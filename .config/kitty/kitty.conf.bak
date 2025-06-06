@@ -1,0 +1,10 @@
+font_family family="AnonymicePro Nerd Font Mono"
+font_size 12
+
+background_opacity 0.8
+
+
+# BEGIN_KITTY_THEME
+# C64
+include current-theme.conf
+# END_KITTY_THEME
