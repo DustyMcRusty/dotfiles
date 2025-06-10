@@ -42,8 +42,8 @@ exec --no-startup-id nm-applet
 # exec --no-startup-id picom --backend glx
 
 # pape + theme (very important)
-exec_always --no-startup-id swaybg -m scale -i ~/Pictures/bsod.jpg
-# exec_always --no-startup-id feh --bg-tile ~/pape
+# exec_always --no-startup-id swaybg -m scale -i ~/Pictures/bsod.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/1746347374461835.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -72,11 +72,11 @@ bindsym $mod+Ctrl+c exec --no-startup-id rofi -show calc
 bindsym $mod+Ctrl+r exec --no-startup-id rofi -show drun
 bindsym $mod+Ctrl+Home exec --no-startup-id rofi -show filebrowser
 bindsym $mod+Ctrl+w exec --no-startup-id rofi -show window
-bindsym $mod+Ctrl+f exec --no-startup-id kitty -e mc
+bindsym $mod+Ctrl+f exec --no-startup-id kitty -e yazi
 bindsym $mod+Ctrl+b exec --no-startup-id librewolf
 bindsym $mod+Ctrl+Insert exec kitty -e btop
 
-bindsym F2 mode "open"
+# bindsym F2 mode "open"
 
 mode "open" {
 ## wofi
@@ -172,28 +172,28 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $meta+1 workspace number $ws1
-bindsym $meta+2 workspace number $ws2
-bindsym $meta+3 workspace number $ws3
-bindsym $meta+4 workspace number $ws4
-bindsym $meta+5 workspace number $ws5
-bindsym $meta+6 workspace number $ws6
-bindsym $meta+7 workspace number $ws7
-bindsym $meta+8 workspace number $ws8
-bindsym $meta+9 workspace number $ws9
-bindsym $meta+0 workspace number $ws10
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
-bindsym $meta+Shift+1 move container to workspace number $ws1
-bindsym $meta+Shift+2 move container to workspace number $ws2
-bindsym $meta+Shift+3 move container to workspace number $ws3
-bindsym $meta+Shift+4 move container to workspace number $ws4
-bindsym $meta+Shift+5 move container to workspace number $ws5
-bindsym $meta+Shift+6 move container to workspace number $ws6
-bindsym $meta+Shift+7 move container to workspace number $ws7
-bindsym $meta+Shift+8 move container to workspace number $ws8
-bindsym $meta+Shift+9 move container to workspace number $ws9
-bindsym $meta+Shift+0 move container to workspace number $ws10
+bindsym $mod+$meta+1 move container to workspace number $ws1
+bindsym $mod+$meta+2 move container to workspace number $ws2
+bindsym $mod+$meta+3 move container to workspace number $ws3
+bindsym $mod+$meta+4 move container to workspace number $ws4
+bindsym $mod+$meta+5 move container to workspace number $ws5
+bindsym $mod+$meta+6 move container to workspace number $ws6
+bindsym $mod+$meta+7 move container to workspace number $ws7
+bindsym $mod+$meta+8 move container to workspace number $ws8
+bindsym $mod+$meta+9 move container to workspace number $ws9
+bindsym $mod+$meta+0 move container to workspace number $ws10
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -224,43 +224,42 @@ mode "resize" {
         bindsym $mod+$meta+c mode "default"
 }
 
-bindsym $mod+$meta+c mode "resize"
+bindsym $mod+Shift+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-set $background #0102ac
-set $foreground #bbbbbb
-set $color1 #22ff22
-set $color2 #9450b7
-set $color3 #000000
-set $color4 #ffffff
-set $color5 #85c6cd
-set $color6 #ff4444
+# set $background #0102ac
+# set $foreground #bbbbbb
+# set $color1 #22ff22
+# set $color2 #9450b7
+# set $color3 #000000
+# set $color4 #ffffff
+# set $color5 #85c6cd
+# set $color6 #ff4444
 
 # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
 bar {
   position bottom
   status_command i3status
-  colors {
-    separator $foreground
-    background $background
-    statusline $foreground
-   #  focused_workspace #cc7700 #ba6100 #442f0e #222222
-   #  active_workspace #664433 #80604a #442f0e #bbbbbb
-   #  inactive_workspace #4f3f33 #3f2f22 #888888 #bbbbbb
-   # urgent_workspace #403a3a #900000 #ffffff #ffffff
-    focused_workspace $foreground $background $foreground
-    active_workspace $color4 $color1 $color4
-    inactive_workspace $foreground $foreground $background
-    urgent_workspace $color3 $background $color1
+  # colors {
+  #   separator $foreground
+  #   background $background
+  #   statusline $foreground
+  #  #  focused_workspace #cc7700 #ba6100 #442f0e #222222
+  #  #  active_workspace #664433 #80604a #442f0e #bbbbbb
+  #  #  inactive_workspace #4f3f33 #3f2f22 #888888 #bbbbbb
+  #  # urgent_workspace #403a3a #900000 #ffffff #ffffff
+  #   focused_workspace $foreground $background $foreground
+  #   active_workspace $color4 $color1 $color4
+  #   inactive_workspace $foreground $foreground $background
+  #   urgent_workspace $color3 $background $color1
 
-  }
-  font pango:BigBlueTermPlus Nerd Font Mono 10px
-# padding 0px 3px 0px 3px
-  separator_symbol "::"
-  mode dock
-  modifier $meta
+  # }
+  # font pango:BigBlueTermPlus Nerd Font Mono 10px
+  # separator_symbol "||"
+  # mode dock
+  # modifier $meta
 
   bindsym button3 exec --no-startup-id rofi -show drun
   bindsym button2 floating toggle
@@ -271,10 +270,10 @@ bar {
 # gaps inner 0
 
 
-client.focused $foreground $background $foreground $background $foreground
-client.focused_inactive $color3 $color6 $foreground $color6 $color6
-client.unfocused $foreground $foreground $background $background $foreground
-client.urgent $background $color2 $color6 $color2
+# client.focused $foreground $background $foreground $background $foreground
+# client.focused_inactive $color3 $color6 $foreground $color6 $color6
+# client.unfocused $foreground $foreground $background $background $foreground
+# client.urgent $background $color2 $color6 $color2
 
 smart_borders on
 floating_maximum_size 1900 x 1060
@@ -285,7 +284,7 @@ bindsym Shift+$meta+c reload; mode "default"
 bindsym Shift+$meta+r restart; mode "default"
 bindsym Shift+$meta+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
 
-bindsym F1 mode command
+# bindsym F1 mode command
 
 mode "command" {
 bindsym q kill; mode "default"

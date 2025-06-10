@@ -5,12 +5,12 @@
  */
 
 * {
-    text-color:  #9094ca;
-    background-color:  rgba(24,24,24,0.75);
+    text-color:  #bbbbbb;
+    background-color:  #0102ac;
     dark: rgba(24,24,24,0.75);
     // Black
     black:       #3d352a;
-    lightblack:  #000000;
+    lightblack:  #0102ac;
     //
     // Red
     red:         #cd5c5c;
@@ -21,8 +21,8 @@
     lightgreen:  #88cc22;
     //
     // Yellow
-    yellow:      #000000;
-    lightyellow:     #000000;
+    yellow:      #0102ac;
+    lightyellow:     #0102ac;
     //
     // Blue
     blue:      #9594a2;
@@ -38,7 +38,7 @@
     //
     // White
     white:      #9594a2;
-    lightwhite:     #000000;
+    lightwhite:     #0102ac;
     //
     // Bold, Italic, Underline
     highlight:     bold #9594a2;
@@ -68,7 +68,7 @@ inputbar {
 }
 mainbox {
     expand: true;
-    background-color: #000000ff;
+    background-color: @background-color;
     spacing: 1em;
 }
 listview {

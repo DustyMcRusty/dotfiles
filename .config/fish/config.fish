@@ -24,7 +24,11 @@ function zyp
 	zypper $argv
 end
 
+function tmux
+  zellij $argv
+end
+
 # Created by `pipx` on 2025-05-27 14:23:02
 set PATH $PATH /home/apolonio/.local/bin
 
-zoxide --cmd cd init fish | source
+zoxide init --cmd cd fish | source
