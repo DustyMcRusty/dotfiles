@@ -1,7 +1,8 @@
 if status is-interactive
-  # wal -Renq
-
     # Commands to run in interactive sessions can go here
+    echo "Are you willing to be patient (and bored)?"
+    echo "Are you willing to make the same choice consistently every day?"
+    echo " "
 end
 
 function l
@@ -24,7 +25,7 @@ function zyp
 	zypper $argv
 end
 
-function tmux
+function zel
   zellij $argv
 end
 

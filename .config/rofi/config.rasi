@@ -157,4 +157,8 @@ font: "AnonymicePro Nerd Font Mono 12";
       sorting-method:    "name";
   }
 }
-@theme "sidebar"
+//@theme "sidebar"
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+@theme "./gruvbox-dark-hard.rasi"

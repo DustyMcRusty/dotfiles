@@ -14,19 +14,19 @@
 * {
     /* Theme settings */
     highlight: bold italic;
-    scrollbar: true;
+    scrollbar: false;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #0000aa;
-    gruvbox-dark-bg0:          #0000aa;
-    gruvbox-dark-bg2:          #dddddd;
-    gruvbox-dark-fg0:          #0000aa;
-    gruvbox-dark-fg1:          #dddddd;
+    gruvbox-dark-bg0-hard:     #000000;
+    gruvbox-dark-bg0:          #000000;
+    gruvbox-dark-bg2:          #ff7711;
+    gruvbox-dark-fg0:          #000000;
+    gruvbox-dark-fg1:          #ff7711;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #0000aa;
+    gruvbox-dark-gray:         #ff7711;
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0-hard;
