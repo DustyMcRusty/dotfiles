@@ -29,6 +29,15 @@ function zel
   zellij $argv
 end
 
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end
+
 # Created by `pipx` on 2025-05-27 14:23:02
 set PATH $PATH /home/apolonio/.local/bin
 
