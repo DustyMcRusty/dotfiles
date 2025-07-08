@@ -38,6 +38,10 @@ function y
 	rm -f -- "$tmp"
 end
 
+function brave
+  flatpak run com.brave.Browser $argv
+end
+
 # Created by `pipx` on 2025-05-27 14:23:02
 set PATH $PATH /home/apolonio/.local/bin
 
