@@ -78,12 +78,70 @@ font-2 = ShureTechMono Nerd Font:pixelsize=12;1
 font-3 = ShureTechMono Nerd Font:fontformat=truetype:size=17;3
 font-4 = ShureTechMono Nerd Font:fontformat=truetype:size=14;3
 
-modules-left = rofi i3 xwindow
-modules-center = 
-modules-right = wlan temperature filesystem memory pulseaudio date powermenu 
+modules-left = rofi i3 
+modules-center = xwindow
+modules-right = date 
 ; tray-position = right
 ; tray-padding = 2
-;tray-background = #0063ff
+; tray-background = ${colors.background-alt}
+
+;wm-restack = bspwm
+wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/mybar2]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 2%
+offset-x = 0%
+offset-y = 0%
+radius = 0
+fixed-center = true
+bottom = false
+underline-size = 0
+transparent = true
+opacity = 0.9
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size =  1
+line-color = #f00
+
+border-bottom-size = 1px
+border-color = #ffff7711
+
+padding-left = 1
+padding-right = 1
+
+margin-left = 2
+margin-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "AnonymicePro Nerd Font Mono:size=9:antialias=false"
+font-1 = ShureTechMono Nerd Font:fontformat=truetype:size=12;3
+font-2 = ShureTechMono Nerd Font:pixelsize=12;1
+font-3 = ShureTechMono Nerd Font:fontformat=truetype:size=17;3
+font-4 = ShureTechMono Nerd Font:fontformat=truetype:size=14;3
+
+modules-left = wlan temperature filesystem 
+modules-center = 
+modules-right = memory pulseaudio powermenu 
+tray-position = right
+tray-padding = 2
+tray-background = ${colors.background-alt}
 
 ;wm-restack = bspwm
 wm-restack = i3
@@ -286,8 +344,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = " %Y-%m-%d"
+date-alt = 
 
 time = %H:%M
 time-alt = %H:%M:%S

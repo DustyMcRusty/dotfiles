@@ -39,13 +39,15 @@ exec --no-startup-id nm-applet
 # conky my beloved 
 exec --no-startup-id conky
 exec --no-startup-id conky -c ~/.config/conky/bonky.conf
+exec --no-startup-id conky -c ~/.config/conky/weather.conf
 
 # compositor
 # exec --no-startup-id picom --backend glx
 
 # pape + theme (very important)
 # exec_always --no-startup-id swaybg -m scale -i ~/Pictures/bsod.jpg
-exec_always --no-startup-id feh --bg-fill ~/Pictures/froton.png
+# exec_always --no-startup-id feh --bg-fill ~/Pictures/1748215524450425.jpg
+exec_always xsetroot -solid black
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -70,14 +72,14 @@ bindsym $mod+Return exec kitty
 
 # kill focused window
 
-bindsym $mod+Ctrl+c exec --no-startup-id rofi -show calc
-bindsym $mod+Ctrl+r exec --no-startup-id rofi -show drun
-bindsym $mod+Ctrl+Home exec --no-startup-id rofi -show filebrowser
-bindsym $mod+Ctrl+w exec --no-startup-id rofi -show window
-bindsym $mod+Ctrl+f exec --no-startup-id kitty -e yazi
-bindsym $mod+Ctrl+n exec --no-startup-id kitty -e nvim
-bindsym $mod+Ctrl+Insert exec --no-startup-id kitty -e btop
-bindsym $mod+Ctrl+b exec --no-startup-id librewolf
+bindsym $mod+$meta+c exec --no-startup-id rofi -show calc
+bindsym $mod+$meta+r exec --no-startup-id rofi -show drun
+bindsym $mod+$meta+Home exec --no-startup-id rofi -show filebrowser
+bindsym $mod+$meta+w exec --no-startup-id rofi -show window
+bindsym $mod+$meta+f exec --no-startup-id kitty -e yazi
+bindsym $mod+$meta+n exec --no-startup-id kitty -e nvim
+bindsym $mod+$meta+Insert exec --no-startup-id kitty -e btop
+bindsym $mod+$meta+b exec --no-startup-id flatpak run com.brave.Browser
 
 # bindsym F2 mode "open"
 
@@ -92,9 +94,9 @@ bindsym Home exec --no-startup-id rofi -show filebrowser; mode "default"
 # check windows
 bindsym w exec --no-startup-id rofi -show window; mode "default"
 # start file manager
-bindsym f exec --no-startup-id kitty -e mc; mode "default"
+bindsym f exec --no-startup-id kitty -e yazi; mode "default"
 # start librewolf
-bindsym b exec --no-startup-id librewolf; mode "default"
+bindsym b exec --no-startup-id flatpak run com.brave.Browser; mode "default"
 # start task manager
 bindsym Insert exec kitty -e btop && mode "default"
 
@@ -109,7 +111,7 @@ bindsym $mod+F1 mode "default"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-bindsym $meta+r exec --no-startup-id rofi -show drun
+bindsym $mod+r exec --no-startup-id rofi -show drun
 
 # change focus
 bindsym $mod+h focus left
@@ -210,10 +212,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
+        bindsym a resize shrink width 5 px or 5 ppt
+        bindsym s resize grow height 5 px or 5 ppt
+        bindsym w resize shrink height 5 px or 5 ppt
+        bindsym d resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 5 px or 5 ppt
@@ -241,39 +243,40 @@ set $color4 #ffffff
 set $color5 #229622
 set $color6 #ffdd77
 
-exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
-bar {
-  position bottom
-  status_command i3status
-  colors {
-    separator $foreground
-    background $background
-    statusline $foreground
-   #  focused_workspace #cc7700 #ba6100 #442f0e #222222
-   #  active_workspace #664433 #80604a #442f0e #bbbbbb
-   #  inactive_workspace #4f3f33 #3f2f22 #888888 #bbbbbb
-   # urgent_workspace #403a3a #900000 #ffffff #ffffff
-    focused_workspace $foreground $background $foreground
-    active_workspace $color4 $color1 $color4
-    inactive_workspace $foreground $foreground $background
-    urgent_workspace $color1 $background $color1
+# # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
 
-  }
-  # font pango:BigBlueTermPlus Nerd Font Mono 10px
-  separator_symbol "|"
-  # modifier $meta
+# bar {
+#   position bottom
+#   status_command i3status
+#   colors {
+#     separator $foreground
+#     background $background
+#     statusline $foreground
+#    #  focused_workspace #cc7700 #ba6100 #442f0e #222222
+#    #  active_workspace #664433 #80604a #442f0e #bbbbbb
+#    #  inactive_workspace #4f3f33 #3f2f22 #888888 #bbbbbb
+#    # urgent_workspace #403a3a #900000 #ffffff #ffffff
+#     focused_workspace $foreground $background $foreground
+#     active_workspace $color4 $color1 $color4
+#     inactive_workspace $foreground $foreground $background
+#     urgent_workspace $color1 $background $color1
+#
+#   }
+#   # font pango:BigBlueTermPlus Nerd Font Mono 10px
+#   separator_symbol "|"
+#   # modifier $meta
+#
+#   bindsym button3 exec --no-startup-id rofi -show drun
+#   bindsym button2 floating toggle
+# }
 
-  bindsym button3 exec --no-startup-id rofi -show drun
-  bindsym button2 floating toggle
-}
-
-# exec_always ~/.config/polybar/launch.sh
+exec_always ~/.config/polybar/launch.sh
 
 # my section
 # smart_gaps yes
-gaps inner 7
+gaps inner 5
 
-default_border pixel 2
+default_border pixel 1
 
 client.focused $foreground $background $foreground $foreground $foreground
 client.focused_inactive $color3 $color6 $foreground $color6 $color6
@@ -283,12 +286,12 @@ client.urgent $background $color2 $color6 $color2
 floating_maximum_size 1900 x 1060
 title_align center
 
-bindsym Shift+$meta+q kill
-bindsym Shift+$meta+c reload; mode "default"
-bindsym Shift+$meta+r restart; mode "default"
-bindsym Shift+$meta+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
+# bindsym Shift+$meta+q kill
+# bindsym Shift+$meta+c reload; mode "default"
+# bindsym Shift+$meta+r restart; mode "default"
+# bindsym Shift+$meta+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
 
-# bindsym F1 mode command
+bindsym $mod+Escape mode command
 
 mode "command" {
 bindsym q kill; mode "default"
@@ -299,12 +302,12 @@ bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you r
 
 bindsym Escape mode "default"
 bindsym Return mode "default"
-bindsym $mod+F2 mode "default"
+bindsym $mod+Escape mode "default"
 }
 
 # scratchpad
-bindsym $mod+m move scratchpad
-bindsym $mod+Shift+m scratchpad show
+bindsym $mod+x move scratchpad
+bindsym $mod+$meta+x scratchpad show
 
 # for_window [class=librewolf] floating enable
 exec --no-startup-id xset s off -dpms
