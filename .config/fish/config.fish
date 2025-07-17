@@ -1,45 +1,46 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    echo "Are you willing to be patient (and bored)?"
+    echo " "
     echo "Are you willing to make the same choice consistently every day?"
+    echo "Also, if you are reading this, there's a decent chance you're overthinking something so, like, don't."
     echo " "
 end
 
 function l
-	ls -la
+    ls -la
 end
 
 function cls
-	clear
+    clear
 end
 
 function qq
-	exit
+    exit
 end
 
 function szyp
-	sudo zypper $argv
+    sudo zypper $argv
 end
 
 function zyp
-	zypper $argv
+    zypper $argv
 end
 
 function zel
-  zellij $argv
+    zellij $argv
 end
 
 function y
-	set tmp (mktemp -t "yazi-cwd.XXXXXX")
-	yazi $argv --cwd-file="$tmp"
-	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
 
 function brave
-  flatpak run com.brave.Browser $argv
+    flatpak run com.brave.Browser $argv
 end
 
 # Created by `pipx` on 2025-05-27 14:23:02
