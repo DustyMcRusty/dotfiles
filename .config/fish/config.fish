@@ -3,6 +3,7 @@ if status is-interactive
     echo " "
     echo "Are you willing to make the same choice consistently every day?"
     echo "Also, if you are reading this, there's a decent chance you're overthinking something so, like, don't."
+    echo "Angel = Friction = Devil"
     echo " "
 end
 

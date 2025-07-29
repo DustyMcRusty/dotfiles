@@ -87,25 +87,32 @@ mode "open" {
 ## wofi
 # quick calculator
 bindsym c exec --no-startup-id rofi -show calc; mode "default"
+
 # app launcher
-bindsym s exec --no-startup-id rofi -show drun; mode "default"
+bindsym r exec --no-startup-id rofi -show drun; mode "default"
+bindsym $mod+r exec --no-startup-id rofi -show drun; mode "default"
+
 # file opener
 bindsym Home exec --no-startup-id rofi -show filebrowser; mode "default"
-# check windows
-bindsym w exec --no-startup-id rofi -show window; mode "default"
+
 # start file manager
 bindsym f exec --no-startup-id kitty -e yazi; mode "default"
+
 # start browser
-bindsym b exec --no-startup-id flatpak run com.brave.Browser; mode "default"
+bindsym b exec --no-startup-id librewolf; mode "default"
+
 # start task manager
 bindsym Insert exec kitty -e btop; mode "default"
+
 # start music player
 bindsym m exec kitty -e cmus; mode "default"
 
+# GO BACK :(
 bindsym Escape mode "default"
 bindsym Return mode "default"
-bindsym $mod+F1 mode "default"
 }
+
+bindsym $mod+Tab exec --no-startup-id rofi -show window; mode "default"
 
 # start dmenu (a program launcher)
 # A more modern dmenu replacement is wofi:
@@ -298,7 +305,7 @@ title_align center
 # bindsym Shift+$meta+r restart; mode "default"
 # bindsym Shift+$meta+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
 
-bindsym $mod+c mode command
+bindsym $mod+Escape mode command
 
 mode "command" {
 bindsym q kill; mode "default"
@@ -309,12 +316,12 @@ bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you r
 
 bindsym Escape mode "default"
 bindsym Return mode "default"
-bindsym $mod+c mode "default"
+bindsym $mod+Escape mode "default"
 }
 
 # scratchpad
-bindsym $mod+x move scratchpad
-bindsym $mod+$meta+x scratchpad show
+bindsym $mod+z move scratchpad
+bindsym $mod+x scratchpad show
 
 # for_window [class=librewolf] floating enable
 exec --no-startup-id xset s off -dpms

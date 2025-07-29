@@ -50,14 +50,14 @@ height = 2%
 offset-x = 0%
 offset-y = 0%
 radius = 0
-fixed-center = false
+fixed-center = true
 bottom = true
 underline-size = 0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size =  1
+line-size =  2%
 line-color = #f00
 
 border-top-size = 1px
