@@ -325,3 +325,4 @@ bindsym $mod+x scratchpad show
 
 # for_window [class=librewolf] floating enable
 exec --no-startup-id xset s off -dpms
+# exec --no-startup-id picom --backend glx -b
