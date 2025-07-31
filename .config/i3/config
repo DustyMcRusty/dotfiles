@@ -46,8 +46,8 @@ exec --no-startup-id conky -c ~/.config/conky/weather.conf
 
 # pape + theme (very important)
 # exec_always --no-startup-id swaybg -m scale -i ~/Pictures/bsod.jpg
-exec_always --no-startup-id feh --bg-fill ~/Pictures/1748215524450425.jpg
-# exec_always xsetroot -solid black
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/bmo.png
+ exec_always xsetroot -solid black
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -289,6 +289,7 @@ exec_always ~/.config/polybar/launch.sh
 # my section
 # smart_gaps yes
 gaps inner 5
+gaps left 355
 
 default_border pixel 1
 
