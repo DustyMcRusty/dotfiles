@@ -232,10 +232,10 @@ mode "resize" {
         bindsym Shift+d resize grow width 25 px or 25 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym Left resize shrink width 3 px or 3 ppt
+        bindsym Down resize grow height 3 px or 3 ppt
+        bindsym Up resize shrink height 3 px or 3 ppt
+        bindsym Right resize grow width 3 px or 3 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -314,6 +314,8 @@ bindsym $meta+q kill
 bindsym c reload; mode "default"
 bindsym r restart; mode "default"
 bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
+bindsym g exec "i3-msg gaps left all set 0px"; mode "default"
+bindsym Shift+g exec "i3-msg gaps left all set 355px"; mode "default"
 
 bindsym Escape mode "default"
 bindsym Return mode "default"
