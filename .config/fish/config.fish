@@ -7,6 +7,8 @@ if status is-interactive
     echo " "
 end
 
+# User-defined commands
+
 function l
     ls -la
 end
@@ -38,10 +40,6 @@ function y
         builtin cd -- "$cwd"
     end
     rm -f -- "$tmp"
-end
-
-function brave
-    flatpak run com.brave.Browser $argv
 end
 
 # Created by `pipx` on 2025-05-27 14:23:02
