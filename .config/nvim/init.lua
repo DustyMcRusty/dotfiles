@@ -53,6 +53,7 @@ vim.pack.add({
 	{src = "https://github.com/echasnovski/mini.pick"},
 	{src = "https://github.com/stevearc/oil.nvim"},
 	{src = "https://github.com/Saghen/blink.cmp"},
+	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
 })
 
 -- LSPs n shit
@@ -68,6 +69,7 @@ require("mason").setup()
 require("mini.pick").setup()
 require("nvim-tree").setup()
 require("oil").setup()
+require("colorizer").setup()
 
 require("blink-cmp").setup({
   "saghen/blink.cmp",
