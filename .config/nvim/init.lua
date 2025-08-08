@@ -18,8 +18,7 @@ vim.o.title          = true
 vim.o.winborder      = "single"
 vim.o.wrap           = false
 
-vim.cmd('colorscheme darkblue')
-vim.cmd('set cc=90')
+vim.cmd('set cc=80')
 
 -- Keybinds
 vim.g.mapleader = ' '
@@ -32,6 +31,8 @@ vim.keymap.set('i', '<M-l>', '<Right>')
 
 vim.keymap.set('n', '<leader>T', ':tabnew<CR>:Oil<CR>')
 vim.keymap.set('n', '<leader>t', ':Oil<CR>')
+
+vim.keymap.set('n', '<leader>s', ':tabnew<CR>:terminal<CR>')
 
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
@@ -54,6 +55,7 @@ vim.pack.add({
 	{src = "https://github.com/stevearc/oil.nvim"},
 	{src = "https://github.com/Saghen/blink.cmp"},
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
+	{src = "https://github.com/luisiacc/gruvbox-baby"}
 })
 
 -- LSPs n shit
@@ -62,13 +64,38 @@ vim.pack.add({
 	"clangd"
 })
 
-
-
 -- etc.
 require("mason").setup()
 require("mini.pick").setup()
 require("nvim-tree").setup()
-require("oil").setup()
+require("oil").setup({
+	view_options = {
+		watch_for_changes = true,
+		show_hidden = true,
+	},
+
+	lsp_file_methods = {
+	autosave_changes = true,
+	},
+
+	confirmation = {
+		border = "single",
+	},
+
+	ssh = {
+		border = "single",
+	},
+	
+	
+	float = {
+		border = "single" 
+	},
+	
+	keymaps_help = {
+		border = "single" 
+	},
+})
+
 require("colorizer").setup()
 
 require("blink-cmp").setup({
@@ -85,3 +112,5 @@ require("blink-cmp").setup({
   },
 })
 
+-- theme
+vim.cmd('colorscheme blue')

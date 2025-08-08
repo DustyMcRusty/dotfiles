@@ -7,6 +7,8 @@ if status is-interactive
     echo " "
 end
 
+setfont alt-8x8 -d
+
 # User-defined commands
 
 function l
