@@ -24,10 +24,10 @@ vim.cmd('set cc=80')
 vim.g.mapleader = ' '
 
 vim.keymap.set('i', '<M-i>', '<esc>')
-vim.keymap.set('i', '<M-k>', '<Up>')
-vim.keymap.set('i', '<M-j>', '<Down>')
-vim.keymap.set('i', '<M-h>', '<Left>')
-vim.keymap.set('i', '<M-l>', '<Right>')
+vim.keymap.set('i', '<C-k>', '<Up>')
+vim.keymap.set('i', '<C-j>', '<Down>')
+vim.keymap.set('i', '<C-h>', '<Left>')
+vim.keymap.set('i', '<C-l>', '<Right>')
 
 vim.keymap.set('n', '<leader>T', ':tabnew<CR>:Oil<CR>')
 vim.keymap.set('n', '<leader>t', ':Oil<CR>')
@@ -42,8 +42,11 @@ vim.keymap.set('n', '<leader>fh', ':Pick help<CR>')
 vim.keymap.set('n', '<leader>fg', ':Pick grep<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
-vim.keymap.set('n', '	', ':tabNext<CR>')
+vim.keymap.set('n', '	', ':tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
+
+vim.keymap.set('v', '<Tab>', '>gv')
+vim.keymap.set('v', '<S-Tab>', '<gv')
 
 -- Plugins
 vim.pack.add({
@@ -113,4 +116,4 @@ require("blink-cmp").setup({
 })
 
 -- theme
-vim.cmd('colorscheme blue')
+vim.cmd('colorscheme gruvbox-baby')

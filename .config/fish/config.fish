@@ -7,7 +7,7 @@ if status is-interactive
     echo " "
 end
 
-setfont alt-8x8 -d
+setfont lat0-08.psfu.gz -d
 
 # User-defined commands
 
@@ -42,6 +42,10 @@ function y
         builtin cd -- "$cwd"
     end
     rm -f -- "$tmp"
+end
+
+function weather
+	curl wttr.in/?T0
 end
 
 # Created by `pipx` on 2025-05-27 14:23:02

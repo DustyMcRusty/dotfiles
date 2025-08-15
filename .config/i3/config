@@ -15,7 +15,7 @@ set $meta Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font AnonymicePro Nerd Font Mono 9
+font Bandal 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -37,8 +37,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # conky my beloved 
-# exec --no-startup-id conky -c ~/.config/conky/conky.conf
-# exec --no-startup-id conky -c ~/.config/conky/bonky.conf
+exec --no-startup-id conky -c ~/.config/conky/conky.conf
+exec --no-startup-id conky -c ~/.config/conky/bonky.conf
 exec --no-startup-id conky -c ~/.config/conky/weather.conf
 
 # compositor
@@ -46,8 +46,8 @@ exec --no-startup-id conky -c ~/.config/conky/weather.conf
 
 # pape + theme (very important)
 set $pape ~/Pictures/neondither1.png
-exec_always --no-startup-id feh --bg-fill $pape
-exec_always --no-startup-id swaybg -m scale -i $pape
+# exec_always --no-startup-id feh --bg-fill $pape
+# exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
 
 # Use pactl to adjust volume in PulseAudio.
@@ -67,7 +67,7 @@ floating_modifier $meta
 tiling_drag titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # Open something
 bindsym $mod+r mode "open"
@@ -78,23 +78,25 @@ mode "open" {
 bindsym c exec --no-startup-id rofi -show calc; mode "default"
 
 # app launcher
-bindsym r exec --no-startup-id rofi -show drun; mode "default"
-bindsym $mod+r exec --no-startup-id rofi -show drun; mode "default"
+bindsym r exec --no-startup-id rofi -show drun -show-icons; mode "default"
+bindsym $mod+r exec --no-startup-id rofi -show drun -show-icons; mode "default"
 
 # file opener
 bindsym Home exec --no-startup-id rofi -show filebrowser; mode "default"
 
 # start file manager
-bindsym f exec --no-startup-id kitty -e yazi; mode "default"
+# bindsym f exec --no-startup-id alacritty -e yazi; mode "default"
+bindsym f exec --no-startup-id thunar; mode "default"
+
 
 # start browser
 bindsym b exec --no-startup-id librewolf; mode "default"
 
 # start task manager
-bindsym Insert exec kitty -e btop; mode "default"
+bindsym Insert exec alacritty -e btop; mode "default"
 
 # start music player
-bindsym m exec kitty -e cmus; mode "default"
+bindsym m exec alacritty -e cmus; mode "default"
 
 # GO BACK
 bindsym Escape mode "default"
@@ -240,10 +242,9 @@ bindsym $mod+Shift+r mode "resize"
 # # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
 
 bar {
-  position top
   status_command i3status
 
-  bindsym button3 exec --no-startup-id rofi -show drun
+  bindsym button3 exec --no-startup-id rofi -show drun -show-icons
 }
 
 # exec_always ~/.config/polybar/launch.sh
@@ -265,9 +266,11 @@ bindsym $meta+q kill
 bindsym c reload; mode "default"
 bindsym r restart; mode "default"
 bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
-bindsym g exec "i3-msg gaps left all set 0px"; mode "default"
-bindsym Shift+g exec "i3-msg gaps left all set 355px"; mode "default"
+bindsym g exec "i3-msg gaps right all set 0px"; mode "default"
+bindsym Shift+g exec "i3-msg gaps right all set 362px"; mode "default"
 
+bindsym F4 exec "i3-nagbar -t warning -m 'You pressed the shutdown shortcut. Do you really want to turn off the computer?' -B 'Yes, shutdown' 'systemctl poweroff -i'"
+bindsym F3 exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the computer?' -B 'Yes, reboot' 'systemctl restart -i'"
 bindsym Escape mode "default"
 bindsym Return mode "default"
 bindsym $mod+Escape mode "default"
