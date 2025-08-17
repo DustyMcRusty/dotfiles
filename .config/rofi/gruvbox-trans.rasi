@@ -20,13 +20,13 @@
     gruvbox-dark-bg0-soft:     #32302fa0;
     gruvbox-dark-bg1:          #3c3836a0;
     gruvbox-dark-bg3:          #665c54a0;
-    gruvbox-dark-fg0:          #fbf1c7a0;
-    gruvbox-dark-fg1:          #ebdbb2a0;
-    gruvbox-dark-red-dark:     #cc241da0;
-    gruvbox-dark-red-light:    #fb4934a0;
-    gruvbox-dark-yellow-dark:  #d79921a0;
-    gruvbox-dark-yellow-light: #fabd2fa0;
-    gruvbox-dark-gray:         #a89984a0;
+    gruvbox-dark-fg0:          #fbf1c7;
+    gruvbox-dark-fg1:          #ebdbb2;
+    gruvbox-dark-red-dark:     #cc241d;
+    gruvbox-dark-red-light:    #fb4934;
+    gruvbox-dark-yellow-dark:  #d79921;
+    gruvbox-dark-yellow-light: #fabd2f;
+    gruvbox-dark-gray:         #a89984;
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0-soft;

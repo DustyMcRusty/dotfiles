@@ -243,7 +243,7 @@ bindsym $mod+Shift+r mode "resize"
 # base colors
 set $fg #ebdbb2ff
 set $fg2 #a89984ff
-set $bg #32302fee
+set $bg #32302fff
 set $yellow #d79921ff
 set $blue #83a598ff
 set $green #98971aff
