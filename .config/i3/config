@@ -67,7 +67,7 @@ floating_modifier $meta
 tiling_drag titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec foot
 
 # Open something
 bindsym $mod+r mode "open"
@@ -85,18 +85,18 @@ bindsym $mod+r exec --no-startup-id rofi -show drun -show-icons; mode "default"
 bindsym Home exec --no-startup-id rofi -show filebrowser; mode "default"
 
 # start file manager
-# bindsym f exec --no-startup-id alacritty -e yazi; mode "default"
-bindsym f exec --no-startup-id thunar; mode "default"
+# bindsym f exec --no-startup-id foot -e yazi; mode "default"
+bindsym f exec --no-startup-id foot -e yazi; mode "default"
 
 
 # start browser
 bindsym b exec --no-startup-id librewolf; mode "default"
 
 # start task manager
-bindsym Insert exec alacritty -e btop; mode "default"
+bindsym Insert exec foot -e btop; mode "default"
 
 # start music player
-bindsym m exec alacritty -e cmus; mode "default"
+bindsym m exec foot -e cmus; mode "default"
 
 # GO BACK
 bindsym Escape mode "default"
