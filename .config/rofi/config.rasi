@@ -2,5 +2,9 @@ configuration {
 font: "Bm437 OlivettiThin 9x16 12";
 }
 
-@theme "/usr/share/rofi/themes/sidebar.rasi"
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
 
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"

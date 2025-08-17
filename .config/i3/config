@@ -232,8 +232,7 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+$meta+c mode "default"
-}
-
+} 
 bindsym $mod+Shift+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -241,8 +240,31 @@ bindsym $mod+Shift+r mode "resize"
 
 # # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
 
+# base colors
+set $fg #ebdbb2
+set $fg2 #a89984
+set $bg #32302f
+set $yellow #d79921
+set $blue #83a598
+set $green #98971a
+set $red #fb4934
+
+# extra colors
+set $purple #b16286
+set $aqua #689d6a
+
 bar {
   status_command i3status
+
+	colors {
+background $bg 
+statusline $fg
+separator $fg2
+focused_workspace $bg $blue $bg
+inactive_workspace $bg $bg $fg2
+urgent_workspace $bg $red $bg
+binding_mode $bg $red $bg
+	}
 
   bindsym button3 exec --no-startup-id rofi -show drun -show-icons
 }
@@ -251,12 +273,15 @@ bar {
 
 # my section
 
-# client.focused $foreground $background $foreground $foreground $foreground
-# client.focused_inactive $color3 $color6 $foreground $color6 $color6
-# client.unfocused $foreground $foreground $background $background $background
-# client.urgent $background $color2 $color6 $color2
+
+
+client.focused $fg $bg $fg $fg $fg
+client.focused_inactive $yellow $yellow $bg $yellow $yellow
+client.unfocused $fg $fg $fg $bg $bg
+client.urgent $bg $green $yellow $green
 
 floating_maximum_size 1900 x 1060
+gaps inner 5px
 
 bindsym $mod+Escape mode command
 
