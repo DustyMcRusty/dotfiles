@@ -45,9 +45,9 @@ exec --no-startup-id conky -c ~/.config/conky/weather.conf
 # exec --no-startup-id picom --backend glx
 
 # pape + theme (very important)
-set $pape ~/Pictures/neondither1.png
-# exec_always --no-startup-id feh --bg-fill $pape
-# exec_always --no-startup-id swaybg -m scale -i $pape
+set $pape ~/Pictures/1695237043400178.jpg
+exec_always --no-startup-id feh --bg-fill $pape
+exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
 
 # Use pactl to adjust volume in PulseAudio.
@@ -241,13 +241,13 @@ bindsym $mod+Shift+r mode "resize"
 # # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
 
 # base colors
-set $fg #ebdbb2
-set $fg2 #a89984
-set $bg #32302f
-set $yellow #d79921
-set $blue #83a598
-set $green #98971a
-set $red #fb4934
+set $fg #ebdbb2ff
+set $fg2 #a89984ff
+set $bg #32302fee
+set $yellow #d79921ff
+set $blue #83a598ff
+set $green #98971aff
+set $red #fb4934ff
 
 # extra colors
 set $purple #b16286
@@ -257,13 +257,13 @@ bar {
   status_command i3status
 
 	colors {
-background $bg 
-statusline $fg
-separator $fg2
-focused_workspace $bg $blue $bg
-inactive_workspace $bg $bg $fg2
-urgent_workspace $bg $red $bg
-binding_mode $bg $red $bg
+		background $bg 
+		statusline $fg
+		separator $fg2
+		focused_workspace $bg $yellow $bg
+		inactive_workspace $bg $bg $fg2
+		urgent_workspace $bg $red $bg
+		binding_mode $bg $red $bg
 	}
 
   bindsym button3 exec --no-startup-id rofi -show drun -show-icons
@@ -275,9 +275,9 @@ binding_mode $bg $red $bg
 
 
 
-client.focused $fg $bg $fg $fg $fg
-client.focused_inactive $yellow $yellow $bg $yellow $yellow
-client.unfocused $fg $fg $fg $bg $bg
+client.focused $yellow $bg $yellow $yellow $yellow
+client.focused_inactive $fg $bg $fg $fg $fg
+client.unfocused $fg $fg $bg $bg $bg
 client.urgent $bg $green $yellow $green
 
 floating_maximum_size 1900 x 1060
