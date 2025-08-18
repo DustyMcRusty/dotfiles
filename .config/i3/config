@@ -42,6 +42,10 @@ exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
 
+# conky
+exec conky -c ~/.config/conky/conky.conf
+exec conky -c ~/.config/conky/weather.conf
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -284,7 +288,7 @@ bindsym c reload; mode "default"
 bindsym r restart; mode "default"
 bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"; mode "default"
 bindsym g exec "i3-msg gaps right all set 0px"; mode "default"
-bindsym Shift+g exec "i3-msg gaps right all set 362px"; mode "default"
+bindsym Shift+g exec "i3-msg gaps right all set 386px"; mode "default"
 
 bindsym F4 exec "i3-nagbar -t warning -m 'You pressed the shutdown shortcut. Do you really want to turn off the computer?' -B 'Yes, shutdown' 'systemctl poweroff -i'"
 bindsym F3 exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the computer?' -B 'Yes, reboot' 'systemctl restart -i'"
