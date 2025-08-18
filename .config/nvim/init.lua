@@ -20,14 +20,21 @@ vim.o.wrap           = false
 
 vim.cmd('set cc=80')
 
+-- akjsdhalkjsdhalksj kajdshlkajsdh alkjsdhaslkjdh klajdsh lkjasdhajksdl
 -- Keybinds
 vim.g.mapleader = ' '
 
-vim.keymap.set('i', '<M-i>', '<esc>')
-vim.keymap.set('i', '<C-k>', '<Up>')
-vim.keymap.set('i', '<C-j>', '<Down>')
-vim.keymap.set('i', '<C-h>', '<Left>')
-vim.keymap.set('i', '<C-l>', '<Right>')
+vim.keymap.set('i', '<M-k>', '<Up>')
+vim.keymap.set('i', '<M-j>', '<Down>')
+vim.keymap.set('i', '<M-h>', '<Left>')
+vim.keymap.set('i', '<M-l>', '<Right>')
+
+vim.keymap.set('i', '<M-w>', 'wwi')
+vim.keymap.set('i', '<M-e>', 'ea')
+vim.keymap.set('i', '<M-b>', 'bi')
+vim.keymap.set('i', '<M-E>', 'WWi')
+vim.keymap.set('i', '<M-W>', 'Ea')
+vim.keymap.set('i', '<M-B>', 'Bi')
 
 vim.keymap.set('n', '<leader>T', ':tabnew<CR>:Oil<CR>')
 vim.keymap.set('n', '<leader>t', ':Oil<CR>')
@@ -58,7 +65,8 @@ vim.pack.add({
 	{src = "https://github.com/stevearc/oil.nvim"},
 	{src = "https://github.com/Saghen/blink.cmp"},
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
-	{src = "https://github.com/luisiacc/gruvbox-baby"}
+	{src = "https://github.com/luisiacc/gruvbox-baby"},
+	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
 })
 
 -- LSPs n shit
