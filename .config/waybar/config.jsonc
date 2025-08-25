@@ -1,0 +1,163 @@
+{
+  "layer": "top",
+  "output": ["VGA-1"],
+  "modules-left": ["custom/launcher", "backlight", "pulseaudio", "cpu", "mpris"],
+  "modules-center": ["sway/workspaces", "clock", "sway/mode", "sway/scratchpad"],
+  "modules-right": ["wlr/taskbar", "custom/bluetooth", "network", "memory", "tray", "battery"],
+
+  "wireplumber": {
+    "tooltip": true,
+    "scroll-step": 5,
+    "format": "{volume}%",
+    "format-muted": "󰝟 {volume}%",
+    "on-click": "pavucontrol",
+    "format-icons": ["", "", ""]
+  },
+
+	"pulseaudio": {
+		"format": "{volume}%",
+		"format-bluetooth": "{volume}% {icon}",
+		"format-muted": "X%",
+		"format-icons": {
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+			"headphones": "",
+			"handsfree": "",
+			"headset": "",
+			"phone": "",
+			"phone-muted": "",
+			"portable": "",
+			"car": "",
+			"default": ["", ""]
+		},
+		"scroll-step": 1,
+		"on-click": "pavucontrol"
+	},
+
+  "network": {
+    "tooltip": true,
+    "format-wifi": " ",
+    "rotate": 0,
+    "format-ethernet": "󰈀 ",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 2,
+    "on-click": "~/.config/rofi/iwmenu/iwmenu-waybar.sh"
+  },
+
+  "backlight": {
+        "device": "intel_backlight",
+        "rotate": 0,
+        "format": "{icon} {percent}%",
+        "format-icons": [""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+  "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "rotate": 0,
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%m-%d-%Y}",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "on-click": "kitty -- btop",
+    "tooltip": true
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "rotate": 0,
+    "spacing": 5
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": "MEM: {used:0.1f}G/{total:0.1f}G",
+    "max-length": 20
+  },
+
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "rofi -show drun"
+  },
+  
+  "custom/bluetooth": {
+    "format": " {}",
+    "exec": "~/.config/waybar/bluetooth-display.sh",
+    "interval": 10,
+    "on-click": "blueman-manager",
+    "return-type": "plain",
+    "tooltip": false,
+    "max-length": 25
+  },
+
+  "mpris": {
+    "format": "{player_icon}  {dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "format-stopped": "",
+    "ignore-list": ["vesktop"],
+    "player-icons": {
+      "brave": "",
+      "default": "",
+      "spotify": "",
+      "vlc": "",
+      "mpv": ""
+    },
+    "status-icons": {
+      "paused": "▶",
+      "playing": "⏸"
+    },
+    "max-length": 40,
+    "tooltip": true
+  },
+
+	"sway/workspaces": {
+		"all-outputs": true,
+		"format": "[ {name} ]",
+	},
+  
+  "custom/updates": {
+    "exec": "systemupdate.sh",
+    "return-type": "json",
+    "format": "{}",
+    "rotate": 0,
+    "on-click": "hyprctl dispatch exec 'systemupdate.sh up'",
+    "interval": 43200,
+    "tooltip": true,
+    "signal": 20
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "icon-theme": "Gruvbox-Dark-Hard",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["kitty", "vesktop"],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "markup": true,
+    "all-outputs": false
+  }
+}

@@ -9,8 +9,10 @@ end
 
 setfont lat0-08.psfu.gz -d
 
-# User-defined commands
+# User-defined variables
+set -Ux MANPAGER "nvim +Man!"
 
+# User-defined commands
 function l
     ls -la
 end

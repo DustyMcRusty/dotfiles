@@ -1,5 +1,5 @@
 configuration {
-font: "Bm437 OlivettiThin 9x16 12";
+font: "Bandal 12";
 }
 
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
