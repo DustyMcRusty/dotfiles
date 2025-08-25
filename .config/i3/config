@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/Pictures/gruvpape.png
+set $pape ~/Pictures/gruvbox_anime.png
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
@@ -55,7 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 bindsym $mod+F4 kill
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $meta
+floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.

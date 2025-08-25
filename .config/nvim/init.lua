@@ -67,6 +67,7 @@ vim.pack.add({
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
 	{src = "https://github.com/luisiacc/gruvbox-baby"},
 	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
+	{src = "https://github.com/m4xshen/autoclose.nvim"},
 })
 
 -- LSPs n shit
@@ -79,6 +80,7 @@ vim.pack.add({
 require("mason").setup()
 require("mini.pick").setup()
 require("nvim-tree").setup()
+require("autoclose").setup()
 require("oil").setup({
 	view_options = {
 		watch_for_changes = true,

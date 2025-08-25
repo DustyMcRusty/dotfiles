@@ -1,9 +1,9 @@
 {
   "layer": "top",
   "output": ["VGA-1"],
-  "modules-left": ["custom/launcher", "backlight", "pulseaudio", "cpu", "mpris"],
-  "modules-center": ["sway/workspaces", "clock", "sway/mode", "sway/scratchpad"],
-  "modules-right": ["wlr/taskbar", "custom/bluetooth", "network", "memory", "tray", "battery"],
+  "modules-left": ["custom/launcher", "backlight", "wlr/taskbar", "mpris"],
+  "modules-center": ["sway/workspaces",  "sway/mode", "sway/scratchpad"],
+  "modules-right": [ "custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray", "battery"],
 
   "wireplumber": {
     "tooltip": true,
@@ -15,7 +15,7 @@
   },
 
 	"pulseaudio": {
-		"format": "{volume}%",
+		"format": "vol:{volume}%",
 		"format-bluetooth": "{volume}% {icon}",
 		"format-muted": "X%",
 		"format-icons": {
@@ -36,12 +36,12 @@
 
   "network": {
     "tooltip": true,
-    "format-wifi": " ",
+    "format-wifi": "CONNECTED!",
     "rotate": 0,
     "format-ethernet": "󰈀 ",
     "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
     "format-linked": "󰈀 {ifname} (No IP)",
-    "format-disconnected": "󰖪 ",
+    "format-disconnected": "disconnected.",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 2,
     "on-click": "~/.config/rofi/iwmenu/iwmenu-waybar.sh"
@@ -78,7 +78,7 @@
   },
 
   "cpu": {
-    "format": " {usage}%",
+    "format": "CPU: {usage}%",
     "on-click": "kitty -- btop",
     "tooltip": true
   },
@@ -96,8 +96,9 @@
   },
 
   "custom/launcher": {
-    "format": " ",
-    "on-click": "rofi -show drun"
+    "format": "Launch",
+    "on-click": "rofi -show drun -show-icons",
+    "on-click-right": "killall rofi"
   },
   
   "custom/bluetooth": {
