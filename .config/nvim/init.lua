@@ -17,6 +17,8 @@ vim.o.termguicolors  = true
 vim.o.title          = true
 vim.o.winborder      = "single"
 vim.o.wrap           = false
+vim.o.listchars			 = "tab:> ,trail:-,eol:$"
+vim.o.swapfile			 = false
 
 vim.cmd('set cc=80')
 
@@ -42,6 +44,9 @@ vim.keymap.set('n', '<leader>t', ':Oil<CR>')
 vim.keymap.set('n', '<leader>s', ':tabnew<CR>:terminal<CR>')
 
 vim.keymap.set('n', '<leader>w', ':write<CR>')
+vim.keymap.set('n', '<leader>q', ':quit<CR>')
+
+vim.keymap.set('n', '<leader>m', ':Man<CR>')
 
 vim.keymap.set('n', '<leader>ff', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>fb', ':Pick buffers<CR>')
@@ -68,6 +73,7 @@ vim.pack.add({
 	{src = "https://github.com/luisiacc/gruvbox-baby"},
 	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
+	{src = "https://github.com/xiyaowong/transparent.nvim"},
 })
 
 -- LSPs n shit

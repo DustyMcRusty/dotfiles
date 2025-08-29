@@ -1,13 +1,14 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    echo " "
-    echo "Are you willing to make the same choice consistently every day?"
     echo "Also, if you are reading this, there's a decent chance you're overthinking something so, like, don't."
-    echo "Angel = Friction = Devil"
-    echo " "
+		echo "1. Learn how to learn the thing you want to learn."
+		echo "2. Focus and dedicate time to learning. Ideally find somewhere with no distractions. "
+		echo "3. Do the thing you want to be good at."
+		echo "4. Find your weakest points and work on those."
+		echo "5. Test yourself."
+		echo "6. Get feedback. It's harder for self-learners but ideally you'll have someone to evaluate your work."
+		echo "7. Don't just accept the answer as the answer. Understand why it's the answer and build your own understanding of how to get there."
 end
-
-setfont lat0-08.psfu.gz -d
 
 # User-defined variables
 set -Ux MANPAGER "nvim +Man!"

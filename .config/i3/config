@@ -37,14 +37,16 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/Pictures/gruvbox_anime.png
+set $pape ~/Pictures/papes/Linux/4539045-1581224595.jpg
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
+# exec_always swaybg -c 282828
 
 # conky
-exec conky -c ~/.config/conky/conky.conf
-exec conky -c ~/.config/conky/weather.conf
+# exec conky -c ~/.config/conky/conky.conf
+# exec conky -c ~/.config/conky/weather.conf
+exec --no-startup-id picom -backend glx
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -63,7 +65,7 @@ floating_modifier $mod
 tiling_drag titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec foot
 
 # Open something
 bindsym $mod+r mode "open"
@@ -81,18 +83,18 @@ bindsym $mod+r exec --no-startup-id rofi -show drun -show-icons; mode "default"
 bindsym Home exec --no-startup-id rofi -show filebrowser; mode "default"
 
 # start file manager
-# bindsym f exec --no-startup-id kitty -e yazi; mode "default"
-bindsym f exec --no-startup-id kitty -e yazi; mode "default"
+# bindsym f exec --no-startup-id foot -e yazi; mode "default"
+bindsym f exec --no-startup-id foot -e yazi; mode "default"
 
 
 # start browser
 bindsym b exec --no-startup-id librewolf; mode "default"
 
 # start task manager
-bindsym Insert exec kitty -e btop; mode "default"
+bindsym Insert exec foot -e btop; mode "default"
 
 # start music player
-bindsym m exec kitty -e cmus; mode "default"
+bindsym m exec foot -e cmus; mode "default"
 
 # GO BACK
 bindsym Escape mode "default"
@@ -234,22 +236,16 @@ bindsym $mod+Shift+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-# # exec_always killall -p waybar && waybar -s ~/.config/waybar/waybar.config -b waybar_main
-
-# base colors
+# palette
 set $fg #ebdbb2
-set $fg2 #a89984
+set $fg2 #928374
 set $white #ddddff
 set $bg #282828
-set $bg2 #32302f
+set $bg2 #222222
 set $yellow #d79921
 set $blue #83a598
 set $green #98971a
 set $red #fb4934
-
-# extra colors
-set $purple #b16286
-set $aqua #689d6a
 
 bar {
 	swaybar_command waybar
@@ -276,14 +272,14 @@ bindsym $mod+Shift+b bar mode dock
 # my section
 
 
-client.focused $yellow $yellow $bg $fg2 $yellow
-client.focused_inactive $fg2 $fg2 $bg $yellow $fg2
-client.unfocused $bg $bg $fg2 $yellow $fg2
+client.focused $fg2 $fg2 $bg $fg2 #222222
+client.focused_inactive $fg2 $fg2 $bg $fg2 #222222
+client.unfocused $bg $bg $fg2 $fg2 #222222
 client.urgent $red $red $yellow $green
 
 floating_maximum_size 1900 x 1060
-default_border pixel 1
-gaps inner 4px
+default_border pixel 2px
+gaps inner 7px
 
 bindsym $mod+Escape mode command
 
@@ -297,18 +293,21 @@ bindsym g exec "i3-msg gaps right all set 0px"; mode "default"
 bindsym Shift+g exec "i3-msg gaps right all set 386px"; mode "default"
 
 bindsym F4 exec "i3-nagbar -t warning -m 'You pressed the shutdown shortcut. Do you really want to turn off the computer?' -B 'Yes, shutdown' 'systemctl poweroff -i'"
-bindsym F3 exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the computer?' -B 'Yes, reboot' 'systemctl restart -i'"
+bindsym F3 exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the computer?' -B 'Yes, reboot' 'systemctl reboot -i'"
 bindsym Escape mode "default"
 bindsym Return mode "default"
 bindsym $mod+Escape mode "default"
 }
 
-# scratchpad
 bindsym $mod+z move scratchpad
 bindsym $mod+x scratchpad show
+
 bindsym --release button3 kill
 
-# for_window [class=librewolf] floating enable
-exec --no-startup-id xset s off -dpms
-# exec --no-startup-id picom --backend glx -b
-exec --no-startup-id xcompmgr
+shadows on
+shadow_offset 12 12
+shadow_blur_radius 1
+
+blur disable
+
+default_dim_inactive 0.6
