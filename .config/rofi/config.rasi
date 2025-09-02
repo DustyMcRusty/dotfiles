@@ -1,5 +1,5 @@
 configuration {
-font: "Bandal 12";
+font: "Inconsolata LGC Nerd Font 12";
 }
 
 @theme "./gruvbox-trans.rasi"
