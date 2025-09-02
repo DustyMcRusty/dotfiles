@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/Pictures/papes/Linux/4539045-1581224595.jpg
+set $pape ~/wallpapers/4539045-1581224595.jpg
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
@@ -279,7 +279,7 @@ client.urgent $red $red $yellow $green
 
 floating_maximum_size 1900 x 1060
 default_border pixel 2px
-gaps inner 7px
+gaps inner 4px
 
 bindsym $mod+Escape mode command
 

@@ -52,6 +52,7 @@ vim.keymap.set('n', '<leader>ff', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>fb', ':Pick buffers<CR>')
 vim.keymap.set('n', '<leader>fh', ':Pick help<CR>')
 vim.keymap.set('n', '<leader>fg', ':Pick grep<CR>')
+
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
 vim.keymap.set('n', '	', ':tabnext<CR>')

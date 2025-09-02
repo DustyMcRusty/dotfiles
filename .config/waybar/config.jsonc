@@ -1,4 +1,5 @@
 {
+	"position": "left",
   "layer": "bottom",
   "output": ["VGA-1"],
   "modules-left": ["custom/launcher", "custom/calc", "backlight", "mpris", "wlr/taskbar"],
