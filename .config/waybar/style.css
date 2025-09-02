@@ -32,7 +32,7 @@ window#waybar.hidden {
 #tray,
 #window,
 #workspaces {
-  font-family: Bandal;
+  font-family: Inconsolata LGC Nerd Font;
   font-size: 12;
   color: #282828;
   margin-right: 6px;
@@ -279,7 +279,7 @@ window#waybar.empty #window {
 }
 
 #mode {
-  font-family: Bandal;
+  font-family: Inconsolata LGC Nerd Font;
   font-size: 12;
   color: #282828;
 	background: #fb4934;
