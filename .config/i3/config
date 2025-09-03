@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/wallpapers/4539045-1581224595.jpg
+set $pape ~/wallpapers/opensuse-linux-4k-ok-3331519839.jpg
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black

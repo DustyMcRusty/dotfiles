@@ -38,10 +38,13 @@ vim.keymap.set('i', '<M-E>', 'WWi')
 vim.keymap.set('i', '<M-W>', 'Ea')
 vim.keymap.set('i', '<M-B>', 'Bi')
 
-vim.keymap.set('n', '<leader>T', ':tabnew<CR>:Oil<CR>')
-vim.keymap.set('n', '<leader>t', ':Oil<CR>')
+vim.keymap.set('n', '<leader>O', ':tabnew<CR>:Oil<CR>')
+vim.keymap.set('n', '<leader>o', ':Oil<CR>')
 
-vim.keymap.set('n', '<leader>s', ':tabnew<CR>:terminal<CR>')
+vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>')
+
+vim.keymap.set('n', '<leader>S', ':tabnew<CR>:terminal<CR>')
+vim.keymap.set('n', '<leader>s', ':split<CR>:terminal<CR>:resize 12<CR>')
 
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
@@ -74,13 +77,12 @@ vim.pack.add({
 	{src = "https://github.com/luisiacc/gruvbox-baby"},
 	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
-	{src = "https://github.com/xiyaowong/transparent.nvim"},
 })
 
 -- LSPs n shit
 	vim.lsp.enable({ 
 	"lua-language-server",
-	"clangd"
+	"clangd",
 })
 
 -- etc.
@@ -134,3 +136,6 @@ require("blink-cmp").setup({
 
 -- theme
 vim.cmd('colorscheme gruvbox-baby')
+
+-- select file
+vim.cmd('NvimTreeToggle')
