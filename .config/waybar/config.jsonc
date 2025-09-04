@@ -1,10 +1,10 @@
 {
-	"position": "left",
+	"position": "bottom",
   "layer": "bottom",
   "output": ["VGA-1"],
   "modules-left": ["custom/launcher", "custom/calc", "backlight", "mpris", "wlr/taskbar"],
   "modules-center": ["sway/workspaces",  "sway/mode", "sway/scratchpad"],
-  "modules-right": [ "custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray", "battery"],
+  "modules-right": [ "custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
 
   "wireplumber": {
     "tooltip": true,
@@ -92,6 +92,7 @@
   "memory": {
     "interval": 30,
     "format": "MEM: {used:0.1f}G/{total:0.1f}G",
+		"tooltip-format": "MEM: {used:0.1f}G/{total:0.1f}G",
     "max-length": 20
   },
 
@@ -124,14 +125,14 @@
     "ignore-list": ["vesktop"],
     "player-icons": {
       "librewolf": "L",
-      "default": "∫",
+      "default": "▶",
       "spotify": "S",
       "vlc": "V",
       "mpv": "M"
     },
     "status-icons": {
-      "paused": "▶",
-      "playing": "∫"
+      "paused": "||",
+      "playing": "▶"
     },
     "max-length": 40,
     "tooltip": true

@@ -136,6 +136,3 @@ require("blink-cmp").setup({
 
 -- theme
 vim.cmd('colorscheme gruvbox-baby')
-
--- select file
-vim.cmd('NvimTreeToggle')

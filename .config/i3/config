@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/wallpapers/opensuse-linux-4k-ok-3331519839.jpg
+set $pape ~/wallpapers/swaywm.jpg
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
@@ -260,6 +260,7 @@ bar {
 		urgent_workspace $bg $bg $red
 		binding_mode $red $red $bg
 	}
+	padding 0 8px
 
   bindsym button3 exec --no-startup-id rofi -show drun -show-icons
 }
@@ -272,14 +273,13 @@ bindsym $mod+Shift+b bar mode dock
 # my section
 
 
-client.focused $fg2 $fg2 $bg $fg2 #222222
-client.focused_inactive $fg2 $fg2 $bg $fg2 #222222
-client.unfocused $bg $bg $fg2 $fg2 #222222
+client.focused $fg2 $fg2 $bg $fg2 $fg2
+client.focused_inactive $fg2 $fg2 $bg $fg2 $fg2
+client.unfocused $bg $bg $fg2 $fg2 $fg2
 client.urgent $red $red $yellow $green
 
 floating_maximum_size 1900 x 1060
-default_border pixel 2px
-gaps inner 4px
+default_border none
 
 bindsym $mod+Escape mode command
 
@@ -304,8 +304,5 @@ bindsym $mod+x scratchpad show
 
 bindsym --release button3 kill
 
-shadows on
-shadow_offset 12 12
-shadow_blur_radius 1
-
 default_dim_inactive 0.6
+blur disable

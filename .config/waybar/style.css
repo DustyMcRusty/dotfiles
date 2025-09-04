@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-  background-color: transparent;
-  padding: 3px 0;
+  background-color: #282828;
+  padding: 0;
 }
 
 window#waybar.hidden {
@@ -35,15 +35,15 @@ window#waybar.hidden {
   font-family: Inconsolata LGC Nerd Font;
   font-size: 12;
   color: #282828;
-  margin-right: 6px;
-  margin-left: 6px;
+  /* margin-right: 6px; */
+  /* margin-left: 6px; */
   padding: 3px 7px;
-  border-bottom: 2px solid;
-  margin-top: 2px;
-  margin-bottom: 6px;
-  background-color: #282828;
-	border: 2px solid #222;
-	box-shadow: 5px 10px rgba(0, 0, 0, .5);
+  /* border-bottom: 2px solid; */
+  /* margin-top: 2px; */
+  /* margin-bottom: 2px; */
+	/*  background-color: #282828; */
+	/* border: 2px solid #222; */
+	/* box-shadow: 5px 10px rgba(0, 0, 0, .5); */
 }
 
 /* ======================================================== */
@@ -53,12 +53,11 @@ window#waybar.hidden {
 #workspaces button {
   color: #ebdbb2;
   border-radius: 0;
-  margin-bottom: 3px;
-  margin-top: 3px;
-  margin-right: 1px;
-  margin-left: 1px;
-  min-width: 20px;
-  padding: 0 2px;
+  /* margin-bottom: 3px; */
+  /* margin-top: 3px; */
+  /* margin-right: 1px; */
+  /* margin-left: 1px; */
+  /* padding: 0 2px; */
 }
 
 #workspaces button.focused {
@@ -68,12 +67,11 @@ window#waybar.hidden {
   margin-top: 3px;
   margin-right: 1px;
   margin-left: 1px;
-  min-width: 20px;
   padding: 0 2px;
 }
 
 #workspaces button:hover {
-  background: #79740e;
+  color: #79740e;
 }
 
 #workspaces button.active {
@@ -96,7 +94,7 @@ window#waybar.hidden {
   margin-bottom: 2px;
   margin-left: 6px;
   margin-right: 6px;
-  padding: 3px 7px;
+  padding: 3px 6px;
   border-bottom-color: #689d6a;
 }
 
@@ -253,7 +251,6 @@ window#waybar.empty #window {
   margin-left: 6px;
   margin-right: 6px;
   border-bottom: none;
-  min-width: 24px;
 }
 
 #taskbar button {
