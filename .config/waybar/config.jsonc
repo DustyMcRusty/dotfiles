@@ -43,7 +43,7 @@
     "tooltip-format": "Signal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "disconnected.",
-    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-disconnected": "disconnected",
     "interval": 2,
   },
 
@@ -79,7 +79,7 @@
 
   "cpu": {
     "format": "CPU: {usage}%",
-    "on-click": "kitty -- btop",
+    "on-click": "foot -- btop",
     "tooltip": true
   },
 

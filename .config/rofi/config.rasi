@@ -2,4 +2,4 @@ configuration {
 font: "Inconsolata LGC Nerd Font 12";
 }
 
-@theme "./gruvbox-trans.rasi"
+@theme "./gruvbox-material.rasi"
