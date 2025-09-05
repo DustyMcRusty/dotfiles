@@ -46,8 +46,9 @@ vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<leader>S', ':tabnew<CR>:terminal<CR>')
 vim.keymap.set('n', '<leader>s', ':split<CR>:terminal<CR>:resize 12<CR>')
 
-vim.keymap.set('n', '<leader>w', ':write<CR>')
-vim.keymap.set('n', '<leader>q', ':quit<CR>')
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>q', ':q<CR>')
+vim.keymap.set('n', '<leader>Q', ':qa<CR>')
 
 vim.keymap.set('n', '<leader>m', ':Man<CR>')
 

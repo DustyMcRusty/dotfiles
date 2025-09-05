@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape + theme (very important)
-set $pape ~/wallpapers/swaywm.jpg
+set $pape ~/wallpapers/1702400814099181.png
 exec_always --no-startup-id feh --bg-fill $pape
 exec_always --no-startup-id swaybg -m scale -i $pape
 # exec_always xsetroot -solid black
@@ -260,7 +260,6 @@ bar {
 		urgent_workspace $bg $bg $red
 		binding_mode $red $red $bg
 	}
-	padding 0 8px
 
   bindsym button3 exec --no-startup-id rofi -show drun -show-icons
 }
@@ -272,14 +271,16 @@ bindsym $mod+Shift+b bar mode dock
 
 # my section
 
+#class border bg text indicator child_border
 
-client.focused $fg2 $fg2 $bg $fg2 $fg2
+client.focused $yellow $yellow $bg $fg2 $yellow
 client.focused_inactive $fg2 $fg2 $bg $fg2 $fg2
 client.unfocused $bg $bg $fg2 $fg2 $fg2
 client.urgent $red $red $yellow $green
 
 floating_maximum_size 1900 x 1060
-default_border none
+default_border normal 0
+default_floating_border normal 0
 
 bindsym $mod+Escape mode command
 
@@ -305,4 +306,3 @@ bindsym $mod+x scratchpad show
 bindsym --release button3 kill
 
 default_dim_inactive 0.6
-blur disable
