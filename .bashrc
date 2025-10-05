@@ -163,8 +163,10 @@ export PATH=$PATH:/home/apolonio/.cargo/bin/
 export PATH=$PATH:~/.local/share/bob/nvim-bin/
 export PATH=$PATH:~/go/bin/
 
+export MANPAGER="nvim +Man!"
 # Aliases
 alias cls=clear
 alias l="ls -la"
 alias qq="exit"
 alias cd="z"
+alias zyp="sudo zypper"

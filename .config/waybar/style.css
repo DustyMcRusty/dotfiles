@@ -8,8 +8,7 @@
 }
 
 window#waybar {
-  background-color: #282828;
-  padding: 0;
+  background: #282828;
 }
 
 window#waybar.hidden {
@@ -30,20 +29,11 @@ window#waybar.hidden {
 #pulseaudio,
 #taskbar,
 #tray,
-#window,
 #workspaces {
   font-family: Inconsolata LGC Nerd Font;
-  font-size: 12;
+  font-size: 10;
   color: #282828;
-  /* margin-right: 6px; */
-  /* margin-left: 6px; */
-  padding: 3px 7px;
-  /* border-bottom: 2px solid; */
-  /* margin-top: 2px; */
-  /* margin-bottom: 2px; */
-	/*  background-color: #282828; */
-	/* border: 2px solid #222; */
-	/* box-shadow: 5px 10px rgba(0, 0, 0, .5); */
+  margin: 0 6px;
 }
 
 /* ======================================================== */
@@ -53,18 +43,14 @@ window#waybar.hidden {
 #workspaces button {
   color: #ebdbb2;
   border-radius: 0;
-  /* margin-bottom: 3px; */
-  /* margin-top: 3px; */
-  /* margin-right: 1px; */
-  /* margin-left: 1px; */
-  /* padding: 0 2px; */
+  margin-right: 1px;
+  margin-left: 1px;
+  padding: 0 2px;
 }
 
 #workspaces button.focused {
-  color: #d79921;
+  color: #dfaf11;
   border-radius: 0;
-  margin-bottom: 3px;
-  margin-top: 3px;
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;
@@ -88,14 +74,12 @@ window#waybar.hidden {
 /* ======================================================== */
 #window {
   color: #282828;
-  background: #d79921;
+  background: #dfaf11;
   border-radius: 0;
-  margin-top: 2px;
-  margin-bottom: 2px;
   margin-left: 6px;
   margin-right: 6px;
   padding: 3px 6px;
-  border-bottom-color: #d79921;
+  border-bottom-color: #dfaf11;
 }
 
 window#waybar.empty #window {
@@ -110,76 +94,76 @@ window#waybar.empty #window {
 /* Network module */
 /* ======================================================== */
 #network {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 #network.disconnected {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* Audio module */
 /* ======================================================== */
 #pulseaudio{
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 #pulseaudio.muted {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* cpu */
 /* ======================================================== */
 #cpu {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* memory */
 /* ======================================================== */
 #memory {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* backlight */
 /* ======================================================== */
 #backlight {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* battery */
 /* ======================================================== */
 #battery {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 #battery.charging, #battery.plugged {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 #battery.critical:not(.charging) {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* clock */
 /* ======================================================== */
 #clock {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
@@ -189,18 +173,18 @@ window#waybar.empty #window {
   padding: 3px 7px;
   margin-left: 6px;
   margin-right: 6px;
-  border-bottom-color: #d79921;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* custom-launcher */
 /* ======================================================== */
 #custom-launcher {
-  color: #d79921;
+  color: #dfaf11;
   font-size: 12px;
   margin-left: 6px;
   margin-right: 6px;
-  border-bottom-color: #d79921;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
@@ -208,39 +192,39 @@ window#waybar.empty #window {
 /* ======================================================== */
 
 #custom-calc{
-  color: #d79921;
+  color: #dfaf11;
   font-size: 12px;
   margin-left: 6px;
   margin-right: 6px;
-  border-bottom-color: #d79921;
+  border-bottom-color: #dfaf11;
 }
 /* ======================================================== */
 /* custom-bluetooth */
 /* ======================================================== */
 #custom-bluetooth {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* custom-updates */
 /* ======================================================== */
 #custom-updates {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
 /* Media player */
 /* ======================================================== */
 #mpris {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 #mpris:hover {
-  color: #d79921;
-  border-bottom-color: #d79921;
+  color: #dfaf11;
+  border-bottom-color: #dfaf11;
 }
 
 /* ======================================================== */
@@ -257,8 +241,8 @@ window#waybar.empty #window {
   background: transparent;
   border: none;
   border-radius: 0;
-  margin: 2px 1px;
-  padding: 2px;
+  margin: 0 1px;
+  padding: 0 2px;
   color: #ebdbb2;
   border-bottom: 2px solid #928374;
 }
@@ -280,6 +264,6 @@ window#waybar.empty #window {
   font-size: 12;
   color: #282828;
 	background: #fb4934;
-  padding: 5px;
+  padding: 0 5px;
   border-bottom: 2px solid;
 }

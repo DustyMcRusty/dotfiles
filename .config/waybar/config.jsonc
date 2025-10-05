@@ -97,13 +97,13 @@
   },
 
   "custom/launcher": {
-    "format": "Launch",
+    "format": " ",
     "on-click": "rofi -show drun -show-icons",
     "on-click-right": "killall rofi"
   },
 
   "custom/calc": {
-    "format": "Calc",
+    "format": " ",
     "on-click": "rofi -show calc",
     "on-click-right": "killall rofi"
   },
@@ -131,7 +131,7 @@
       "mpv": "M"
     },
     "status-icons": {
-      "paused": "||",
+      "paused": "󱪽",
       "playing": "▶"
     },
     "max-length": 40,

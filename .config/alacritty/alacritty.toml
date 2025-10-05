@@ -1,0 +1,11 @@
+[window]
+dimensions = { columns = 120, lines = 40 }
+title = "Bourne Again Shell"
+
+[font]
+normal.family = "Inconsolata LGC Nerd Font Mono"
+bold.family = "Inconsolata LGC Nerd Font Mono"
+italic.family = "Inconsolata LGC Nerd Font Mono"
+bold_italic.family = "Inconsolata LGC Nerd Font Mono"
+
+size = 12.0
