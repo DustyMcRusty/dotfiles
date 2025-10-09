@@ -20,7 +20,7 @@ vim.o.wrap           = false
 vim.o.listchars			 = "tab:> ,trail:-,eol:$"
 vim.o.swapfile			 = false
 
-vim.cmd('set cc=80')
+vim.cmd('set cc=90')
 
 -- akjsdhalkjsdhalksj kajdshlkajsdh alkjsdhaslkjdh klajdsh lkjasdhajksdl
 -- Keybinds
@@ -76,8 +76,8 @@ vim.pack.add({
 	{src = "https://github.com/Saghen/blink.cmp"},
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
 	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
-	{src = "https://github.com/letorbi/vim-colors-modern-borland"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
+	{src = "https://github.com/luisiacc/gruvbox-baby"},
 })
 
 -- LSPs n shit
@@ -426,4 +426,4 @@ require("blink-cmp").setup({
 })
 
 -- theme
-vim.cmd('colorscheme borland')
+vim.cmd('colorscheme blue')

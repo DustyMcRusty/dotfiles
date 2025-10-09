@@ -2,9 +2,9 @@
 	"position": "bottom",
   "layer": "bottom",
   "output": ["VGA-1"],
-  "modules-left": ["custom/launcher", "custom/calc", "backlight", "mpris", "wlr/taskbar"],
+  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar"],
   "modules-center": ["sway/workspaces",  "sway/mode", "sway/scratchpad"],
-  "modules-right": [ "custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
+  "modules-right": ["custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
 
   "wireplumber": {
     "tooltip": true,
@@ -73,7 +73,7 @@
 
   "clock": {
     "format": "{:%H:%M}",
-    "format-alt": "{:%m-%d-%Y}",
+    "format-alt": "{:%d/%m/%Y}",
     "tooltip": false
   },
 

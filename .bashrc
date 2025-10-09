@@ -157,11 +157,13 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 eval "$(zoxide init bash)"
+setfont -d
 
 # Exports
 export PATH=$PATH:/home/apolonio/.cargo/bin/
 export PATH=$PATH:~/.local/share/bob/nvim-bin/
 export PATH=$PATH:~/go/bin/
+export EDITOR=nvim
 
 export MANPAGER="nvim +Man!"
 # Aliases

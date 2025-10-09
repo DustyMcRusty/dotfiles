@@ -37,11 +37,11 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape (very important)
-set $pape ~/Pictures/wallpapers/evangelion43.png
-# exec --no-startup-id feh --bg-fill $pape
-# exec --no-startup-id swaybg -m tile -i $pape
-exec_always xsetroot -solid black
-exec_always killall swaybg; swaybg -c 003078
+set $pape ~/Pictures/wallpapers/1746391097495095.png
+exec --no-startup-id feh --bg-fill $pape
+exec --no-startup-id swaybg -m zoom -i $pape
+# exec_always xsetroot -solid black
+# exec_always killall swaybg; swaybg -c 003078
 
 # conky
 # exec conky -c ~/.config/conky/conky.conf
@@ -244,7 +244,7 @@ set $bg #282828
 set $bg2 #1c1c1c
 set $yellow #dfaf11
 set $blue #83a598
-set $green #98971a
+set $green #9fb71a
 set $red #fb4934
 
 bar {
@@ -273,15 +273,23 @@ bindsym $mod+Shift+b bar mode dock
 
 #class border bg text indicator child_border
 
-client.focused $yellow $yellow $bg $fg2 $yellow
+client.focused $green $green $bg $fg2 $green
 client.focused_inactive $bg $bg $bg2 $fg2 $fg2
 client.unfocused $bg2 $bg2 $fg2 $fg2 $fg2
-client.urgent $red $red $yellow $green
+client.urgent $red $red $green $yellow
+
+gaps inner 2px
+smart_gaps on
 
 floating_maximum_size 1900 x 1060
+
 default_border normal 0
 default_floating_border normal 0
+for_window [title="Firefox"] border pixel 0
+for_window [title="Bourne Again Shell"] border pixel 0
+
 focus_follows_mouse no
+
 workspace_auto_back_and_forth yes
 
 bindsym $mod+Escape mode command
@@ -306,4 +314,3 @@ bindsym $mod+z move scratchpad
 bindsym $mod+x scratchpad show
 
 bindsym --release button3 kill
-
