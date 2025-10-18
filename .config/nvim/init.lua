@@ -52,6 +52,8 @@ vim.keymap.set('n', '<leader>Q', ':qa<CR>')
 
 vim.keymap.set('n', '<leader>m', ':Man<CR>')
 
+vim.keymap.set('n', '<leader>b', ':DapToggleBreakpoint<CR>')
+
 vim.keymap.set('n', '<leader>ff', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>fb', ':Pick buffers<CR>')
 vim.keymap.set('n', '<leader>fh', ':Pick help<CR>')
@@ -77,7 +79,6 @@ vim.pack.add({
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
 	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
-	{src = "https://github.com/luisiacc/gruvbox-baby"},
 })
 
 -- LSPs n shit
@@ -426,4 +427,4 @@ require("blink-cmp").setup({
 })
 
 -- theme
-vim.cmd('colorscheme blue')
+vim.cmd('colorscheme habamax')

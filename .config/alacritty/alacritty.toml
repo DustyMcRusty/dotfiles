@@ -1,6 +1,6 @@
 
 [window]
-dimensions = { columns = 120, lines = 40 }
+dimensions = { columns = 120, lines = 30 }
 title = "Bourne Again Shell"
 
 [font]

@@ -165,7 +165,6 @@ export PATH=$PATH:~/.local/share/bob/nvim-bin/
 export PATH=$PATH:~/go/bin/
 export EDITOR=nvim
 
-export MANPAGER="nvim +Man!"
 # Aliases
 alias cls=clear
 alias l="ls -la"

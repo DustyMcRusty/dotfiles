@@ -28,6 +28,7 @@ mainbox {
     spacing: 0;
     children: [inputbar, message, listview];
 		border-color: @selection;
+		border-radius: 5px;
 }
 
 inputbar {

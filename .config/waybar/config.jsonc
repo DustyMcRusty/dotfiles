@@ -2,7 +2,7 @@
 	"position": "bottom",
   "layer": "bottom",
   "output": ["VGA-1"],
-  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar"],
+  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar", "sway/window"],
   "modules-center": ["sway/workspaces",  "sway/mode", "sway/scratchpad"],
   "modules-right": ["custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
 
