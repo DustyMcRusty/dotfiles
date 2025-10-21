@@ -50,7 +50,7 @@ window#waybar.hidden {
 
 #workspaces button {
   color: #ebdbb2;
-  border-radius: 0;
+  /* border-radius: 0; */
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;
@@ -58,7 +58,7 @@ window#waybar.hidden {
 
 #workspaces button.focused {
   color: #9fb31a;
-  border-radius: 0;
+  /* border-radius: 0; */
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;
@@ -82,7 +82,7 @@ window#waybar.hidden {
 /* ======================================================== */
 #window {
   color: #9fb31a;
-  border-radius: 0;
+  /* border-radius: 0; */
   margin-left: 6px;
   margin-right: 6px;
   padding: 3px 3px;
@@ -238,7 +238,7 @@ window#waybar.empty #window {
 #taskbar button {
   background: transparent;
   border: none;
-  border-radius: 0;
+  /* border-radius: 0; */
   margin: 0 1px;
   padding: 0 2px;
   color: #ebdbb2;
