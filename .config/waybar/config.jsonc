@@ -1,9 +1,9 @@
 {
-	"position": "bottom",
+	"position": "top",
   "layer": "bottom",
   "output": ["VGA-1"],
-  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar", "sway/window"],
-  "modules-center": ["sway/workspaces",  "sway/mode", "sway/scratchpad"],
+  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar", "niri/window"],
+  "modules-center": ["niri/workspaces"],
   "modules-right": ["custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
 
   "wireplumber": {
@@ -138,9 +138,9 @@
     "tooltip": true
   },
 
-	"sway/workspaces": {
+	"niri/workspaces": {
 		"all-outputs": true,
-		"format": "[ {name} ]",
+		"format": "[ {index} ]",
 		"persistent-workspaces": {
 			"1": [],
 			"2": [],

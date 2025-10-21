@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # pape (very important)
-set $pape ~/Pictures/wallpapers/gnulicious.jpg
+set $pape ~/Pictures/wallpapers/1740278884052826.jpg
 exec --no-startup-id feh --bg-fill $pape
 exec --no-startup-id swaybg -m zoom -i $pape
 # exec_always xsetroot -solid black
@@ -283,7 +283,7 @@ floating_maximum_size 1873 x 1052
 default_border pixel 1
 default_floating_border pixel 1
 
-gaps vertical 9px
+gaps top 9px
 gaps horizontal 16px
 gaps inner 5px
 

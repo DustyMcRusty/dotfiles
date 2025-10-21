@@ -157,7 +157,7 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 eval "$(zoxide init bash)"
-setfont -d
+setfont -d /usr/share/kbd/consolefonts/alt-8x8.gz
 
 # Exports
 export PATH=$PATH:/home/apolonio/.cargo/bin/

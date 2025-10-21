@@ -2,7 +2,7 @@
   padding: 0;
   margin: 2px 0;
   min-height: 14px;
-  border-radius: 2px;
+  border-radius: 12px;
   text-shadow: none;
   transition: none;
 }
@@ -12,7 +12,7 @@ window#waybar {
 }
 
 window#waybar > box {
-	margin: 0 26px;
+	margin: 0 15px;
 }
 
 window#waybar.hidden {
