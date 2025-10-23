@@ -47,6 +47,9 @@ window#waybar.hidden {
 /* ======================================================== */
 /* workspaces module */
 /* ======================================================== */
+#workspaces {
+	padding: 0;
+}
 
 #workspaces button {
   color: #ebdbb2;
@@ -58,7 +61,7 @@ window#waybar.hidden {
 
 #workspaces button.focused {
   color: #9fb31a;
-  /* border-radius: 0; */
+  border-radius: 8px;
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;

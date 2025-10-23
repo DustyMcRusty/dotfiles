@@ -41,7 +41,6 @@ vim.keymap.set('i', '<M-B>', 'Bi')
 vim.keymap.set('n', '<leader>O', ':tabnew<CR>:Oil<CR>')
 vim.keymap.set('n', '<leader>o', ':Oil<CR>')
 
-vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>')
 
 vim.keymap.set('n', '<leader>S', ':tabnew<CR>:terminal<CR>')
 vim.keymap.set('n', '<leader>s', ':split<CR>:terminal<CR>:resize 12<CR>')
@@ -53,11 +52,6 @@ vim.keymap.set('n', '<leader>Q', ':qa<CR>')
 vim.keymap.set('n', '<leader>m', ':Man<CR>')
 
 vim.keymap.set('n', '<leader>b', ':DapToggleBreakpoint<CR>')
-
-vim.keymap.set('n', '<leader>ff', ':Pick files<CR>')
-vim.keymap.set('n', '<leader>fb', ':Pick buffers<CR>')
-vim.keymap.set('n', '<leader>fh', ':Pick help<CR>')
-vim.keymap.set('n', '<leader>fg', ':Pick grep<CR>')
 
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
@@ -71,13 +65,10 @@ vim.keymap.set('v', '<S-Tab>', '<gv')
 vim.pack.add({
 	{src = "https://github.com/neovim/nvim-lspconfig"},
 	{src = "https://github.com/rafamadriz/friendly-snippets"},
-	{src = "https://github.com/nvim-tree/nvim-tree.lua"},
 	{src = "https://github.com/mason-org/mason.nvim"},
-	{src = "https://github.com/echasnovski/mini.pick"},
 	{src = "https://github.com/stevearc/oil.nvim"},
 	{src = "https://github.com/Saghen/blink.cmp"},
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
-	{src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
 })
 
@@ -379,8 +370,6 @@ vim.pack.add({
 
 -- etc.
 require("mason").setup()
-require("mini.pick").setup()
-require("nvim-tree").setup()
 require("autoclose").setup()
 require("oil").setup({
 	view_options = {
@@ -425,6 +414,3 @@ require("blink-cmp").setup({
     },
   },
 })
-
--- theme
-vim.cmd('colorscheme habamax')

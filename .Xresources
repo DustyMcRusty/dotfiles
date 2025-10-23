@@ -2,4 +2,3 @@ xterm*dynamicColors: true
 xterm*background   : black
 xterm*foreground   : white
 xterm*saveLines    : 35000
-
