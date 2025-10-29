@@ -54,6 +54,7 @@ vim.keymap.set('n', '<leader>m', ':Man<CR>')
 vim.keymap.set('n', '<leader>b', ':DapToggleBreakpoint<CR>')
 
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>ca', mc.matchAddCursor(1))
 
 vim.keymap.set('n', '	', ':tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
@@ -70,6 +71,7 @@ vim.pack.add({
 	{src = "https://github.com/Saghen/blink.cmp"},
 	{src = "https://github.com/norcalli/nvim-colorizer.lua", name="colorizer"},
 	{src = "https://github.com/m4xshen/autoclose.nvim"},
+	{src = "https://github.com/jake-stewart/multicursor.nvim",}
 })
 
 -- LSPs n shit
