@@ -4,34 +4,23 @@ dimensions = { columns = 120, lines = 30 }
 title = "Bourne Again Shell"
 
 [font]
-normal.family = "Inconsolata LGC Nerd Font Mono"
-bold.family = "Inconsolata LGC Nerd Font Mono"
-italic.family = "Inconsolata LGC Nerd Font Mono"
-bold_italic.family = "Inconsolata LGC Nerd Font Mono"
+normal.family = "BigBlueTermPlus Nerd Font Mono"
+bold.family = "BigBlueTermPlus Nerd Font Mono"
+italic.family = "BigBlueTermPlus Nerd Font Mono"
+bold_italic.family = "BigBlueTermPlus Nerd Font Mono"
 
-size = 12.0
+size = 11
 
 [colors.primary]
-background = '#282828'
-foreground = '#ebdbb2'
+background = '#000000'
+foreground = '#aaaaaa'
 
 [colors.normal]
-black   = '#282828'
-red     = '#cc241d'
-green   = '#98971a'
-yellow  = '#d79921'
-blue    = '#458588'
-magenta = '#b16286'
-cyan    = '#689d6a'
-white   = '#a89984'
-
-# Bright colors
-[colors.bright]
-black   = '#928374'
-red     = '#fb4934'
-green   = '#b8bb26'
-yellow  = '#fabd2f'
-blue    = '#83a598'
-magenta = '#d3869b'
-cyan    = '#8ec07c'
-white   = '#ebdbb2'
+black   = '#000000'
+red     = '#aa0000'
+green   = '#00aa00'
+yellow  = '#aaaa00'
+blue    = '#0000aa'
+magenta = '#aa00aa'
+cyan    = '#00aaaa'
+white   = '#aaaaaa'

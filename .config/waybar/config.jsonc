@@ -1,40 +1,61 @@
 {
-	"position": "top",
+  "position": "top",
   "layer": "bottom",
-  "output": ["VGA-1"],
-  "modules-left": ["custom/launcher", "custom/calc", "mpris", "wlr/taskbar", "niri/window"],
-  "modules-center": ["niri/workspaces"],
-  "modules-right": ["custom/bluetooth",  "network", "cpu", "memory", "pulseaudio", "clock", "tray"],
-
+  "output": [
+    "VGA-1"
+  ],
+  "modules-left": [
+    "custom/launcher",
+    "custom/calc",
+    "niri/window"
+  ],
+  "modules-center": [
+    "niri/workspaces"
+  ],
+  "modules-right": [
+    "mpris",
+    "custom/bluetooth",
+    "network",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "clock",
+    "tray"
+  ],
   "wireplumber": {
     "tooltip": true,
     "scroll-step": 5,
     "format": "{volume}%",
     "format-muted": "󰝟 {volume}%",
     "on-click": "pavucontrol",
-    "format-icons": ["", "", ""]
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
   },
-
-	"pulseaudio": {
-		"format": "vol:{volume}%",
-		"format-bluetooth": "{volume}% {icon}",
-		"format-muted": "X%",
-		"format-icons": {
-			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
-			"alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
-			"headphones": "",
-			"handsfree": "",
-			"headset": "",
-			"phone": "",
-			"phone-muted": "",
-			"portable": "",
-			"car": "",
-			"default": ["", ""]
-		},
-		"scroll-step": 1,
-		"on-click": "pavucontrol"
-	},
-
+  "pulseaudio": {
+    "format": "vol:{volume}%",
+    "format-bluetooth": "{volume}% {icon}B",
+    "format-muted": "X%",
+    "format-icons": {
+      "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+      "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "phone-muted": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol"
+  },
   "network": {
     "tooltip": true,
     "format-wifi": "CONNECTED!",
@@ -46,70 +67,75 @@
     "tooltip-format-disconnected": "disconnected",
     "interval": 2,
   },
-
   "backlight": {
-        "device": "intel_backlight",
-        "rotate": 0,
-        "format": "{icon} {percent}%",
-        "format-icons": [""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
-        "min-length": 6
-    },
-
+    "device": "intel_backlight",
+    "rotate": 0,
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      ""
+    ],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "min-length": 6
+  },
   "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "rotate": 0,
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
-
+    "format": "{icon} {capacity}%",
+    "rotate": 0,
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
+  },
   "clock": {
     "format": "{:%H:%M}",
     "format-alt": "{:%d/%m/%Y}",
     "tooltip": false
   },
-
   "cpu": {
     "format": "CPU: {usage}%",
     "on-click": "foot -- btop",
     "tooltip": true
   },
-
   "tray": {
     "icon-size": 16,
     "rotate": 0,
     "spacing": 5
   },
-
   "memory": {
     "interval": 30,
     "format": "MEM: {used:0.1f}G/{total:0.1f}G",
-		"tooltip-format": "MEM: {used:0.1f}G/{total:0.1f}G",
+    "tooltip-format": "MEM: {used:0.1f}G/{total:0.1f}G",
     "max-length": 20
   },
-
   "custom/launcher": {
-    "format": " ",
+    "format": "*",
     "on-click": "rofi -show drun -show-icons",
     "on-click-right": "killall rofi"
   },
-
   "custom/calc": {
-    "format": " ",
+    "format": "#",
     "on-click": "rofi -show calc",
     "on-click-right": "killall rofi"
   },
-  
   "custom/bluetooth": {
-    "format": " {}",
+    "format": "B {}",
     "exec": "~/.config/waybar/bluetooth-display.sh",
     "interval": 10,
     "on-click": "blueman-manager",
@@ -117,39 +143,38 @@
     "tooltip": false,
     "max-length": 25
   },
-
   "mpris": {
     "format": "{player_icon}  {dynamic}",
     "format-paused": "{status_icon} {dynamic}",
     "format-stopped": "",
-    "ignore-list": ["vesktop"],
+    "ignore-list": [
+      "vesktop"
+    ],
     "player-icons": {
       "librewolf": "L",
-      "default": "▶",
+      "default": ">",
       "spotify": "S",
       "vlc": "V",
       "mpv": "M"
     },
     "status-icons": {
-      "paused": "󱪽",
-      "playing": "▶"
+      "paused": "II",
+      "playing": ">"
     },
     "max-length": 40,
     "tooltip": true
   },
-
-	"niri/workspaces": {
-		"all-outputs": true,
-		"format": "[ {index} ]",
-		"persistent-workspaces": {
-			"1": [],
-			"2": [],
-			"3": [],
-			"4": [],
-			"5": []
-		}
-	},
-  
+  "niri/workspaces": {
+    "all-outputs": true,
+    "format": "[ {index} ]",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
   "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 16,

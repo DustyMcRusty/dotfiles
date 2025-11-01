@@ -1,5 +1,6 @@
 configuration {
 font: "Inconsolata LGC Nerd Font 12";
+modes: [window,drun,run,ssh,calc];
 }
 
-@theme "./gruvbox-material.rasi"
+@theme "./dmenu.rasi"
