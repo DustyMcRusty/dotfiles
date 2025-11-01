@@ -244,13 +244,13 @@ window#waybar.empty #window {
 /* Media player */
 /* ======================================================== */
 #mpris {
-  color: #000000;
-  background: #00aa00;
+  color: #00aa00;
+  background: #000000;
   /* border-bottom-color: #cc7711; */
 }
 
 #mpris:hover {
-  color: #000000;
+  color: #00aa00;
   /* border-bottom-color: #9fb71a; */
 }
 

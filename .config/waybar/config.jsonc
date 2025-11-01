@@ -126,7 +126,7 @@
   },
   "custom/launcher": {
     "format": "*",
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "rofi -show drun",
     "on-click-right": "killall rofi"
   },
   "custom/calc": {
