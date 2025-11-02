@@ -200,7 +200,7 @@ window#waybar.empty #window {
   color: #000000;
   background: #00aa00;
   font-size: 16px;
-  margin-left: 0px;
+  margin-left: 4px;
   margin-right: 0px;
   /* border-bottom-color: #cc7711; */
 }
