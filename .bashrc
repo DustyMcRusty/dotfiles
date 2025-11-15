@@ -1,3 +1,8 @@
+# Start tmux if it isn't already running
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux a
+fi
+
 eval "$(zoxide init bash)"
 setfont -d 
 
