@@ -10,8 +10,6 @@ export EDITOR=hx
 
 # Aliases
 alias cls=clear
-alias l="ls -la"
+alias l="ls -la --color=auto"
 alias qq="exit"
 alias cd="z"
-alias zyp="sudo zypper"
-alias uzyp="sudo zypper ref && sudo zypper dup"
