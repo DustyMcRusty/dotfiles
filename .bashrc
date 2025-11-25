@@ -1,5 +1,4 @@
 eval "$(zoxide init bash)"
-setfont -d 
 
 # Exports
 export PATH=$PATH:/home/apolonio/.cargo/bin/
