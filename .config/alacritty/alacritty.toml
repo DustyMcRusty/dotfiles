@@ -1,15 +1,15 @@
 
 [window]
-dimensions = { columns = 120, lines = 30 }
+dimensions = { columns = 110, lines = 30 }
 title = "Bourne Again Shell"
 
-[font]
-normal.family = "BigBlueTermPlus Nerd Font Mono"
-bold.family = "BigBlueTermPlus Nerd Font Mono"
-italic.family = "BigBlueTermPlus Nerd Font Mono"
-bold_italic.family = "BigBlueTermPlus Nerd Font Mono"
+# [font]
+# normal.family = "BigBlueTermPlus Nerd Font Mono"
+# bold.family = "BigBlueTermPlus Nerd Font Mono"
+# italic.family = "BigBlueTermPlus Nerd Font Mono"
+# bold_italic.family = "BigBlueTermPlus Nerd Font Mono"
 
-size = 11
+# size = 11
 
 [colors.primary]
 background = '#000000'
