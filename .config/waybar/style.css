@@ -1,15 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-  min-height: 20px;
+  min-height: 24px;
   border-radius: 0;
   text-shadow: none;
   transition: none;
 }
 
 window#waybar {
-  background: #cc7700;
-  border-bottom: 2px solid #cc7700;
+  background: #000000;
+  color: #cc7711;
+  border-bottom: 2px solid #cc7711;
 }
 
 window#waybar>box {
@@ -36,11 +37,11 @@ window#waybar.hidden {
 #taskbar,
 #tray,
 #workspaces {
-  font-family: BigBlueTermPlus Nerd Font Mono;
-  font-size: 12;
-  color: #000000;
-  background: #cc7700;
-  /* border: 2px solid #cc7700; */
+  font-family: monospace;
+  font-size: 14;
+  color: #cc7711;
+  background: #000000;
+  border-bottom: 2px solid #cc7711;
   border-radius: 0;
   margin: 0 4px;
   padding: 0 4px;
@@ -55,35 +56,18 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  color: #000000;
-  /* border-radius: 0; */
+  color: #cc7711;
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;
 }
 
 #workspaces button.focused {
-  color: #cc7700;
-  background: #000000;
-  /* border-radius: 8px; */
+  color: #000000;
+  background: #cc7711;
   margin-right: 1px;
   margin-left: 1px;
   padding: 0 2px;
-}
-
-#workspaces button:hover {
-  color: #cc7700;
-  background: #000000;
-  box-shadow: inherit;
-  text-shadow: inherit;
-}
-
-#workspaces button.active {
-  color: #cc7700;
-}
-
-#workspaces button.urgent {
-  background: #ff2211;
 }
 
 /* ======================================================== */
@@ -91,12 +75,11 @@ window#waybar.hidden {
 /* ======================================================== */
 #window {
   background: #000000;
-  color: #cc7700;
-  /* border-radius: 0; */
+  color: #cc7711;
   margin-left: 6px;
   margin-right: 6px;
   padding: 0 3px;
-  /* border-bottom-color: #cc7711; */
+  border-bottom-color: #cc7711;
 }
 
 window#waybar.empty #window {
@@ -111,103 +94,102 @@ window#waybar.empty #window {
 /* Network module */
 /* =====c================================================== */
 #network {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 #network.disconnected {
-  color: #000000;
-  /* borcer-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* Audio module */
 /* ======================================================== */
 #pulseaudio {
-  color: #000000;
-  /* borcer-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 #pulseaudio.muted {
-  color: #000000;
-  /* borcer-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* cpu */
 /* =====c================================================== */
 #cpu {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* memory */
 /* =====c================================================== */
 #memory {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* c* backlight */
-
 /* ======================================================== */
 #backlight {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* battery */
 /* ======================================================== */
 #battery {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 #battery.critical:not(.charging) {
-  color: #000000;
-  /* border-bottom-colorc #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* clock */
 /* ======================================================== */
 #clock {
-  color: #000000;
-  /* borcer-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* ======================================================== */
 /* tray */
 /* ======================================================== */
 #tray {
-  /* border-bottom-color: #cc7711; */
-  background: #000000;
+  border-bottom-color: #cc7711;
+  background: #cc7711;
 }
 
 /* ======================================================== */
 /* custom-launcher */
 /* ======================================================== */
 #custom-launcher {
-  color: #000000;
-  background: #cc7700;
+  color: #cc7711;
+  background: #000000;
   font-size: 16px;
   margin-left: 4px;
   margin-right: 0px;
-  /* border-bottom-color: #cc7711; */
+  border-bottom-color: #cc7711;
 }
 
 #custom-launcher:hover {
-  color: #cc7700;
-  background: #000000;
+  color: #000000;
+  background: #cc7711;
 }
 
 /* ======================================================== */
@@ -215,25 +197,25 @@ window#waybar.empty #window {
 /* ======================================================== */
 
 #custom-calc {
-  color: #000000;
-  background: #cc7700;
+  color: #cc7711;
+  background: #000000;
   font-size: 16px;
   margin-left: 0px;
   margin-right: 0px;
-  /* border-bottom-color: #cc7711; */
+  border-bottom-color: #cc7711;
 }
 
 #custom-calc:hover {
-  color: #cc7700;
-  background: #000000;
+  color: #000000;
+  background: #cc7711;
 }
 
 /* ======================================================== */
 /* custom-bluetooth */
 /* ======================================================== */
 #custom-bluetooth {
-  color: #000000;
-  /* border-bottom-color: #cc7711; */
+  color: #cc7711;
+  border-bottom-color: #cc7711;
 }
 
 /* =====c================================================== */
@@ -244,14 +226,14 @@ window#waybar.empty #window {
 /* Media player */
 /* ======================================================== */
 #mpris {
-  color: #cc7700;
+  color: #cc7711;
   background: #000000;
-  /* border-bottom-color: #cc7711; */
+  border-bottom-color: #cc7711;
 }
 
 #mpris:hover {
-  color: #cc7700;
-  /* border-bottom-color: #9fb71a; */
+  color: #cc7711;
+  border-bottom-color: #9fb71a;
 }
 
 #mode {
@@ -267,4 +249,14 @@ window#waybar.empty #window {
   font-size: 10;
   color: #000000;
   padding: 0 3px;
+}
+
+tooltip {
+  color: #cc7711;
+  border: 2px solid #cc7711;
+  background: #000000;
+}
+
+tooltip * {
+  color: #cc7711;
 }

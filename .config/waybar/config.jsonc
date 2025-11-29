@@ -1,21 +1,20 @@
 {
   "position": "top",
-  "layer": "bottom",
+  "layer": "top",
   "output": [
     "VGA-1"
   ],
   "modules-left": [
     "custom/launcher",
-    "custom/calc",
-    "niri/window"
+    "custom/calc"
   ],
   "modules-center": [
-    "niri/workspaces"
+    "wlr/taskbar"
   ],
   "modules-right": [
     "mpris",
-    "custom/bluetooth",
     "network",
+    "custom/bluetooth",
     "cpu",
     "memory",
     "pulseaudio",
@@ -65,7 +64,7 @@
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "disconnected.",
     "tooltip-format-disconnected": "disconnected",
-    "interval": 2,
+    "interval": 2
   },
   "backlight": {
     "device": "intel_backlight",
@@ -126,11 +125,13 @@
   },
   "custom/launcher": {
     "format": "*",
+    "tooltip-format": "Program Launcher",
     "on-click": "rofi -show drun",
     "on-click-right": "killall rofi"
   },
   "custom/calc": {
     "format": "#",
+    "tooltip-format": "Launch Calculator",
     "on-click": "rofi -show calc",
     "on-click-right": "killall rofi"
   },
@@ -163,17 +164,6 @@
     },
     "max-length": 40,
     "tooltip": true
-  },
-  "niri/workspaces": {
-    "all-outputs": true,
-    "format": "[ {index} ]",
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    }
   },
   "wlr/taskbar": {
     "format": "{icon}",

@@ -1,56 +1,13 @@
+[2025-11-29 03:57:38.755] [info] Using configuration file /home/apolonio/.config/waybar/config.jsonc
+[2025-11-29 03:57:38.761] [info] Discovered appearance 'dark'
+[2025-11-29 03:57:38.778] [info] Using CSS file /home/apolonio/.config/waybar/style.css
 
-(waybar:93493): Gtk-WARNING **: 02:23:19.256: Theme parsing error: gtk.css:2:1: Expected semicolon
+(waybar:88961): Gtk-WARNING **: 03:57:38.779: Theme parsing error: style.css:41:15: Not using units is deprecated. Assuming 'px'.
 
-(waybar:93493): Gtk-WARNING **: 02:23:19.256: Theme parsing error: gtk.css:3:1: Expected semicolon
+(waybar:88961): Gtk-WARNING **: 03:57:38.779: Theme parsing error: style.css:241:15: Not using units is deprecated. Assuming 'px'.
 
-(waybar:93493): Gtk-WARNING **: 02:23:19.256: Theme parsing error: gtk.css:4:1: Expected semicolon
-
-(waybar:93493): Gtk-WARNING **: 02:23:19.256: Theme parsing error: gtk.css:5:1: Expected semicolon
-
-(waybar:93493): Gtk-WARNING **: 02:23:19.256: Theme parsing error: gtk.css:6:1: Expected semicolon
-[2025-11-01 02:23:19.278] [info] Using configuration file /home/apolonio/.config/waybar/config.jsonc
-[2025-11-01 02:23:19.307] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.portal.Error.NotFound: A configuração requisitada não foi encontrada
-[2025-11-01 02:23:19.307] [info] Using CSS file /home/apolonio/.config/waybar/style.css
-
-(waybar:93493): Gtk-WARNING **: 02:23:19.307: Theme parsing error: style.css:40:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:93493): Gtk-WARNING **: 02:23:19.307: Theme parsing error: style.css:259:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:93493): Gtk-WARNING **: 02:23:19.307: Theme parsing error: style.css:267:15: Not using units is deprecated. Assuming 'px'.
-[2025-11-01 02:23:19.314] [warning] 'swap-icon-label' must be a bool.
-[2025-11-01 02:23:19.314] [info] Niri IPC starting
-[2025-11-01 02:23:19.451] [info] Bar configured (width: 1920, height: 22) for output: VGA-1
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.661: Theme parsing error: gtk.css:2:1: Expected semicolon
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.662: Theme parsing error: gtk.css:3:1: Expected semicolon
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.662: Theme parsing error: gtk.css:4:1: Expected semicolon
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.662: Theme parsing error: gtk.css:5:1: Expected semicolon
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.662: Theme parsing error: gtk.css:6:1: Expected semicolon
-[2025-11-01 05:44:34.684] [info] Using configuration file /home/apolonio/.config/waybar/config.jsonc
-[2025-11-01 05:44:34.716] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.portal.Error.NotFound: A configuração requisitada não foi encontrada
-[2025-11-01 05:44:34.716] [info] Using CSS file /home/apolonio/.config/waybar/style.css
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.716: Theme parsing error: style.css:40:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.716: Theme parsing error: style.css:259:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:103876): Gtk-WARNING **: 05:44:34.716: Theme parsing error: style.css:267:15: Not using units is deprecated. Assuming 'px'.
-[2025-11-01 05:44:34.721] [warning] 'swap-icon-label' must be a bool.
-[2025-11-01 05:44:34.721] [info] Niri IPC starting
-[2025-11-01 05:44:34.861] [info] Bar configured (width: 1920, height: 22) for output: VGA-1
-[2025-11-28 22:52:18.639] [info] Using configuration file /home/apolonio/.config/waybar/config.jsonc
-[2025-11-28 22:52:18.668] [info] Discovered appearance 'dark'
-[2025-11-28 22:52:18.687] [info] Using CSS file /home/apolonio/.config/waybar/style.css
-
-(waybar:7080): Gtk-WARNING **: 22:52:18.688: Theme parsing error: style.css:40:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:7080): Gtk-WARNING **: 22:52:18.688: Theme parsing error: style.css:259:15: Not using units is deprecated. Assuming 'px'.
-
-(waybar:7080): Gtk-WARNING **: 22:52:18.688: Theme parsing error: style.css:267:15: Not using units is deprecated. Assuming 'px'.
-[2025-11-28 22:52:18.695] [warning] 'swap-icon-label' must be a bool.
-[2025-11-28 22:52:18.695] [warning] Niri is not running, niri IPC will not be available.
-[2025-11-28 22:52:18.828] [info] Bar configured (width: 1920, height: 20) for output: VGA-1
+(waybar:88961): Gtk-WARNING **: 03:57:38.779: Theme parsing error: style.css:249:15: Not using units is deprecated. Assuming 'px'.
+[2025-11-29 03:57:38.786] [warning] module wlroots/window: Unknown module: wlroots/window
+[2025-11-29 03:57:38.786] [info] Wayfire IPC: starting
+[2025-11-29 03:57:38.786] [warning] module wayfire/workspaces: Disabling module "wayfire/workspaces", Wayfire IPC: ipc not available
+[2025-11-29 03:57:38.917] [info] Bar configured (width: 1920, height: 26) for output: VGA-1

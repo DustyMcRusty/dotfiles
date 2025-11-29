@@ -1,7 +1,7 @@
 
 [window]
 dimensions = { columns = 150, lines = 28 }
-title = "Bourne Again Shell"
+title = "Alacritty"
 
 # [font]
 # normal.family = "BigBlueTermPlus Nerd Font Mono"
@@ -13,7 +13,7 @@ title = "Bourne Again Shell"
 
 [colors.primary]
 background = '#000000'
-foreground = '#aaaaaa'
+foreground = '#cc7711'
 
 [colors.normal]
 black   = '#000000'

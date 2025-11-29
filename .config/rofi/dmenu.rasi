@@ -5,16 +5,17 @@
  */
 
 * {
-    background-color: #cc7700;
-    border-color:     #000000;
-    text-color:       #000000;
-    font:             "BigBlueTermPlus Nerd Font Mono 12";
+    background-color: #000000;
+    border-color:     #cc7711;
+    text-color:       #cc7711;
+    font:             "Monospace 12";
 }
 window {
     anchor:     south;
     location:   south;
     width:      100%;
     padding:    0px;
+    border: 1 0 0 0;
     children:   [ horibox ];
 }
 horibox {
@@ -34,8 +35,8 @@ element {
     padding: 0px 2px;
 }
 element selected {
-    background-color: #000000;
-    text-color:       #cc7700;
+    background-color: #cc7711;
+    text-color:       #000000;
 }
 
 element-text, element-icon {
