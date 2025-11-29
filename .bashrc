@@ -12,3 +12,7 @@ alias cls=clear
 alias l="ls -la --color=auto"
 alias qq="exit"
 alias cd="z"
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi

@@ -5,7 +5,7 @@
  */
 
 * {
-    background-color: #00aa00;
+    background-color: #cc7700;
     border-color:     #000000;
     text-color:       #000000;
     font:             "BigBlueTermPlus Nerd Font Mono 12";
@@ -35,7 +35,7 @@ element {
 }
 element selected {
     background-color: #000000;
-    text-color:       #00aa00;
+    text-color:       #cc7700;
 }
 
 element-text, element-icon {
