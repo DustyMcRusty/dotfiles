@@ -1,13 +1,7 @@
-eval "$(zoxide init bash)"
-
 # Exports
-export PATH=$PATH:/home/apolonio/.cargo/bin/
-export PATH=$PATH:~/.local/share/bob/nvim-bin/
-export PATH=$PATH:~/go/bin/
-export WAYFIRE_CONFIG_FILE=~/.config/wayfire/wayfire.ini
-export EDITOR=hx
+export PATH=$PATH:$HOME/.cargo/bin/:/home/apolonio/go/bin/
+export WAYFIRE_CONFIG_FILE=$HOME/.config/wayfire/wayfire.ini
 
 # Aliases
-alias cls=clear
-alias l="ls -la --color=auto"
-alias cd="z"
+unalias l
+alias l="ls -xA --group-directories-first --file-type"

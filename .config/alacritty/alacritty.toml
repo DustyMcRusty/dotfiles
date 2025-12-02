@@ -1,6 +1,6 @@
 
 [window]
-dimensions = { columns = 150, lines = 28 }
+dimensions = { columns = 130, lines = 28 }
 title = "Alacritty"
 
 # [font]
@@ -13,7 +13,7 @@ title = "Alacritty"
 
 [colors.primary]
 background = '#000000'
-foreground = '#cc7711'
+foreground = '#ffbb88'
 
 [colors.normal]
 black   = '#000000'
