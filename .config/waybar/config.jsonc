@@ -153,14 +153,14 @@
     ],
     "player-icons": {
       "librewolf": "L",
-      "default": ">",
+      "default": ">>",
       "spotify": "S",
       "vlc": "V",
       "mpv": "M"
     },
     "status-icons": {
       "paused": "II",
-      "playing": ">"
+      "playing": ">>"
     },
     "max-length": 40,
     "tooltip": true
