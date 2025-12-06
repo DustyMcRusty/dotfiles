@@ -37,8 +37,8 @@ window#waybar.hidden {
 #taskbar,
 #tray,
 #workspaces {
-  font-family: monospace;
-  font-size: 14;
+  font-family: "GohuFont 14 Nerd Font Mono";
+  font-size: 15;
   color: #cc7711;
   background: #000000;
   border-bottom: 2px solid #cc7711;
@@ -237,7 +237,7 @@ window#waybar.empty #window {
 }
 
 #mode {
-  font-family: Inconsolata LGC Nerd Font;
+  font-family: "GohuFont 14 Nerd Font Mono";
   font-size: 12;
   color: #000000;
   background: #ff2211;
@@ -245,7 +245,7 @@ window#waybar.empty #window {
 }
 
 #scratchpad {
-  font-family: Inconsolata LGC Nerd Font;
+  font-family: "GohuFont 14 Nerd Font Mono";
   font-size: 10;
   color: #000000;
   padding: 0 3px;
@@ -255,6 +255,8 @@ tooltip {
   color: #cc7711;
   border: 2px solid #cc7711;
   background: #000000;
+  font-family: "GohuFont 14 Nerd Font Mono";
+  font-size: 12;
 }
 
 tooltip * {
