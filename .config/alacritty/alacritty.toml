@@ -4,12 +4,12 @@ dimensions = { columns = 130, lines = 28 }
 title = "Alacritty"
 
 [font]
-normal.family = "GohuFont 14 Nerd Font Mono"
-bold.family = "GohuFont 14 Nerd Font Mono"
-italic.family = "GohuFont 14 Nerd Font Mono"
-bold_italic.family = "GohuFont 14 Nerd Font Mono"
+normal.family = "monospace"
+bold.family = "monospace"
+italic.family = "monospace"
+bold_italic.family = "monospace"
 
-size = 12
+size = 11
 
 [colors.primary]
 background = '#000000'

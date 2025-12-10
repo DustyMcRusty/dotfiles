@@ -8,7 +8,7 @@
     background-color: #000000;
     border-color:     #cc7711;
     text-color:       #cc7711;
-    font:             "GohuFont 14 Nerd Font Mono 14";
+    font:             "monospace 12";
 }
 window {
     anchor:     south;
