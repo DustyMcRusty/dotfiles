@@ -3,4 +3,5 @@ font: "Inconsolata LGC Nerd Font 12";
 modes: [window,drun,run,ssh,calc];
 }
 
-@theme "./dmenu.rasi"
+@theme "./theme.rasi"
+

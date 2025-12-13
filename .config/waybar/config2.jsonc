@@ -1,16 +1,21 @@
 {
-  "position": "top",
+  "position": "bottom",
   "layer": "top",
   "output": [
     "VGA-1"
   ],
   "modules-left": [
-    "custom/launcher",
-    "custom/calc"
+    "wlr/taskbar"
   ],
   "modules-center": [],
   "modules-right": [
-    "mpris"
+    "network",
+    "custom/bluetooth",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "clock",
+    "tray"
   ],
   "wireplumber": {
     "tooltip": true,
