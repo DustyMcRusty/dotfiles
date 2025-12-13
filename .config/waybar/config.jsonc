@@ -10,7 +10,8 @@
   ],
   "modules-center": [],
   "modules-right": [
-    "mpris"
+    "mpris",
+    "clock"
   ],
   "wireplumber": {
     "tooltip": true,
