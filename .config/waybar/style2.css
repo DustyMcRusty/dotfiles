@@ -29,12 +29,16 @@ window#waybar.hidden {
 #custom-calc,
 #custom-launcher,
 #custom-updates,
+#custom-poweroff,
+#custom-reboot,
+#custom-update,
 #memory,
 #mpris,
 #network,
 #pulseaudio,
 #window,
 #taskbar,
+#disk,
 #tray,
 #workspaces {
   font-family: "monospace";
@@ -76,9 +80,8 @@ window#waybar.hidden {
 #window {
   background: #000000;
   color: #cc7711;
-  margin-left: 6px;
-  margin-right: 6px;
-  padding: 0 3px;
+  margin: 0 3px;
+  padding: 0 3px 0 0;
   border-top-color: #cc7711;
 }
 
@@ -206,6 +209,48 @@ window#waybar.empty #window {
 }
 
 #custom-calc:hover {
+  color: #000000;
+  background: #cc7711;
+}
+
+#custom-poweroff {
+  color: #cc7711;
+  background: #000000;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top-color: #cc7711;
+}
+
+#custom-poweroff:hover {
+  color: #000000;
+  background: #cc7711;
+}
+
+#custom-reboot {
+  color: #cc7711;
+  background: #000000;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top-color: #cc7711;
+}
+
+#custom-reboot:hover {
+  color: #000000;
+  background: #cc7711;
+}
+
+#custom-update {
+  color: #cc7711;
+  background: #000000;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top-color: #cc7711;
+}
+
+#custom-update:hover {
   color: #000000;
   background: #cc7711;
 }

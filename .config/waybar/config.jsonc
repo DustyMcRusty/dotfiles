@@ -2,15 +2,18 @@
   "position": "top",
   "layer": "top",
   "output": [
-    "VGA-1"
+    "VGA-1",
+    "HDMI-1"
   ],
   "modules-left": [
-    "custom/launcher",
-    "custom/calc"
+    "wlr/taskbar"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "custom/launcher",
+  ],
   "modules-right": [
     "mpris",
+    "pulseaudio",
     "clock"
   ],
   "wireplumber": {
@@ -116,7 +119,7 @@
     "max-length": 20
   },
   "custom/launcher": {
-    "format": "*",
+    "format": "|+|",
     "tooltip-format": "Program Launcher",
     "on-click": "rofi -show drun",
     "on-click-right": "killall rofi"

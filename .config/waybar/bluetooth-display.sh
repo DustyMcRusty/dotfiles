@@ -2,7 +2,7 @@
 
 # Check if Bluetooth is powered on
 if ! bluetoothctl show | grep -q 'Powered: yes'; then
-    echo "Off"
+    echo "off"
     exit 0
 fi
 
@@ -11,7 +11,7 @@ connected_devices=$(bluetoothctl devices Connected | grep "^Device [A-Fa-f0-9:]"
 
 # Check if any devices are connected
 if [ -z "$connected_devices" ]; then
-    echo "No devices"
+    echo "no devices"
     exit 0
 fi
 
@@ -49,7 +49,7 @@ total_devices=$((${#audio_devices[@]} + ${#controllers[@]} + ${#mice[@]} + ${#ot
 
 # Display logic based on priority and device count
 if [ $total_devices -eq 0 ]; then
-    echo "No devices"
+    echo "no devices"
 elif [ $total_devices -eq 1 ]; then
     # Only one device connected, show whatever it is
     if [ ${#audio_devices[@]} -gt 0 ]; then

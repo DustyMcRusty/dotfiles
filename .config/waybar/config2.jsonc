@@ -2,10 +2,13 @@
   "position": "bottom",
   "layer": "top",
   "output": [
-    "VGA-1"
+    "VGA-1",
+    "HDMI-1"
   ],
   "modules-left": [
-    "wlr/taskbar"
+    "custom/poweroff",
+    "custom/reboot",
+    "custom/update",
   ],
   "modules-center": [],
   "modules-right": [
@@ -13,7 +16,7 @@
     "custom/bluetooth",
     "cpu",
     "memory",
-    "pulseaudio",
+    "disk",
     "tray"
   ],
   "wireplumber": {
@@ -52,7 +55,7 @@
   },
   "network": {
     "tooltip": true,
-    "format-wifi": "CONNECTED!",
+    "format-wifi": "connected!",
     "rotate": 0,
     "format-ethernet": "󰈀 ",
     "tooltip-format": "Signal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
@@ -103,9 +106,14 @@
     "tooltip": false
   },
   "cpu": {
-    "format": "CPU: {usage}%",
-    "on-click": "foot -- btop",
+    "format": "cpu: {usage}%",
+    "on-click": "xterm -- htop",
     "tooltip": true
+  },
+  "disk": {
+    "on-click": "filelight",
+    "path": "/home",
+    "format": "home: {free} / {total}"
   },
   "tray": {
     "icon-size": 16,
@@ -114,25 +122,28 @@
   },
   "memory": {
     "interval": 30,
-    "format": "MEM: {used:0.1f}G/{total:0.1f}G",
-    "tooltip-format": "MEM: {used:0.1f}G/{total:0.1f}G",
+    "format": "mem: {used:0.1f}G/{total:0.1f}G",
+    "tooltip-format": "mem: {used:0.1f}G/{total:0.1f}G",
     "max-length": 20
   },
-  "custom/launcher": {
-    "format": "*",
-    "tooltip-format": "Program Launcher",
-    "on-click": "rofi -show drun",
-    "on-click-right": "killall rofi"
+  "custom/poweroff": {
+    "format": "off",
+    "tooltip-format": "power down.",
+    "on-click": "alacritty -e $HOME/.config/waybar/poweroff.sh"
   },
-  "custom/calc": {
-    "format": "#",
-    "tooltip-format": "Launch Calculator",
-    "on-click": "rofi -show calc",
-    "on-click-right": "killall rofi"
+  "custom/reboot": {
+    "format": "reboot",
+    "tooltip-format": "reboot.",
+    "on-click": "alacritty -e $HOME/.config/waybar/poweroff.sh"
+  },
+  "custom/update": {
+    "format": "up",
+    "tooltip-format": "update packages.",
+    "on-click": "alacritty -e sudo zypper ref && sudo zypper dup"
   },
   "custom/bluetooth": {
-    "format": "B {}",
-    "exec": "~/.config/waybar/bluetooth-display.sh",
+    "format": "bt: {}",
+    "exec": "$HOME/.config/waybar/bluetooth-display.sh",
     "interval": 10,
     "on-click": "blueman-manager",
     "return-type": "plain",
