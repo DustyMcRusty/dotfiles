@@ -1,6 +1,6 @@
 
 [window]
-dimensions = { columns = 130, lines = 28 }
+dimensions = { columns = 108, lines = 48 }
 title = "Alacritty"
 
 [font]
@@ -9,11 +9,11 @@ bold.family = "monospace"
 italic.family = "monospace"
 bold_italic.family = "monospace"
 
-size = 12
+size = 10
 
 [colors.primary]
 background = '#000000'
-foreground = '#ffbb88'
+foreground = '#dd8822'
 
 [colors.normal]
 black   = '#000000'

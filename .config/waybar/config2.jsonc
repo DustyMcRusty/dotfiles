@@ -139,7 +139,7 @@
   "custom/update": {
     "format": "up",
     "tooltip-format": "update packages.",
-    "on-click": "alacritty -e sudo zypper ref && sudo zypper dup"
+    "on-click": "alacritty -e sudo zypper ref; alacritty -e sudo zypper dup"
   },
   "custom/bluetooth": {
     "format": "bt: {}",
