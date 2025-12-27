@@ -9,7 +9,9 @@
     "wlr/taskbar"
   ],
   "modules-center": [
+    "custom/term",
     "custom/launcher",
+    "custom/lock"
   ],
   "modules-right": [
     "mpris",
@@ -120,15 +122,19 @@
   },
   "custom/launcher": {
     "format": "|+|",
-    "tooltip-format": "Program Launcher",
+    "tooltip-format": "program launcher",
     "on-click": "rofi -show drun",
     "on-click-right": "killall rofi"
   },
-  "custom/calc": {
-    "format": "#",
-    "tooltip-format": "Launch Calculator",
-    "on-click": "rofi -show calc",
-    "on-click-right": "killall rofi"
+  "custom/term": {
+    "format": "term",
+    "tooltip-format": "launch terminal",
+    "on-click": "alacritty",
+  },
+  "custom/lock": {
+    "format": "lock",
+    "tooltip-format": "lock screen",
+    "on-click": "swaylock",
   },
   "custom/bluetooth": {
     "format": "B {}",

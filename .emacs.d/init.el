@@ -1,3 +1,10 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
 (put 'dired-find-alternate-file 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
@@ -24,12 +31,5 @@
 (evil-mode 1)
 (global-set-key (kbd "C-c v") 'evil-mode)
 
-(require 'multiple-cursors)
-
-;; Multiple-cursors bindings
-;; Create new cursor based on continuous lines
-(global-set-key (kbd "C-c c") 'mc/edit-lines) 
-;; Create new cursor based on keyword in buffer
-(global-set-key (kbd "C-c n") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-c p") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c a") 'mc/mark-all-like-this)
+(require 'evil-mc)
+(global-evil-mc-mode 1)

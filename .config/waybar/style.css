@@ -26,7 +26,8 @@ window#waybar.hidden {
 #clock,
 #cpu,
 #custom-bluetooth,
-#custom-calc,
+#custom-term,
+#custom-lock,
 #custom-launcher,
 #custom-updates,
 #memory,
@@ -196,16 +197,28 @@ window#waybar.empty #window {
 /* custom-calculator*/
 /* ======================================================== */
 
-#custom-calc {
+#custom-term {
   color: #cc7711;
   background: #000000;
-  font-size: 16px;
   margin-left: 0px;
   margin-right: 0px;
   border-bottom-color: #cc7711;
 }
 
-#custom-calc:hover {
+#custom-term:hover {
+  color: #000000;
+  background: #cc7711;
+}
+
+#custom-lock {
+  color: #cc7711;
+  background: #000000;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-bottom-color: #cc7711;
+}
+
+#custom-lock:hover {
   color: #000000;
   background: #cc7711;
 }
