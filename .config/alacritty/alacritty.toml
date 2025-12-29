@@ -10,17 +10,3 @@ italic.family = "monospace"
 bold_italic.family = "monospace"
 
 size = 10
-
-[colors.primary]
-background = '#000000'
-foreground = '#dd8822'
-
-[colors.normal]
-black   = '#000000'
-red     = '#aa0000'
-green   = '#00aa00'
-yellow  = '#aaaa00'
-blue    = '#0000aa'
-magenta = '#aa00aa'
-cyan    = '#00aaaa'
-white   = '#aaaaaa'

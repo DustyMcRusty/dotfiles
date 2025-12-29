@@ -1,7 +1,0 @@
-configuration {
-font: "Inconsolata LGC Nerd Font 12";
-modes: [window,drun,run,ssh,calc];
-}
-
-@theme "./theme.rasi"
-
