@@ -1,8 +1,4 @@
-xterm*dynamicColors: true
-xterm*background   : #000000
-xterm*foreground   : #ffffff
-xterm*saveLines    : 35000
-
-Xft.antialias: false
-Xft.hintstyle: hintslant
-Xft.rgba: none
+xterm*dynamicColors:true
+xterm*foreground:#ffffff
+xterm*background:#000000
+xterm*saveLines:35000
