@@ -1,0 +1,4 @@
+xterm*dynamicColors:true
+xterm*foreground:#ffffff
+xterm*background:#000000
+xterm*saveLines:35000
