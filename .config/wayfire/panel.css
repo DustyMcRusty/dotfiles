@@ -1,0 +1,7 @@
+.wf-panel .menu-icon {
+  -gtk-icon-transform: scale(1.5);
+}
+
+.wf-panel .clock {
+  text-shadow: 2px 2px 2px black;
+}
