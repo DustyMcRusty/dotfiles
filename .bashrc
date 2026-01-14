@@ -13,3 +13,12 @@ alias weather="curl wttr.in/?t1"
 alias cage="cage -s"
 alias edit="helix"
 alias tkill="pkill --signal 9"
+
+# Functions
+
+# Run a program detached from terminal
+run() {
+  for arg in "$@"; do
+    nohup "$arg" &> /dev/null &
+  done
+}
