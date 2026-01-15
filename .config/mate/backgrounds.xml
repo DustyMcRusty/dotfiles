@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "mate-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Two Wings</name>
+    <filename>/usr/share/backgrounds/mate/nature/TwoWings.jpg</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Charles Barbin, Hylke Bons</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Garden</name>
+    <filename>/usr/share/backgrounds/mate/nature/Garden.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Charles Barbin</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>helix-nebula.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/helix-nebula.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>blue-marble-west.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/blue-marble-west.jpg</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Fresh Flower</name>
+    <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Jens Ansorg</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Dune</name>
+    <filename>/usr/share/backgrounds/mate/nature/Dune.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Marco Cogoni, Hylke Bons</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Wood</name>
+    <filename>/usr/share/backgrounds/mate/nature/Wood.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Jean-Fran&#xE7;ois Fortin Tam</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Green Meadow</name>
+    <filename>/usr/share/backgrounds/mate/nature/GreenMeadow.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Timothy Schellhase, Lapo Calamandrei</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Green Traditional</name>
+    <filename>/usr/share/backgrounds/mate/desktop/GreenTraditional.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>l0r4n0n</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>jupiter.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/jupiter.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>galaxy-ngc3370.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/galaxy-ngc3370.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>comet.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/comet.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Yellow Flower</name>
+    <filename>/usr/share/backgrounds/mate/nature/YellowFlower.jpg</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Charles Barbin</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Gulp</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Gulp.png</filename>
+    <options>stretched</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(98,127,90)</pcolor>
+    <scolor>rgb(39,88,126)</scolor>
+    <artist>Daniel Galleguillos, Hylke Bons</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>cloud.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/cloud.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>odin.jpg</name>
+    <filename>/usr/share/backgrounds/odin.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Silk</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Silk.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(39,88,126)</pcolor>
+    <scolor>rgb(98,127,90)</scolor>
+    <artist>Patryk Zawadzki</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Sunset by the Pier.jpg</name>
+    <filename>/usr/share/backgrounds/Sunset by the Pier.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ubuntu MATE Cold</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Goce Mitevski</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Lady Bird</name>
+    <filename>/usr/share/backgrounds/mate/nature/LadyBird.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Charles Barbin</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ubuntu MATE Radioactive</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Radioactive-no-logo.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Goce Mitevski</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Cosmos</name>
+    <filename>/usr/share/backgrounds/cosmos/background-1.xml</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ubuntu MATE Warm</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Warm-no-logo.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Goce Mitevski</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Mr. Lee.jpg</name>
+    <filename>/usr/share/backgrounds/Mr. Lee.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>whirlpool.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/whirlpool.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Something slowly gets clear</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Elephants.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(114,159,207)</pcolor>
+    <scolor>rgb(0,0,0)</scolor>
+    <artist>Wyng Stancikaite</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>sombrero.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/sombrero.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MATE Stripes Light</name>
+    <filename>/usr/share/backgrounds/mate/desktop/MATE-Stripes-Light.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(63,77,40)</pcolor>
+    <scolor>rgb(106,148,38)</scolor>
+    <artist>Adam Erdman</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Arc</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(153,193,241)</pcolor>
+    <scolor>rgb(62,193,143)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Stripes</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Stripes.png</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(135,205,39)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
+    <artist>Jakub Steiner</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Something slowly gets clear</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Elephants_5640x3172.jpg</filename>
+    <options>scaled</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(114,159,207)</pcolor>
+    <scolor>rgb(0,0,0)</scolor>
+    <artist>Wyng Stancikaite</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>1920x1200.png</name>
+    <filename>/usr/share/wallpapers/openSUSEdefault/contents/images/1920x1200.png</filename>
+    <options>stretched</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MATE Stripes Dark</name>
+    <filename>/usr/share/backgrounds/mate/desktop/MATE-Stripes-Dark.png</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(186,218,85)</pcolor>
+    <scolor>rgb(133,212,91)</scolor>
+    <artist>Adam Erdman</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Canazei Granite Ridges.jpg</name>
+    <filename>/usr/share/backgrounds/Canazei Granite Ridges.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Aqua</name>
+    <filename>/usr/share/backgrounds/mate/nature/Aqua.jpg</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Charles Barbin</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>No Desktop Background</name>
+    <filename>(none)</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(106,154,54)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Float into MATE</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Float-into-MATE.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Rowen Stipe</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>odin-dark.jpg</name>
+    <filename>/usr/share/backgrounds/odin-dark.jpg</filename>
+    <options>scaled</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Photo by SpaceX.jpg</name>
+    <filename>/usr/share/backgrounds/Photo by SpaceX.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Spring</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Spring.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(38,162,105)</pcolor>
+    <scolor>rgb(46,194,126)</scolor>
+    <artist>Patryk Zawadzki</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Flow</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Flow.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(39,88,126)</pcolor>
+    <scolor>rgb(98,127,90)</scolor>
+    <artist>Daniel Galleguillos, Hylke Bons</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Rain Drops</name>
+    <filename>/usr/share/backgrounds/mate/nature/RainDrops.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>blackcombwhistler07</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Waves</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Waves.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(230,97,0)</pcolor>
+    <scolor>rgb(255,163,72)</scolor>
+    <artist>Patryk Zawadzki</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Something slowly gets clear</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Elephants_3840x2160.jpg</filename>
+    <options>scaled</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(153,193,241)</pcolor>
+    <scolor>rgb(119,118,123)</scolor>
+    <artist>Wyng Stancikaite</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ashim DSilva.jpg</name>
+    <filename>/usr/share/backgrounds/Ashim DSilva.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>earth-horizon.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/earth-horizon.jpg</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(154,153,150)</pcolor>
+    <scolor>rgb(61,56,70)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Storm</name>
+    <filename>/usr/share/backgrounds/mate/nature/Storm.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Sergey Nazarov</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ubuntu MATE Dark</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Dark-no-logo.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(246,211,45)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Goce Mitevski</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Scatter Purple.png</name>
+    <filename>/home/apolonio/.fvwm/wallpapers/Scatter Purple.png</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(106,154,54)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
+    <artist/>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Blinds</name>
+    <filename>/usr/share/backgrounds/mate/nature/Blinds.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Lennart Poettering, Andrea Cimitan</artist>
+  </wallpaper>
+</wallpapers>
