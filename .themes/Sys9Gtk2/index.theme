@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Sys9
+Type=X-GNOME-Metatheme
+Comment=A MacOS-9 Look and feel theme for GTK2\nAuthors: Danny Wu and Steven Young modified by jesusmora
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Sys9
+MetacityTheme=Sys9
+IconTheme=Sys9

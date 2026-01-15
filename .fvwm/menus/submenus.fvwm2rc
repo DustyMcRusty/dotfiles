@@ -12,7 +12,7 @@ AddToMenu SysMenu
 #------- "Exit" menu ------------#
 # suspend assumes you're using systemd
 AddToMenu ExitMenu
-	+ 	"Log Out"		Popup QuitMenu
+	+ 	"Log Out"	Popup QuitMenu
 	+	"Suspend"	Exec systemctl suspend
 	+	"Shut Down"	Exec poweroff
 	+	"Reboot"	Exec reboot
@@ -20,7 +20,7 @@ AddToMenu ExitMenu
 #------- Confirm quitting X ------------#
 AddToMenu QuitMenu "Really quit?" Title
 	+   "Yeah" Quit
-	+   "No"  Nop
+	+   "No"   Nop
 
 #------- "Internet" menu ------------#
 AddToMenu SurfMenu
@@ -34,7 +34,9 @@ AddToMenu UtilsMenu
 ## Graphics programs menu
 AddToMenu GfxMenu
 	Test (x gimp) +	"GIMP"		exec gimp &
+	Test (x inkscape) + "Inkscape"	    exec inkscape &
+	Test (x flatpak run com.wings3d.WINGS) + "Wings3D"	exec flatpak run com.wings3d.WINGS &
 
 ## Music software menu
 AddToMenu MusicMenu
-	Test (x audacious)	+	"Audacious "			exec audacious &
+	Test (x qmmp)	+	"qmmp "			exec qmmp &

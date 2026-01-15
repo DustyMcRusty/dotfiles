@@ -22,8 +22,7 @@ AddDesktop "Etc."
 EdgeScroll 0 0
 
 #------ Behavior -------#
-# Keep the last focus while in root window
-Style "*" SloppyFocus
+Style "*" ClickToFocus
 
 # Click/release must occur in <n milliseconds to be a "click"
 ClickTime 10
@@ -74,19 +73,18 @@ AddToFunc "InitFunction"
 # ----import xfce4 settings----
 
 Test (x xfsettingsd) + I Exec xfsettingsd &
-Test (x xfce4-power-manager) + I Exec xfce4-power-manager &
 
 # ----tray----
 
-+ I Exec stalonetray -geometry "16x1-14-14" --kludges=force_icons_size &
+# + I Exec stalonetray -geometry "16x1-14-14" --kludges=force_icons_size &
 
 # dark mode
 
-#+ I Exec stalonetray -geometry "16x1-14-14" -bg "#222" --kludges=force_icons_size &
++ I Exec stalonetray -geometry "16x1-14-14" -bg "#222" --kludges=force_icons_size &
 
 # ----background----
 
 # xsetroot will be used as a fallback
-+ I Exec xsetroot -solid "#4c719e"
+# + I Exec xsetroot -mod 4 4 -bg darkcyan -fg teal 
 
-Test (x hsetroot) + I Exec hsetroot -tile "$HOME/.fvwm/wallpapers/Scatter Blue.png" &
++ I Exec feh --bg-tile "$HOME/.fvwm/wallpapers/Scatter Purple.png" &
