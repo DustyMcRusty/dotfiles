@@ -29,15 +29,6 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>blue-marble-west.jpg</name>
-    <filename>/usr/share/backgrounds/cosmos/blue-marble-west.jpg</filename>
-    <options>centered</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist>(none)</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>Fresh Flower</name>
     <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
     <options>wallpaper</options>
@@ -47,6 +38,15 @@
     <artist>Jens Ansorg</artist>
   </wallpaper>
   <wallpaper deleted="false">
+    <name>blue-marble-west.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/blue-marble-west.jpg</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
     <name>Dune</name>
     <filename>/usr/share/backgrounds/mate/nature/Dune.jpg</filename>
     <options>zoom</options>
@@ -54,6 +54,15 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Marco Cogoni, Hylke Bons</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>tileblue1.JPG</name>
+    <filename>/home/apolonio/Pictures/papes/tileblue1.JPG</filename>
+    <options>wallpaper</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>rgb(154,153,150)</pcolor>
+    <scolor>rgb(61,56,70)</scolor>
+    <artist/>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Wood</name>
@@ -117,6 +126,15 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Charles Barbin</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>industry.png</name>
+    <filename>/home/apolonio/Pictures/papes/industry.png</filename>
+    <options>centered</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,191,64)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Gulp</name>
@@ -321,7 +339,7 @@
     <filename>(none)</filename>
     <options>wallpaper</options>
     <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(106,154,54)</pcolor>
+    <pcolor>rgb(88,191,64)</pcolor>
     <scolor>rgb(58,87,41)</scolor>
     <artist>(none)</artist>
   </wallpaper>
@@ -432,15 +450,6 @@
     <pcolor>rgb(246,211,45)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Goce Mitevski</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
-    <name>Scatter Purple.png</name>
-    <filename>/home/apolonio/.fvwm/wallpapers/Scatter Purple.png</filename>
-    <options>wallpaper</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(106,154,54)</pcolor>
-    <scolor>rgb(58,87,41)</scolor>
-    <artist/>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Blinds</name>
