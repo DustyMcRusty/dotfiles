@@ -2,7 +2,7 @@
 window-ratio=(1.9705882352941178, 1.231060606060606)
 
 [caja/desktop]
-font='Cantarell 9'
+font='ChicagoFLF Regular 9'
 home-icon-name='Home'
 network-icon-visible=true
 
@@ -27,7 +27,7 @@ show-hidden-files=true
 thumbnail-limit=uint64 104857600
 
 [caja/window-state]
-geometry='948x810+373+131'
+geometry='948x719+239+176'
 maximized=false
 sidebar-width=184
 start-with-location-bar=true
@@ -76,24 +76,26 @@ picture-filename='/home/apolonio/Pictures/papes/tileblue1.JPG'
 picture-options='wallpaper'
 primary-color='rgb(154,153,150)'
 secondary-color='rgb(61,56,70)'
+show-desktop-icons=true
 
 [desktop/font-rendering]
-antialiasing='grayscale'
-dpi=0.0
-hinting='medium'
+antialiasing='rgba'
+dpi=96.0
+hinting='none'
 rgba-order='rgb'
 
 [desktop/interface]
 buttons-have-icons=true
 cursor-blink-time=1367
 document-font-name='Source Sans Pro 11'
-font-name='ChicagoFLF Medium 9'
+font-name='ChicagoFLF Medium 8'
 gtk-color-scheme='menu_bg: #ffffff'
 gtk-decoration-layout='close,minimize,maximize:menu'
 gtk-theme='Sys9-def'
 icon-theme='NineIcons48x'
 menus-have-icons=true
 monospace-font-name='Adwaita Mono 9'
+window-scaling-factor=0
 
 [desktop/media-handling]
 autorun-x-content-ignore=@as []
@@ -124,7 +126,7 @@ cursor-theme='mate-black'
 
 [desktop/session]
 idle-delay=120
-session-start=1768449713
+session-start=1768550022
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -133,7 +135,11 @@ windowmanager='marco-no-composite'
 [desktop/sound]
 event-sounds=true
 input-feedback-sounds=true
-theme-name='freedesktop'
+theme-name='ocean'
+volume-overamplifiable=false
+
+[desktop/thumbnailers]
+disable=['image/png', 'image/jpeg', 'image/webp', 'image/bmp', 'image/svg+xml', 'video/webm', 'video/x-msvideo', 'video/mp4', 'video/mpeg', 'video/ogg', 'video/mp2t', 'video/3gpp', 'video/3gpp2']
 
 [disk-usage-analyzer/ui]
 active-chart='rings'
@@ -164,18 +170,19 @@ image-collection=false
 
 [marco/general]
 action-double-click-titlebar='toggle_shade'
-allow-tiling=false
+allow-tiling=true
 button-layout='close,minimize,maximize:menu'
 compositing-fast-alt-tab=true
 compositing-manager=false
 mouse-button-modifier='<Super>'
 num-workspaces=4
-reduced-resources=true
+reduced-resources=false
 show-tab-border=false
 theme='Sys9-def'
 titlebar-font='ChicagoFLF Medium 9'
 
 [marco/global-keybindings]
+panel-run-dialog='<Mod4>r'
 run-command-terminal='<Primary><Alt>t'
 switch-to-workspace-1='<Mod4>1'
 switch-to-workspace-2='<Mod4>2'
@@ -210,11 +217,13 @@ theme='nodoka'
 
 [panel/general]
 default-layout='fedora'
-object-id-list=['notification-area', 'clock', 'object-4', 'object-6', 'object-11', 'object-10']
+history-mate-run=['dconf-editor', 'notes/', 'winetricks']
+object-id-list=['notification-area', 'clock', 'object-4', 'object-6', 'object-11', 'object-10', 'object-2', 'object-3', 'object-8']
 toplevel-id-list=['top']
 
 [panel/menubar]
-icon-size='22px'
+icon-name='mc'
+icon-size='16px'
 item-icon-size='32px'
 show-applications=true
 show-desktop=true
@@ -225,13 +234,14 @@ applet-iid='ClockAppletFactory::ClockApplet'
 locked=false
 object-type='applet'
 panel-right-stick=true
-position=88
+position=85
 toplevel-id='top'
 
 [panel/objects/clock/prefs]
 expand-locations=false
-show-date=true
-show-seconds=true
+format='12-hour'
+show-date=false
+show-seconds=false
 show-temperature=false
 show-weather=false
 speed-unit='km/h'
@@ -241,7 +251,7 @@ applet-iid='NotificationAreaAppletFactory::NotificationArea'
 locked=false
 object-type='applet'
 panel-right-stick=false
-position=1789
+position=870
 toplevel-id='top'
 
 [panel/objects/object-0]
@@ -277,6 +287,18 @@ cpu=0
 show-mode=2
 show-text-mode=2
 
+[panel/objects/object-2]
+object-type='separator'
+panel-right-stick=true
+position=26
+toplevel-id='top'
+
+[panel/objects/object-3]
+object-type='separator'
+panel-right-stick=true
+position=112
+toplevel-id='top'
+
 [panel/objects/object-4]
 locked=true
 object-type='menu-bar'
@@ -300,13 +322,22 @@ frames=8
 rotate=false
 speed=0.29999999999999999
 
+[panel/objects/object-8]
+applet-iid='StickyNotesAppletFactory::StickyNotesApplet'
+object-type='applet'
+panel-right-stick=true
+position=102
+toplevel-id='top'
+
 [panel/objects/volume-control]
 applet-iid='GvcAppletFactory::GvcApplet'
+custom-icon='mc'
 locked=true
 object-type='applet'
 panel-right-stick=true
 position=20
 toplevel-id='top'
+use-custom-icon=true
 
 [panel/toplevels/top]
 auto-hide=false
@@ -315,7 +346,7 @@ enable-buttons=false
 expand=true
 orientation='top'
 screen=0
-size=34
+size=16
 x=0
 x-centered=true
 x-right=-1
@@ -324,7 +355,7 @@ y-bottom=-1
 
 [panel/toplevels/top/background]
 color='rgb(214,214,214)'
-image='/home/apolonio/.themes/PanelAssets/middle.png'
+image='/home/apolonio/.themes/PanelAssets/toppanel.png'
 type='image'
 
 [panel/toplevels/toplevel-0]
@@ -376,11 +407,15 @@ search-history={'gsearchtool-file-entry': ['wall']}
 [search-tool/select]
 contains-the-text=true
 
+[settings-daemon/plugins/xrandr]
+show-notification-icon=false
+
 [stickynotes]
-default-height=100
-default-width=100
-desktop-hide=true
+default-height=41
+default-width=41
+desktop-hide=false
 force-default=false
+locked=false
 sticky=true
 use-system-color=true
 use-system-font=true
@@ -414,7 +449,7 @@ background-type='transparent'
 bold-color-same-as-fg=true
 default-size-columns=101
 default-size-rows=40
-font='Adwaita Mono 10'
+font='Mx437 Acer710 Mono 12'
 foreground-color='#FFFFFFFFFFFF'
 palette='#000000000000:#CCCC00000000:#4E4D9A9A0605:#C4C3A0A00000:#34346564A4A3:#7575504F7B7B:#060598979A9A:#D3D3D7D6CFCF:#555457565352:#EFEF29282928:#8A89E2E23434:#FCFBE9E84F4F:#72729F9ECFCF:#ADAC7F7EA8A8:#3434E2E2E2E2:#EEEDEEEDECEB'
 title='Bash'

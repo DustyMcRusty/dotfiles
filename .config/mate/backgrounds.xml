@@ -29,15 +29,6 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Fresh Flower</name>
-    <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
-    <options>wallpaper</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist>Jens Ansorg</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>blue-marble-west.jpg</name>
     <filename>/usr/share/backgrounds/cosmos/blue-marble-west.jpg</filename>
     <options>centered</options>
@@ -45,6 +36,15 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Fresh Flower</name>
+    <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
+    <options>wallpaper</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Jens Ansorg</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Dune</name>
@@ -62,7 +62,7 @@
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>rgb(154,153,150)</pcolor>
     <scolor>rgb(61,56,70)</scolor>
-    <artist/>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Wood</name>
@@ -218,15 +218,6 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Ubuntu MATE Warm</name>
-    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Warm-no-logo.png</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist>Goce Mitevski</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>Mr. Lee.jpg</name>
     <filename>/usr/share/backgrounds/Mr. Lee.jpg</filename>
     <options>zoom</options>
@@ -234,6 +225,15 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ubuntu MATE Warm</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Warm-no-logo.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Goce Mitevski</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>whirlpool.jpg</name>
@@ -263,15 +263,6 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>MATE Stripes Light</name>
-    <filename>/usr/share/backgrounds/mate/desktop/MATE-Stripes-Light.png</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(63,77,40)</pcolor>
-    <scolor>rgb(106,148,38)</scolor>
-    <artist>Adam Erdman</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>Arc</name>
     <filename>/usr/share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png</filename>
     <options>zoom</options>
@@ -279,6 +270,15 @@
     <pcolor>rgb(153,193,241)</pcolor>
     <scolor>rgb(62,193,143)</scolor>
     <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MATE Stripes Light</name>
+    <filename>/usr/share/backgrounds/mate/desktop/MATE-Stripes-Light.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(63,77,40)</pcolor>
+    <scolor>rgb(106,148,38)</scolor>
+    <artist>Adam Erdman</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Stripes</name>
