@@ -59,9 +59,9 @@
     <name>tileblue1.JPG</name>
     <filename>/home/apolonio/Pictures/papes/tileblue1.JPG</filename>
     <options>wallpaper</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(154,153,150)</pcolor>
-    <scolor>rgb(61,56,70)</scolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(119,117,222)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
@@ -338,8 +338,8 @@
     <name>No Desktop Background</name>
     <filename>(none)</filename>
     <options>wallpaper</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(88,191,64)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
     <scolor>rgb(58,87,41)</scolor>
     <artist>(none)</artist>
   </wallpaper>
