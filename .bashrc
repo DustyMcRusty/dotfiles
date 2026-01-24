@@ -13,6 +13,7 @@ alias weather="curl wttr.in/?t1"
 alias cage="cage -s"
 alias edit="helix"
 alias tkill="pkill --signal 9"
+alias scr="screen -R"
 
 # Functions
 

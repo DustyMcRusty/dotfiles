@@ -26,32 +26,6 @@ term screen-256color
 # get rid of silly xoff stuff
 bind s split
 
-# layouts
-layout autosave on
-layout new one
-select 1
-layout new two
-select 1
-split
-resize -v +8
-focus down
-select 4
-focus up
-layout new three
-select 1
-split
-resize -v +7
-focus down
-select 3
-split -v
-resize -h +10
-focus right
-select 4
-focus up
-
-layout attach one
-layout select one
-
 # navigating regions with Ctrl-arrows
 bindkey "^[[1;5D" focus left
 bindkey "^[[1;5C" focus right
