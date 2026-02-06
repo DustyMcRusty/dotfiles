@@ -3,12 +3,16 @@ show-sidebar=false
 window-ratio=(1.9705882352941178, 1.231060606060606)
 
 [caja/desktop]
+computer-icon-visible=true
 font='ChicagoFLF Regular 9'
 home-icon-name='Home'
+home-icon-visible=true
 network-icon-visible=true
+trash-icon-visible=true
+volumes-visible=true
 
 [caja/icon-view]
-default-use-tighter-layout=false
+default-use-tighter-layout=true
 default-zoom-level='small'
 labels-beside-icons=false
 
@@ -24,14 +28,15 @@ background-set=false
 background-uri=''
 date-format='iso'
 default-folder-viewer='icon-view'
+executable-text-activation='launch'
 show-hidden-files=true
 thumbnail-limit=uint64 104857600
 
 [caja/window-state]
-geometry='976x687+43+106'
+geometry='972x761+227+155'
 maximized=false
 sidebar-width=184
-start-with-location-bar=false
+start-with-location-bar=true
 start-with-sidebar=false
 start-with-status-bar=false
 start-with-toolbar=false
@@ -72,11 +77,11 @@ exec='pidgin'
 exec='mate-terminal'
 
 [desktop/background]
-color-shading-type='solid'
-picture-filename=''
-picture-options='wallpaper'
-primary-color='rgb(133,121,176)'
-secondary-color='rgb(58,87,41)'
+color-shading-type='vertical-gradient'
+picture-filename='/home/apolonio/Pictures/papelocal/dieselpunk3003764368.jpg'
+picture-options='zoom'
+primary-color='rgb(37,140,6)'
+secondary-color='rgb(37,140,6)'
 show-desktop-icons=true
 
 [desktop/file-views]
@@ -92,7 +97,7 @@ buttons-have-icons=true
 cursor-blink-time=1367
 document-font-name='Source Sans Pro 10'
 font-name='ChicagoFLF Medium 8'
-gtk-color-scheme='menu_bg: #ffffff'
+gtk-color-scheme='link_color:#08c'
 gtk-decoration-layout='close,minimize,maximize:menu'
 gtk-shell-shows-app-menu=true
 gtk-shell-shows-menubar=true
@@ -116,22 +121,22 @@ duplicate-leds=false
 group-per-window=false
 
 [desktop/peripherals/keyboard/kbd]
-layouts=['us']
+layouts=['us', 'br']
 options=['terminate\tterminate:ctrl_alt_bksp', 'grp\tgrp:win_space_toggle', 'grp_led\tgrp_led:scroll']
 
 [desktop/peripherals/keyboard/preview]
 height=810
-width=1440
-x=240
+width=1427
+x=0
 y=145
 
 [desktop/peripherals/mouse]
-cursor-size=16
-cursor-theme='whiteglass'
+cursor-size=24
+cursor-theme='mate-black'
 
 [desktop/session]
 idle-delay=120
-session-start=1768879274
+session-start=1770340035
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -227,32 +232,34 @@ height=266
 icon-size=16
 
 [notification-daemon]
-theme='nodoka'
+popup-location='bottom_right'
+theme='standard'
 
 [panel/general]
 default-layout='fedora'
 enable-program-list=false
-history-mate-run=['virt-manager', 'dconf-editor', 'gzdoom', 'xfce4-settings-manager', 'notes/', 'winetricks']
+history-mate-run=['dconf-editor', 'virt-manager', 'gzdoom', 'xfce4-settings-manager', 'notes/', 'winetricks']
 object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-2', 'object-3', 'object-8', 'object-23']
 show-program-list=true
 toplevel-id-list=['top']
 
 [panel/menubar]
-icon-name='mc'
+icon-name='porthole'
 icon-size='16px'
+item-icon-size='22px'
 show-applications=true
 show-desktop=true
 
 [panel/objects/clock]
 applet-iid='ClockAppletFactory::ClockApplet'
-locked=false
+locked=true
 object-type='applet'
-panel-right-stick=true
-position=85
+panel-right-stick=false
+position=1372
 toplevel-id='top'
 
 [panel/objects/clock/prefs]
-expand-locations=false
+expand-locations=true
 format='12-hour'
 show-date=false
 show-seconds=false
@@ -261,7 +268,7 @@ show-weather=false
 speed-unit='km/h'
 
 [panel/objects/notification-area/prefs]
-min-icon-size=24
+min-icon-size=16
 
 [panel/objects/object-0]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
@@ -358,9 +365,10 @@ position=205
 toplevel-id='top'
 
 [panel/objects/object-2]
+locked=true
 object-type='separator'
-panel-right-stick=true
-position=26
+panel-right-stick=false
+position=1362
 toplevel-id='top'
 
 [panel/objects/object-20]
@@ -411,10 +419,25 @@ panel-right-stick=false
 position=260
 toplevel-id='top'
 
+[panel/objects/object-27]
+applet-iid='AppmenuAppletFactory::AppmenuApplet'
+object-type='applet'
+panel-right-stick=false
+position=328
+toplevel-id='top'
+
+[panel/objects/object-28]
+applet-iid='AppmenuAppletFactory::AppmenuApplet'
+object-type='applet'
+panel-right-stick=false
+position=528
+toplevel-id='top'
+
 [panel/objects/object-3]
+locked=true
 object-type='separator'
-panel-right-stick=true
-position=95
+panel-right-stick=false
+position=1414
 toplevel-id='top'
 
 [panel/objects/object-4]
@@ -443,8 +466,8 @@ speed=0.29999999999999999
 [panel/objects/object-8]
 applet-iid='NotificationAreaAppletFactory::NotificationArea'
 object-type='applet'
-panel-right-stick=true
-position=121
+panel-right-stick=false
+position=1287
 toplevel-id='top'
 
 [panel/objects/object-8/prefs]
@@ -510,7 +533,7 @@ side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
 size=(1000, 784)
-state=0
+state=128
 statusbar-visible=false
 tabs-size=uint32 4
 toolbar-visible=false
@@ -519,7 +542,7 @@ use-default-font=true
 [pluma/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/apolonio'
+virtual-root='file:///home/apolonio/.icons/NineIcons48x/Iconfactory'
 
 [power-manager]
 button-lid-ac='suspend'
@@ -537,7 +560,7 @@ lock-enabled=false
 mode='single'
 picture-filename='/usr/share/backgrounds/mate/desktop/Stripes.png'
 power-management-delay=1200
-themes=['screensavers-fireworkx']
+themes=['screensavers-flurry']
 
 [screenshot]
 border-effect='none'
@@ -547,7 +570,7 @@ include-pointer=true
 last-save-directory='file:///home/apolonio/Pictures'
 
 [search-tool]
-default-window-height=416
+default-window-height=421
 default-window-maximized=false
 default-window-width=554
 look-in-folder='/home/apolonio'
@@ -555,6 +578,9 @@ search-history={'gsearchtool-file-entry': ['wall']}
 
 [search-tool/select]
 contains-the-text=true
+
+[settings-daemon/plugins/media-keys]
+screensaver='<Shift><Mod4>l'
 
 [settings-daemon/plugins/xrandr]
 show-notification-icon=false
@@ -595,14 +621,18 @@ background-darkness=0.98320895522388063
 background-image='/home/apolonio/Pictures/papes/1749285894733177.jpg'
 background-type='transparent'
 bold-color-same-as-fg=true
+cursor-blink-mode='system'
+cursor-shape='block'
 default-size-columns=90
-default-size-rows=48
+default-size-rows=40
 font='Monospace 10'
 foreground-color='#FFFFFFFFFFFF'
-palette='#000000000000:#CCCC00000000:#4E4D9A9A0605:#C4C3A0A00000:#34346564A4A3:#7575504F7B7B:#060598979A9A:#D3D3D7D6CFCF:#555457565352:#EFEF29282928:#8A89E2E23434:#FCFBE9E84F4F:#72729F9ECFCF:#ADAC7F7EA8A8:#3434E2E2E2E2:#EEEDEEEDECEB'
+palette='#000000000000:#AAAA00000000:#0000AAAA0000:#AAAA55540000:#00000000AAAA:#AAAA0000AAAA:#0000AAAAAAAA:#AAAAAAAAAAAA:#555455545554:#FFFF55545554:#5554FFFF5554:#FFFFFFFF5554:#55545554FFFF:#FFFF5554FFFF:#5554FFFFFFFF:#FFFFFFFFFFFF'
 scroll-on-output=false
+scrollback-lines=2048
 scrollback-unlimited=false
 scrollbar-position='right'
+silent-bell=false
 title='Bash'
 title-mode='ignore'
 use-custom-default-size=true
