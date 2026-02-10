@@ -8,7 +8,7 @@ export PATH=$PATH:$HOME/.cargo/bin/:$HOME/go/bin/
 export WAYFIRE_CONFIG_FILE=$HOME/.config/wayfire/wayfire.ini
 
 # Aliases
-alias l="ls -XA --group-directories-first --file-type -w 128"
+alias l="ls -XA --group-directories-first --file-type -w 92"
 alias weather="curl wttr.in/?t1"
 alias cage="cage -s"
 alias edit="helix"
