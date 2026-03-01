@@ -1,4 +1,4 @@
-theme = "carbon"
+theme = "dark_plus"
 
 [editor]
 line-number = "relative"

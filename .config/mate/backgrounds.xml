@@ -40,11 +40,20 @@
   <wallpaper deleted="false">
     <name>Fresh Flower</name>
     <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
-    <options>wallpaper</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
+    <options>centered</options>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(198,70,0)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Jens Ansorg</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>1770619362520142.jpg</name>
+    <filename>/home/apolonio/Pictures/papelocal/1770619362520142.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Dune</name>
@@ -54,15 +63,6 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Marco Cogoni, Hylke Bons</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
-    <name>1770619362520142.jpg</name>
-    <filename>/home/apolonio/Pictures/papelocal/1770619362520142.jpg</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist/>
   </wallpaper>
   <wallpaper deleted="false">
     <name>tileblue1.JPG</name>
@@ -83,15 +83,6 @@
     <artist>Jean-Fran&#xE7;ois Fortin Tam</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Green Meadow</name>
-    <filename>/usr/share/backgrounds/mate/nature/GreenMeadow.jpg</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist>Timothy Schellhase, Lapo Calamandrei</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>Green Traditional</name>
     <filename>/usr/share/backgrounds/mate/desktop/GreenTraditional.jpg</filename>
     <options>zoom</options>
@@ -99,6 +90,15 @@
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>l0r4n0n</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Green Meadow</name>
+    <filename>/usr/share/backgrounds/mate/nature/GreenMeadow.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>Timothy Schellhase, Lapo Calamandrei</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>jupiter.jpg</name>
@@ -110,17 +110,17 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>galaxy-ngc3370.jpg</name>
-    <filename>/usr/share/backgrounds/cosmos/galaxy-ngc3370.jpg</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
+    <name>1765996780772416.jpg</name>
+    <filename>/home/apolonio/Pictures/papelocal/1765996780772416.jpg</filename>
+    <options>scaled</options>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>comet.jpg</name>
-    <filename>/usr/share/backgrounds/cosmos/comet.jpg</filename>
+    <name>galaxy-ngc3370.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/galaxy-ngc3370.jpg</filename>
     <options>zoom</options>
     <shade_type>vertical-gradient</shade_type>
     <pcolor>rgb(37,140,6)</pcolor>
@@ -137,6 +137,15 @@
     <artist>Charles Barbin</artist>
   </wallpaper>
   <wallpaper deleted="false">
+    <name>comet.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/comet.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
     <name>industry.png</name>
     <filename>/home/apolonio/Pictures/papes/industry.png</filename>
     <options>centered</options>
@@ -149,8 +158,8 @@
     <name>Gulp</name>
     <filename>/usr/share/backgrounds/mate/abstract/Gulp.png</filename>
     <options>stretched</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(98,127,90)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
     <scolor>rgb(39,88,126)</scolor>
     <artist>Daniel Galleguillos, Hylke Bons</artist>
   </wallpaper>
@@ -176,14 +185,14 @@
     <name>Silk</name>
     <filename>/usr/share/backgrounds/mate/abstract/Silk.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(39,88,126)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
     <scolor>rgb(98,127,90)</scolor>
     <artist>Patryk Zawadzki</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Sunset by the Pier.jpg</name>
-    <filename>/usr/share/backgrounds/Sunset by the Pier.jpg</filename>
+    <name>dieselpunk3003764368.jpg</name>
+    <filename>/home/apolonio/Pictures/papelocal/dieselpunk3003764368.jpg</filename>
     <options>zoom</options>
     <shade_type>vertical-gradient</shade_type>
     <pcolor>rgb(37,140,6)</pcolor>
@@ -209,13 +218,13 @@
     <artist>Charles Barbin</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>dieselpunk3003764368.jpg</name>
-    <filename>/home/apolonio/Pictures/papelocal/dieselpunk3003764368.jpg</filename>
+    <name>Sunset by the Pier.jpg</name>
+    <filename>/usr/share/backgrounds/Sunset by the Pier.jpg</filename>
     <options>zoom</options>
     <shade_type>vertical-gradient</shade_type>
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
-    <artist/>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Ubuntu MATE Radioactive</name>
@@ -235,7 +244,7 @@
     <scolor>rgb(37,140,6)</scolor>
     <artist>(none)</artist>
   </wallpaper>
-  <wallpaper deleted="false">
+  <wallpaper deleted="true">
     <name>Mr. Lee.jpg</name>
     <filename>/usr/share/backgrounds/Mr. Lee.jpg</filename>
     <options>zoom</options>
@@ -254,15 +263,6 @@
     <artist>Goce Mitevski</artist>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>whirlpool.jpg</name>
-    <filename>/usr/share/backgrounds/cosmos/whirlpool.jpg</filename>
-    <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(37,140,6)</pcolor>
-    <scolor>rgb(37,140,6)</scolor>
-    <artist>(none)</artist>
-  </wallpaper>
-  <wallpaper deleted="false">
     <name>Something slowly gets clear</name>
     <filename>/usr/share/backgrounds/mate/abstract/Elephants.jpg</filename>
     <options>zoom</options>
@@ -270,6 +270,15 @@
     <pcolor>rgb(114,159,207)</pcolor>
     <scolor>rgb(0,0,0)</scolor>
     <artist>Wyng Stancikaite</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>whirlpool.jpg</name>
+    <filename>/usr/share/backgrounds/cosmos/whirlpool.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>sombrero.jpg</name>
@@ -281,11 +290,20 @@
     <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
+    <name>1749493555441815.jpg</name>
+    <filename>/home/apolonio/Pictures/papelocal/1749493555441815.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(37,140,6)</pcolor>
+    <scolor>rgb(37,140,6)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
     <name>Arc</name>
     <filename>/usr/share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(153,193,241)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(229,165,10)</pcolor>
     <scolor>rgb(62,193,143)</scolor>
     <artist>(none)</artist>
   </wallpaper>
@@ -293,17 +311,17 @@
     <name>MATE Stripes Light</name>
     <filename>/usr/share/backgrounds/mate/desktop/MATE-Stripes-Light.png</filename>
     <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(63,77,40)</pcolor>
-    <scolor>rgb(106,148,38)</scolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
+    <scolor>rgb(133,121,176)</scolor>
     <artist>Adam Erdman</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Stripes</name>
     <filename>/usr/share/backgrounds/mate/desktop/Stripes.png</filename>
     <options>wallpaper</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(135,205,39)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(206,106,0)</pcolor>
     <scolor>rgb(58,87,41)</scolor>
     <artist>Jakub Steiner</artist>
   </wallpaper>
@@ -392,8 +410,8 @@
     <name>Spring</name>
     <filename>/usr/share/backgrounds/mate/abstract/Spring.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(38,162,105)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
     <scolor>rgb(46,194,126)</scolor>
     <artist>Patryk Zawadzki</artist>
   </wallpaper>
@@ -401,8 +419,8 @@
     <name>Flow</name>
     <filename>/usr/share/backgrounds/mate/abstract/Flow.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(39,88,126)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(229,165,10)</pcolor>
     <scolor>rgb(98,127,90)</scolor>
     <artist>Daniel Galleguillos, Hylke Bons</artist>
   </wallpaper>
@@ -464,10 +482,19 @@
     <name>Ubuntu MATE Dark</name>
     <filename>/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Dark-no-logo.png</filename>
     <options>zoom</options>
-    <shade_type>vertical-gradient</shade_type>
-    <pcolor>rgb(246,211,45)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(229,165,10)</pcolor>
     <scolor>rgb(37,140,6)</scolor>
     <artist>Goce Mitevski</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>1765973632706558.jpg</name>
+    <filename>/home/apolonio/Pictures/papelocal/1765973632706558.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(133,121,176)</pcolor>
+    <scolor>rgb(58,87,41)</scolor>
+    <artist>(none)</artist>
   </wallpaper>
   <wallpaper deleted="false">
     <name>Blinds</name>
