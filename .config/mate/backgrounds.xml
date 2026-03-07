@@ -823,7 +823,7 @@
   <wallpaper deleted="false">
     <name>collidedivert.jpg</name>
     <filename>/home/apolonio/Pictures/papes/collidedivert.jpg</filename>
-    <options>stretched</options>
+    <options>zoom</options>
     <shade_type>vertical-gradient</shade_type>
     <pcolor>rgb(37,140,6)</pcolor>
     <scolor>rgb(37,140,6)</scolor>

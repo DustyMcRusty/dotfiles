@@ -1,20 +1,21 @@
 [atril/default]
 show-sidebar=false
-window-ratio=(1.9705882352941178, 1.231060606060606)
+window-ratio=(1.9699074074074074, 1.2314814814814814)
 
 [caja/desktop]
 computer-icon-visible=true
-font='ChicagoFLF Regular 9'
+font='Carlito 11'
 home-icon-name='Home'
 home-icon-visible=true
-network-icon-name='net-share'
+network-icon-name='Net Folder'
 network-icon-visible=true
+trash-icon-name='Wastebasket'
 trash-icon-visible=true
 volumes-visible=true
 
 [caja/icon-view]
-default-use-tighter-layout=true
-default-zoom-level='small'
+default-use-tighter-layout=false
+default-zoom-level='standard'
 labels-beside-icons=false
 
 [caja/list-view]
@@ -28,18 +29,19 @@ background-color='#E0D656'
 background-set=false
 background-uri=''
 date-format='iso'
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 executable-text-activation='launch'
 show-hidden-files=true
 thumbnail-limit=uint64 104857600
 
 [caja/window-state]
-geometry='972x761+1069+75'
+geometry='960x1026+960+25'
 maximized=false
+side-pane-view='places'
 sidebar-width=184
-start-with-location-bar=false
-start-with-sidebar=false
-start-with-status-bar=false
+start-with-location-bar=true
+start-with-sidebar=true
+start-with-status-bar=true
 start-with-toolbar=false
 
 [desktop/accessibility/keyboard]
@@ -78,36 +80,41 @@ exec='pidgin'
 exec='mate-terminal'
 
 [desktop/background]
-color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/1765973632706558.jpg'
-picture-options='zoom'
-primary-color='rgb(133,121,176)'
-secondary-color='rgb(58,87,41)'
+color-shading-type='vertical-gradient'
+picture-filename='/usr/share/backgrounds/odin-dark.jpg'
+picture-options='scaled'
+primary-color='rgb(37,140,6)'
+secondary-color='rgb(37,140,6)'
 show-desktop-icons=true
 
 [desktop/file-views]
 icon-theme='NineIcons48x'
 
 [desktop/font-rendering]
-antialiasing='none'
-hinting='full'
+antialiasing='rgba'
+hinting='slight'
 rgba-order='rgb'
 
 [desktop/interface]
 buttons-have-icons=true
 cursor-blink-time=1367
 document-font-name='Source Sans Pro 10'
-enable-animations=true
-font-name='ChicagoFLF Medium 9'
+enable-animations=false
+font-name='Carlito 11'
 gtk-color-scheme='link_color:#08c'
-gtk-decoration-layout='close:maximize,minimize'
+gtk-decoration-layout='close,minimize,maximize:'
 gtk-shell-shows-app-menu=true
 gtk-shell-shows-menubar=true
-gtk-theme='Sys9-def'
-icon-theme='NineIcons48x'
+gtk-theme='Dracula'
+icon-theme='Mint-Y-Purple'
 menus-have-icons=true
 monospace-font-name='Adwaita Mono 9'
 window-scaling-factor=0
+
+[desktop/keybindings/custom0]
+action='mate-terminal'
+binding='<Mod4>Return'
+name='Run a terminal 2'
 
 [desktop/media-handling]
 autorun-x-content-ignore=@as []
@@ -134,13 +141,13 @@ y=145
 
 [desktop/peripherals/mouse]
 accel-profile='adaptive'
-cursor-size=32
-cursor-theme='retrosmart-xcursor-black'
+cursor-size=24
+cursor-theme='Dracula-cursors'
 locate-pointer=false
 
 [desktop/session]
 idle-delay=120
-session-start=1772341155
+session-start=1772858805
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -195,13 +202,13 @@ interpolate=false
 [marco/general]
 action-double-click-titlebar='toggle_shade'
 allow-tiling=true
-button-layout='close:maximize,minimize'
+button-layout='close,minimize,maximize:'
 compositing-manager=false
 mouse-button-modifier='<Super>'
 num-workspaces=4
 reduced-resources=false
-theme='Sys9-Tangerine'
-titlebar-font='ChicagoFLF Medium 9'
+theme='dracula-gtk-theme'
+titlebar-font='Cantarell Bold 10'
 
 [marco/global-keybindings]
 cycle-windows='<Mod4>Tab'
@@ -216,15 +223,22 @@ switch-windows='<Alt>Tab'
 
 [marco/window-keybindings]
 close='<Mod4>q'
+move-to-monitor-e='<Mod4>F1'
 move-to-monitor-w='<Mod4>F2'
+move-to-side-n='disabled'
 move-to-workspace-1='<Shift><Mod4>exclam'
 move-to-workspace-2='<Shift><Mod4>at'
 move-to-workspace-3='<Shift><Mod4>numbersign'
 move-to-workspace-4='<Shift><Mod4>dollar'
+tile-to-corner-ne='disabled'
+tile-to-corner-nw='disabled'
+tile-to-corner-se='disabled'
+tile-to-corner-sw='disabled'
+tile-to-side-e='<Mod4>l'
+tile-to-side-w='<Mod4>h'
 
 [mate-menu]
-applet-text='Run'
-border-width=1
+applet-text='SUSE'
 hide-applet-icon=false
 plugins-list=['places', 'system_management', 'newpane', 'applications']
 
@@ -252,31 +266,32 @@ theme='standard'
 [panel/general]
 default-layout='fedora'
 enable-program-list=false
-history-mate-run=['pluma', 'winecfg', 'dconf-editor', 'floorp', 'byobu', 'virt-manager', 'gzdoom', 'xfce4-settings-manager', 'notes/', 'winetricks']
-object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-2', 'object-3', 'object-8', 'object-23']
+history-mate-run=['dconf-editor', 'pluma', 'winecfg', 'floorp', 'byobu', 'virt-manager', 'gzdoom', 'xfce4-settings-manager', 'notes/', 'winetricks']
+object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-8', 'object-23']
 show-program-list=true
 toplevel-id-list=['top']
 
 [panel/menubar]
-icon-name='porthole'
-icon-size='16px'
-item-icon-size='22px'
+icon-name='applications-other'
+icon-size='22px'
+item-icon-size='32px'
 show-applications=true
 show-desktop=true
 
 [panel/objects/clock]
 applet-iid='ClockAppletFactory::ClockApplet'
-locked=false
+locked=true
 object-type='applet'
 panel-right-stick=true
-position=92
+position=147
 toplevel-id='top'
 
 [panel/objects/clock/prefs]
+cities=@as []
 expand-locations=true
-format='12-hour'
-show-date=false
-show-seconds=false
+format='24-hour'
+show-date=true
+show-seconds=true
 show-temperature=false
 show-weather=false
 speed-unit='km/h'
@@ -378,13 +393,6 @@ panel-right-stick=false
 position=205
 toplevel-id='top'
 
-[panel/objects/object-2]
-locked=false
-object-type='separator'
-panel-right-stick=true
-position=102
-toplevel-id='top'
-
 [panel/objects/object-20]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
 object-type='applet'
@@ -454,13 +462,6 @@ panel-right-stick=false
 position=230
 toplevel-id='top'
 
-[panel/objects/object-3]
-locked=false
-object-type='separator'
-panel-right-stick=true
-position=26
-toplevel-id='top'
-
 [panel/objects/object-4]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
 object-type='applet'
@@ -489,11 +490,11 @@ applet-iid='NotificationAreaAppletFactory::NotificationArea'
 locked=true
 object-type='applet'
 panel-right-stick=true
-position=161
+position=256
 toplevel-id='top'
 
 [panel/objects/object-8/prefs]
-min-icon-size=11
+min-icon-size=16
 
 [panel/objects/object-9]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
@@ -519,7 +520,7 @@ enable-buttons=false
 expand=true
 orientation='top'
 screen=0
-size=18
+size=25
 x=0
 x-centered=true
 x-right=-1
@@ -527,9 +528,9 @@ y=0
 y-bottom=-1
 
 [panel/toplevels/top/background]
-color='rgb(214,214,214)'
+color='rgb(40,42,54)'
 image='/home/apolonio/.themes/PanelAssets/toppanel.png'
-type='image'
+type='color'
 
 [panel/toplevels/toplevel-0]
 enable-arrows=true
@@ -547,7 +548,7 @@ color-scheme='classic'
 display-line-numbers=true
 display-overview-map=false
 display-right-margin=true
-editor-font='Courier 10'
+editor-font='Adwaita Mono 10'
 highlight-current-line=false
 print-header=false
 right-margin-position=uint32 80
@@ -564,7 +565,7 @@ use-default-font=false
 [pluma/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/apolonio/Games'
+virtual-root='file:///home/apolonio/.themes/Orange-X/emblems/96'
 
 [power-manager]
 button-lid-ac='suspend'
@@ -602,7 +603,9 @@ search-history={'gsearchtool-file-entry': ['wall']}
 contains-the-text=true
 
 [settings-daemon/plugins/media-keys]
-screensaver='<Shift><Mod4>l'
+logout='<Shift><Mod4>l'
+magnifier='disabled'
+screensaver='<Mod4>l'
 
 [settings-daemon/plugins/xrandr]
 show-notification-icon=false
@@ -638,11 +641,11 @@ sort-col=0
 sort-order=0
 
 [terminal/keybindings]
-toggle-menubar='F2'
+toggle-menubar='F12'
 
 [terminal/profiles/default]
 allow-bold=false
-background-color='#000000000000'
+background-color='#1E1E1F1F2929'
 background-darkness=1.0
 background-image='/home/apolonio/Pictures/papes/1749285894733177.jpg'
 background-type='solid'
@@ -653,9 +656,9 @@ cursor-shape='block'
 default-show-menubar=false
 default-size-columns=110
 default-size-rows=46
-font='Mx437 MBytePC230 8x16 12'
-foreground-color='#FFFFFFFFFFFF'
-palette='#000000000000:#CDCD00000000:#0000CDCD0000:#CDCDCDCD0000:#1E1D9090FFFF:#CDCD0000CDCD:#0000CDCDCDCD:#E5E4E5E4E5E4:#4C4B4C4B4C4B:#FFFF00000000:#0000FFFF0000:#FFFFFFFF0000:#46468282B4B3:#FFFF0000FFFF:#0000FFFFFFFF:#FFFFFFFFFFFF'
+font='Adwaita Mono 10'
+foreground-color='#DEDEDDDDDADA'
+palette='#24241F1F3131:#CCCC00000000:#4E4D9A9A0605:#C4C3A0A00000:#34346564A4A3:#7575504F7B7B:#060598979A9A:#D3D3D7D6CFCF:#555457565352:#EFEF29282928:#8A89E2E23434:#FCFBE9E84F4F:#72729F9ECFCF:#ADAC7F7EA8A8:#3434E2E2E2E2:#EEEDEEEDECEB'
 scroll-on-output=false
 scrollback-lines=6400
 scrollback-unlimited=false
