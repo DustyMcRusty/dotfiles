@@ -1,0 +1,96 @@
+{
+  "plugins": {
+    "LuaSnip": {
+      "rev": "a62e1083a3cfe8b6b206e7d3d33a51091df25357",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
+    "Oil": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "autoclose": {
+      "rev": "bafd0368716216fa6a7bb2a43ecd889b44efdb46",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
+    "blink.cmp": {
+      "rev": "61a1391399076ca37f06f63cca0a8fe22b267463",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
+    "blink.lib": {
+      "rev": "4b9a304a1d715c180c8a0d1db7b76a8c6868ed8f",
+      "src": "https://github.com/saghen/blink.lib"
+    },
+    "borland-colors": {
+      "rev": "f55137b8b3d6de24e35627ba01b2d6676aa41a2d",
+      "src": "https://github.com/letorbi/vim-colors-modern-borland"
+    },
+    "friendly-snippets": {
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+      "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "mason.nvim": {
+      "rev": "12ddd182d9efbdc848b540f16484a583d52da0fb",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini-git": {
+      "rev": "a007cc40a4585c4f54787ddcf07295c2689daeb4",
+      "src": "https://github.com/nvim-mini/mini-git"
+    },
+    "mini.align": {
+      "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
+      "src": "https://github.com/nvim-mini/mini.align"
+    },
+    "mini.comment": {
+      "rev": "8e5ff3ed3cc0e8f216617aae01020c00c20f7a87",
+      "src": "https://github.com/nvim-mini/mini.comment"
+    },
+    "mini.diff": {
+      "rev": "ab11575a6c147ecfba894d676d0c93e855021d34",
+      "src": "https://github.com/nvim-mini/mini.diff"
+    },
+    "mini.move": {
+      "rev": "74d140143b1bb905c3d0aebcfc2f216fd237080e",
+      "src": "https://github.com/nvim-mini/mini.move"
+    },
+    "mini.pick": {
+      "rev": "437d44eb57312f23e6b931704694fc294922cd88",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
+    "minialign": {
+      "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
+      "src": "https://github.com/nvim-mini/mini.align"
+    },
+    "minicomment": {
+      "rev": "8e5ff3ed3cc0e8f216617aae01020c00c20f7a87",
+      "src": "https://github.com/nvim-mini/mini.comment"
+    },
+    "minigit": {
+      "rev": "a007cc40a4585c4f54787ddcf07295c2689daeb4",
+      "src": "https://github.com/nvim-mini/mini-git"
+    },
+    "minimove": {
+      "rev": "74d140143b1bb905c3d0aebcfc2f216fd237080e",
+      "src": "https://github.com/nvim-mini/mini.move"
+    },
+    "minipick": {
+      "rev": "437d44eb57312f23e6b931704694fc294922cd88",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
+    "nvim-cmp": {
+      "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
+      "src": "https://github.com/hrsh7th/nvim-cmp"
+    },
+    "nvim-lspconfig": {
+      "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "oil": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    }
+  }
+}
