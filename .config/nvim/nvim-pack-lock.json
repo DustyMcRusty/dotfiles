@@ -68,6 +68,10 @@
       "rev": "437d44eb57312f23e6b931704694fc294922cd88",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
+    "mini.tabline": {
+      "rev": "169af955ad2ed0ffcc3d2c83e850bcc7eaac2f0e",
+      "src": "https://github.com/nvim-mini/mini.tabline"
+    },
     "minialign": {
       "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
       "src": "https://github.com/nvim-mini/mini.align"

@@ -1,3 +1,7 @@
 [font]
 	normal = { family = "Inconsolata LGC Nerd Font Mono", style = "Regular" }
 	size = 14
+
+[colors.primary]
+	background = "#000000"
+	foreground = "#cc7711"

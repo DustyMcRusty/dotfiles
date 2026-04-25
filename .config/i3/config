@@ -17,7 +17,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu wmenu-run -N 000000 -S CC7711 -b
+set $menu wmenu-run -M cc7711 -m 000000 -N 000000 -n cc7711 -S CC7711 -s 000000 -b -p "Run"
 
 include /etc/sway/config-vars.d/*
 
@@ -28,6 +28,7 @@ include /etc/sway/config-vars.d/*
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
 output * bg ~/pape stretch
+output * subpixel none
 #
 # Example configuration:
 #

@@ -1,6 +1,5 @@
 -- Colorscheme
-	vim.cmd(":colorscheme borland")
-	vim.g.BorlandStyle = "modern"
+	vim.cmd(":colorscheme catppuccin")
 
 -- Options
 	vim.g.mapleader      = " "
@@ -45,6 +44,7 @@
 		{ src = 'https://github.com/nvim-mini/mini.diff'},
 		{ src = 'https://github.com/nvim-mini/mini.move'},
 		{ src = 'https://github.com/nvim-mini/mini.pick'},
+		{ src = 'https://github.com/nvim-mini/mini.tabline'},
 		{ src = 'https://github.com/rafamadriz/friendly-snippets' },
 		{ src = 'https://github.com/stevearc/oil.nvim'},
 	})
@@ -69,6 +69,7 @@
 	require("mason").setup()
 	require("mini.align").setup()
 	require("mini.diff").setup()
+	require("mini.tabline").setup()
 	require("mini.git").setup()
 	require("mini.move").setup()
 	require("mini.pick").setup()
