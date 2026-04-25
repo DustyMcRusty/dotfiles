@@ -1,4 +1,3 @@
-# per-machine stuff
 
 # Exports
 export PATH=$PATH:$HOME/.cargo/bin/:$HOME/go/bin/:$HOME/.local/share/applications/:$HOME/.local/bin/:$HOME/.local/share/bob/nvim-bin/
@@ -18,4 +17,5 @@ run() {
   done
 }
 
+# per-machine stuff
 source ~/.machine_rc

@@ -12,6 +12,10 @@
       "rev": "bafd0368716216fa6a7bb2a43ecd889b44efdb46",
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
+    "autoclose.nvim": {
+      "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
     "blink.cmp": {
       "rev": "61a1391399076ca37f06f63cca0a8fe22b267463",
       "src": "https://github.com/saghen/blink.cmp"
@@ -24,9 +28,17 @@
       "rev": "f55137b8b3d6de24e35627ba01b2d6676aa41a2d",
       "src": "https://github.com/letorbi/vim-colors-modern-borland"
     },
+    "colorizer": {
+      "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
+      "src": "https://github.com/norcalli/nvim-colorizer.lua"
+    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "gruvbox-baby": {
+      "rev": "bd52e62d8134647090108189e69c8b3cd18bdbbf",
+      "src": "https://github.com/luisiacc/gruvbox-baby"
     },
     "mason.nvim": {
       "rev": "12ddd182d9efbdc848b540f16484a583d52da0fb",
@@ -76,13 +88,25 @@
       "rev": "437d44eb57312f23e6b931704694fc294922cd88",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
+    "multicursor.nvim": {
+      "rev": "0c6ceae228bf209e8b8717df9de500770c4e7022",
+      "src": "https://github.com/jake-stewart/multicursor.nvim"
+    },
     "nvim-cmp": {
       "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
       "src": "https://github.com/hrsh7th/nvim-cmp"
     },
+    "nvim-dap": {
+      "rev": "881f7dc17c0b4204a1d844732f95539575350e5b",
+      "src": "https://github.com/mfussenegger/nvim-dap"
+    },
     "nvim-lspconfig": {
       "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-tree.lua": {
+      "rev": "fefa335f1c8f690eb668a1efd18ee4fc6d64cd3e",
+      "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "oil": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
@@ -91,6 +115,18 @@
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "render-markdown.nvim": {
+      "rev": "e76eb2e4262f0f0a1a7bd7a454dd7d44f1299afd",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "transparent.nvim": {
+      "rev": "8ac59883de84e9cd1850ea25cf087031c5ba7d54",
+      "src": "https://github.com/xiyaowong/transparent.nvim"
+    },
+    "vim-colors-modern-borland": {
+      "rev": "f55137b8b3d6de24e35627ba01b2d6676aa41a2d",
+      "src": "https://github.com/letorbi/vim-colors-modern-borland"
     }
   }
 }
