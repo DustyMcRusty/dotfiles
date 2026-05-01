@@ -1,0 +1,18 @@
+#!/bin/sh
+
+result_file="$HOME/.local/share/wmenu-calc/last_result"
+
+set_result() { echo "$1" > $result_file; }
+
+main() {
+    wmenu_cmd="wmenu -M cc7711 -m 000000 -N 000000 -n cc7711 -S CC7711 -s 000000 -b -p"
+
+    while
+        input=$( tac $result_file | ${wmenu_cmd} "bc: " "$@" )
+    do
+	equation=$( echo "$input" | bc -l )
+	set_result "$equation"
+    done
+}
+
+main "$@"

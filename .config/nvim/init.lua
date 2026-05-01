@@ -7,7 +7,6 @@
 	vim.o.number         = true
 	vim.o.relativenumber = true
 	vim.o.smartindent    = true
-	vim.o.wrap           = false
 
 -- Keybinds
 	vim.api.nvim_set_keymap('n', '<Leader>q', ':bdelete<CR>', { noremap = true, silent = true })
@@ -18,7 +17,7 @@
 	vim.api.nvim_set_keymap('n', '<Leader>fb', ':Pick buffers<CR>', { noremap = true, silent = true })
 	vim.api.nvim_set_keymap('n', '<Leader>ff', ':Pick files<CR>', { noremap = true, silent = true })
 	vim.api.nvim_set_keymap('n', '<Leader>fh', ':Pick help<CR>', { noremap = true, silent = true })
-	vim.api.nvim_set_keymap('n', '<Leader>t', '<C-w>s<C-w>j:term<CR>', { noremap = true, silent = true  })
+	vim.api.nvim_set_keymap('n', '<Leader>t', ':term<CR>', { noremap = true, silent = true  })
 
 	vim.api.nvim_set_keymap('i', '<M-h>', '<left>', {noremap = true})
 	vim.api.nvim_set_keymap('i', '<M-j>', '<down>', {noremap = true})
@@ -32,7 +31,7 @@
 
 -- Plugin Declarations
 	vim.pack.add({
-		{ src = 'https://github.com/L3MON4D3/LuaSnip' },
+		{ src = 'https://github.com/L3MON4D3/LuaSnip'},
 		{ src = 'https://github.com/saghen/blink.cmp' },
 		{ src = 'https://github.com/saghen/blink.lib' },
 		{ src = 'https://github.com/m4xshen/autoclose.nvim', name = 'autoclose' },
