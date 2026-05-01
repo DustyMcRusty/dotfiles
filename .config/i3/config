@@ -222,14 +222,7 @@ bindsym $mod+r mode "resize"
 # Customizations
 #
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #cc7711 #000000ff #cc7711 #ffcc00   #cc7711
-client.focused_inactive #995500 #000000ff #888888 #484e50   #995500
-client.unfocused        #333333 #000000ff #888888 #292d2e   #222222
-client.urgent           #2f343a #900000ff #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0cff #ffffff #000000   #0c0c0c
-
-client.background       #ffffff
+include colorschemes/catppuccin_mocha
 
 bar {
     position bottom
@@ -238,10 +231,10 @@ bar {
     font monospace 8
 
     colors {
-        statusline #cc7711
-        background #000000
-        inactive_workspace #000000 #000000 #cc7711
-        focused_workspace #cc7711 #cc7711 #000000
+        statusline $cl_high
+        background $cl_back
+        inactive_workspace $cl_back $cl_back $cl_high
+        focused_workspace $cl_high $cl_high $cl_back
     }
 }
 
@@ -249,3 +242,4 @@ font monospace 8
 default_border normal 1
 titlebar_border_thickness 1
 titlebar_padding 5 4
+gaps inner 5

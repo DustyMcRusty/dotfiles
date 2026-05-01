@@ -1,6 +1,7 @@
 -- Colorscheme
 	vim.cmd(":colorscheme catppuccin")
 
+	
 -- Options
 	vim.g.mapleader      = " "
 	vim.o.colorcolumn    = "90"
@@ -59,7 +60,7 @@
 	require("blink.cmp").setup({
 		keymap = { preset = 'default' },
 		sources = {
-			default = { 'lsp', 'path', 'snippets', 'buffer' },
+			default = { 'lsp', 'path', 'snippets', 'buffer', 'path' },
 		},
 	})
 	require("luasnip.loaders.from_vscode").lazy_load()
