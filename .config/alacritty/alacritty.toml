@@ -3,5 +3,5 @@
 	size = 14
 
 [colors.primary]
-	background = "#000000"
-	foreground = "#cc7711"
+	background = "#1e1e2e"
+	foreground = "#b4befe"
