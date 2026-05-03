@@ -17,7 +17,6 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu wmenu-run -M cc7711 -m 000000 -N 000000 -n cc7711 -S CC7711 -s 000000 -b -p "Run" -f "monospace 10.7"
 set $calc wmenu-bc
 
 include /etc/sway/config-vars.d/*
