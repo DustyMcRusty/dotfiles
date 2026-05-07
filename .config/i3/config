@@ -224,20 +224,21 @@ bindsym $mod+r mode "resize"
 include colorschemes/catppuccin_mocha
 
 bar {
-    position bottom
+	position bottom
 
-    status_command i3status
-    font monospace 8
+	swaybar_command waybar
+	status_command i3status
+	font "InconsolataLGC Nerd Font Mono" 9
 
-    colors {
-        statusline $cl_high
-        background $cl_back
-        inactive_workspace $cl_back $cl_back $cl_high
-        focused_workspace $cl_high $cl_high $cl_back
-    }
+	colors {
+	statusline $cl_high
+	background $cl_back
+	inactive_workspace $cl_back $cl_back $cl_high
+	focused_workspace $cl_high $cl_high $cl_back
+	}
 }
 
-font monospace 8
+font "InconsolataLGC Nerd Font Mono" 9
 default_border normal 0
 titlebar_border_thickness 0
 titlebar_padding 5 4
