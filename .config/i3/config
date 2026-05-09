@@ -239,7 +239,7 @@ bar {
 }
 
 font "InconsolataLGC Nerd Font Mono" 9
-default_border normal 0
+default_border normal 2
 titlebar_border_thickness 0
 titlebar_padding 5 4
 gaps inner 5

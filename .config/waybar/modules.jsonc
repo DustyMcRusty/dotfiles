@@ -74,11 +74,11 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}",
-        "format-bluetooth": "{icon}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-right": "hyprctl dispatch exec 'pavucontrol -t 4'",
-        "tooltip-format": "{volume}%",
+        "tooltip-format": "{desc}",
         "format-muted": "<span size='12pt'>󰝟</span>",
         "scroll-step": 2,
         "format-icons": {
@@ -175,9 +175,9 @@
     },
 
     "mpris": {
-        "format": "{artist} - {title}",
+        "format": "> {artist} - {title}",
         "tooltip-format" : "{album}",
-        "format-paused": " {artist} - {title}",
+        "format-paused": "|| {artist} - {title}",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl previous",
         "on-scroll-down": "playerctl next",

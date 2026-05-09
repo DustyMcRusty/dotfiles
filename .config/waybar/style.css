@@ -60,13 +60,15 @@
     margin: 0 3px;
 } 
 
-#right, 
-#left,
-#right-hidden-top, 
-#left-hidden-top {
-    padding: 2px 10px;
-    border-radius: 15px;
-    background: @module-bg;
+#mpris,
+#right-main, 
+#left-main,
+#right-ctl, 
+#left-workspaces {
+	margin: 0 3px;
+	padding: 2px 10px;
+	border-radius: 15px;
+	background: @module-bg;
 }
 
 #right-hidden-top,

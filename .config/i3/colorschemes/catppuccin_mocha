@@ -1,12 +1,12 @@
-set $cl_high #b4befe
+set $cl_high #fab387
 set $cl_indi #9399b2
 set $cl_back #1e1e2e
 set $cl_fore #cdd6f4
 set $cl_urge #f38ba8
-set $menu wmenu-run -M b4befe -m 1e1e2e -N 1e1e2e -n b4befe -S b4befe -s 1e1e2e -b -p "Run"
+set $menu wmenu-run -M fab387 -m 1e1e2e -N 1e1e2e -n fab387 -S fab387 -s 1e1e2e -b -p "Run"
 
 # Colors                border   bg       text     indi     childborder
-client.focused          $cl_high $cl_high $cl_back $cl_indi $cl_high
+client.focused          $cl_back $cl_high $cl_back $cl_indi $cl_back
 client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge

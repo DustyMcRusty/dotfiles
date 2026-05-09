@@ -5,7 +5,7 @@ result_file="$HOME/.local/share/wmenu-calc/last_result"
 set_result() { echo "$1" > $result_file; }
 
 main() {
-    wmenu_cmd="wmenu -M b4befe -m 1e1e2e -N 1e1e2e -n b4befe -S b4befe -s 1e1e2e -b -p"
+    wmenu_cmd="wmenu -M fab387 -m 1e1e2e -N 1e1e2e -n fab387 -S fab387 -s 1e1e2e -b -p"
 
     while
         input=$( tac $result_file | ${wmenu_cmd} "bc: " "$@" )

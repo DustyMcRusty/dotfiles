@@ -1,7 +1,8 @@
 alacritty
-hx
+nvim (> 0.12)
 htop
 mc
 tmux
 sway
-i3status
+waybar
+playerctl

@@ -3,7 +3,7 @@
 @define-color module-bg     #1e1e2e;
 @define-color tooltip-bg    @module-bg;
 @define-color inactive      #6c7086;
-@define-color fg            #cdd6fa;
+@define-color fg            #fab387;
 @define-color workspace-fg  @fg;
 
 @define-color red           #f38ba8;

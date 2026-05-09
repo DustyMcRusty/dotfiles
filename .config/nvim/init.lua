@@ -46,6 +46,7 @@
 		{ src = 'https://github.com/nvim-mini/mini.tabline'},
 		{ src = 'https://github.com/rafamadriz/friendly-snippets' },
 		{ src = 'https://github.com/stevearc/oil.nvim'},
+		{ src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim'},
 	})
 
 -- Plugin Configs
@@ -72,3 +73,4 @@
 	require("mini.git").setup()
 	require("mini.move").setup()
 	require("mini.pick").setup()
+	require("render-markdown").setup()
