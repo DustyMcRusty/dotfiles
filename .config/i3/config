@@ -221,6 +221,11 @@ bindsym $mod+r mode "resize"
 # Customizations
 #
 
+input type:keyboard {
+		xkb_layout us,br
+		xkb_options grp:rctrl_toggle
+	}
+
 include colorschemes/catppuccin_mocha
 
 bar {

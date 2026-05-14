@@ -28,6 +28,10 @@
       "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
       "src": "https://github.com/norcalli/nvim-colorizer.lua"
     },
+    "csvview.nvim": {
+      "rev": "5c22774c3ecc7f8883af5d143b366e45b1f0875d",
+      "src": "https://github.com/hat0uma/csvview.nvim"
+    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
@@ -88,6 +92,10 @@
       "rev": "0c6ceae228bf209e8b8717df9de500770c4e7022",
       "src": "https://github.com/jake-stewart/multicursor.nvim"
     },
+    "nvim": {
+      "rev": "df1c6af5e1df601232a2c0fc7198ea1342e95f29",
+      "src": "https://github.com/neko-night/nvim"
+    },
     "nvim-cmp": {
       "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
       "src": "https://github.com/hrsh7th/nvim-cmp"
@@ -111,10 +119,6 @@
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
-    },
-    "render-markdown.nvim": {
-      "rev": "e76eb2e4262f0f0a1a7bd7a454dd7d44f1299afd",
-      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "transparent.nvim": {
       "rev": "8ac59883de84e9cd1850ea25cf087031c5ba7d54",
