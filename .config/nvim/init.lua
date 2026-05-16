@@ -14,6 +14,7 @@
 	vim.o.number         = true
 	vim.o.relativenumber = true
 	vim.o.smartindent    = true
+	vim.o.wrap			 = false
 
 -- Keybinds
 
@@ -25,24 +26,25 @@
 	vim.keymap.set('n', '<Leader>D',  vim.lsp.buf.type_definition, {noremap = true})
 	vim.keymap.set('n', '<Leader>ca', vim.lsp.buf.code_action,     {noremap = true})
 	vim.keymap.set('v', '<Leader>ca', vim.lsp.buf.code_action,     {noremap = true})
+	vim.keymap.set('n', '<Leader>ld', vim.diagnostic.open_float,   { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>le', ':lsp enable<CR>',           { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>ld', ':lsp disable<CR>',          { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>ls', ':lsp disable<CR>',          { noremap = true, silent = true })
 
-	-- Insert mode movement (vim philosophy? never heard of it.)
-	vim.keymap.set('i', '<M-h>', '<left>',  {noremap = true})
-	vim.keymap.set('i', '<M-j>', '<down>',  {noremap = true})
-	vim.keymap.set('i', '<M-k>', '<up>',    {noremap = true})
-	vim.keymap.set('i', '<M-l>', '<right>', {noremap = true})
-	vim.keymap.set('i', '<M-H>', '<Home>',  {noremap = true})
-	vim.keymap.set('i', '<M-J>', '<C-o>}',  {noremap = true})
-	vim.keymap.set('i', '<M-K>', '<C-o>{',  {noremap = true})
-	vim.keymap.set('i', '<M-L>', '<End>',   {noremap = true})
-	vim.keymap.set('i', '<M-w>', '<C-o>w',  {noremap = true})
-	vim.keymap.set('i', '<M-b>', '<C-o>b',  {noremap = true})
-	vim.keymap.set('i', '<M-e>', '<C-o>e',  {noremap = true})
-	vim.keymap.set('i', '<M-W>', '<C-o>W',  {noremap = true})
-	vim.keymap.set('i', '<M-B>', '<C-o>B',  {noremap = true})
-	vim.keymap.set('i', '<M-E>', '<C-o>E',  {noremap = true})
+	-- Insert mode movement (vim philosophy my ass)
+	vim.keymap.set('i', '<M-h>', '<left>',        {noremap = true})
+	vim.keymap.set('i', '<M-j>', '<down>',        {noremap = true})
+	vim.keymap.set('i', '<M-k>', '<up>',          {noremap = true})
+	vim.keymap.set('i', '<M-l>', '<right>',       {noremap = true})
+	vim.keymap.set('i', '<M-H>', '<C-o>_',        {noremap = true})
+	vim.keymap.set('i', '<M-J>', '<C-o>}',        {noremap = true})
+	vim.keymap.set('i', '<M-K>', '<C-o>{',        {noremap = true})
+	vim.keymap.set('i', '<M-L>', '<End>',         {noremap = true})
+	vim.keymap.set('i', '<M-w>', '<C-o>w',        {noremap = true})
+	vim.keymap.set('i', '<M-b>', '<C-o>b',        {noremap = true})
+	vim.keymap.set('i', '<M-e>', '<C-o>e<right>', {noremap = true})
+	vim.keymap.set('i', '<M-W>', '<C-o>W',        {noremap = true})
+	vim.keymap.set('i', '<M-B>', '<C-o>B',        {noremap = true})
+	vim.keymap.set('i', '<M-E>', '<C-o>E<right>', {noremap = true})
 
 	vim.keymap.set('c', '<M-h>', '<left>',  {noremap = true})
 	vim.keymap.set('c', '<M-j>', '<down>',  {noremap = true})
@@ -62,11 +64,11 @@
 	vim.keymap.set('n', '<Leader>n',   ':bnext<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>p',   ':bprevious<CR>',       { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>q',   ':bdelete<CR>',         { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>w',   ':write<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>r',   ':source $MYVIMRC<CR>', { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>t',   ':term<CR>',            { noremap = true, silent = true  })
-	vim.keymap.set('v', '<',           '<gv',                  {noremap = true})
-	vim.keymap.set('v', '>',           '>gv',                  {noremap = true})
-
+	vim.keymap.set('n', '<Leader>t',   ':term<CR>',            { noremap = true, silent = true })
+	vim.keymap.set('v', '<',           '<gv',                  { noremap = true})
+	vim.keymap.set('v', '>',           '>gv',                  { noremap = true})
 
 -- Plugin Declarations
 	vim.pack.add({
@@ -100,7 +102,7 @@
 	require("blink.cmp").setup({
 		keymap = { preset = 'default' },
 		sources = {
-			default = { 'lsp', 'path', 'snippets', 'buffer', 'path' },
+			default = { 'path', 'snippets'},
 		},
 	})
 	require("autoclose").setup()
@@ -113,3 +115,10 @@
 	require("mini.move").setup()
 	require("mini.pick").setup()
 	require("mini.tabline").setup()
+
+-- LSPs
+	vim.lsp.enable({
+		"cssls",
+		"html",
+		"clangd",
+	})

@@ -1,1 +1,39 @@
-{ "include": [ "~/.config/waybar/layouts/general.jsonc" ] }
+{
+    "layer": "top",
+    "position": "top",
+    "width": 1280,
+    "height": 25,
+    "margin": "1",
+
+    "group/left-workspaces" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "sway/workspaces", "sway/window"
+//            "niri/workspaces", "niri/window"
+        ]
+    },
+
+    "group/left-main" : {
+        "orientation": "horizontal",
+        "modules" : [ "custom/start", "battery", "cpu", "load"
+ ]
+    },
+
+    "group/right-ctl" : {
+        "orientation": "horizontal",
+        "modules" : [
+           "group/group-volume", "group/group-backlight", "network", "tray"
+        ]
+    },
+
+    "group/right-main" : {
+        "orientation": "horizontal",
+        "modules" : [ "memory", "temperature", "custom/ctlcenter" ]
+    },
+
+    "modules-left"   : ["group/left-main", "group/left-workspaces"],
+    "modules-center" : ["clock"],
+    "modules-right"  : ["mpris", "group/right-ctl",  "group/right-main"],
+
+    "include": [ "~/.config/waybar/modules.jsonc" ]
+}

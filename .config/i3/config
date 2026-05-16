@@ -228,6 +228,8 @@ input type:keyboard {
 
 include colorschemes/catppuccin_mocha
 
+exec blueman-applet &
+
 bar {
 	position bottom
 

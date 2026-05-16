@@ -1,10 +1,8 @@
 {
     "sway/workspaces": {
         "format": "{icon}",
-        "on-scroll-down": "hyprctl dispatch workspace e+1",
-        "on-scroll-up": "hyprctl dispatch workspace e-1",
         "persistent-workspaces": { "*": 5 },
-        "cursor" : true,
+        "cursor": true,
         "format-icons": {
             "active": "󰮯",
             "persistent": "",
@@ -14,7 +12,7 @@
 
     "niri/workspaces": {
         "format": "{icon}",
-        "cursor" : true,
+        "cursor": true,
         "on-scroll-up": "niri msg action focus-workspace-up",
         "on-scroll-down": "niri msg action focus-workspace-down",
         "format-icons": {
@@ -24,7 +22,7 @@
         }
     },
 
-    "sway/window" : {
+    "sway/window": {
         "max-length": 45
     },
 
@@ -38,7 +36,7 @@
         }
     },
 
-    "tray" : {
+    "tray": {
         "icon-size": 13,
         "spacing": 12,
         "cursor": true
@@ -67,17 +65,17 @@
     },
 
     "backlight": {
-        "scroll-step" : 2,
+        "scroll-step": 2,
         "format": "{icon}",
-        "tooltip-format" : "{percent}%",
-        "format-icons": [ "󰃞", "󰃝", "󰃟", "󰃠" ]
+        "tooltip-format": "{percent}%",
+        "format-icons": [ "󰃞", "󰃝", "󰃟", "󰃠"]
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "{icon} {volume}%",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "hyprctl dispatch exec 'pavucontrol -t 4'",
+        "on-click-right": "pavucontrol",
         "tooltip-format": "{desc}",
         "format-muted": "<span size='12pt'>󰝟</span>",
         "scroll-step": 2,
@@ -100,7 +98,7 @@
         "min": 0,
         "max": 100,
         "cursor": true,
-        "on-click-right": "hyprctl dispatch exec 'pavucontrol -t 4'"
+        "on-click-right": "pavucontrol"
     },
 
     "backlight/slider": {
@@ -121,8 +119,8 @@
         "menu-actions": {
   			"action-1": "nmcli radio wifi off",
   			"action-2": "nmcli radio wifi on",
-            "action-3": "hyprctl dispatch exec '[float] alacritty -e nmtui'",
-            "action-4": "hyprctl dispatch exec nm-connection-editor"
+            "action-3": "alacritty -e nmtui'",
+            "action-4": "nm-connection-editor"
   		}
     },
 
@@ -137,7 +135,7 @@
         "tooltip-format-enumerate-connected": "{device_alias}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}   {device_battery_percentage}%",
         "on-click": "~/.local/bin/toggle_bluetooth &",
-        "on-click-right": "hyprctl dispatch exec blueman-manager"
+        "on-click-right": "blueman-manager"
     },
 
     "battery": {
@@ -156,10 +154,10 @@
     },
 
     "clock": {
-        "timezone": "America/Argentina/Buenos_Aires",
+        "timezone": "America/Brazil/Sao_Paulo",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%H:%M %d %B %Y}",
-        "on-click-right": "hyprctl dispatch exec 'alacritty --class=peaclock -e peaclock'",
+        "on-click-right": "alacritty --class=peaclock -e peaclock",
         "calendar": {
             "mode": "year",
             "weeks-pos": "right",
@@ -176,7 +174,7 @@
 
     "mpris": {
         "format": "> {artist} - {title}",
-        "tooltip-format" : "{album}",
+        "tooltip-format": "{album}",
         "format-paused": "|| {artist} - {title}",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl previous",
@@ -199,32 +197,17 @@
         "on-click": "wmenu-run -M b4befe -m 1e1e2e -N 1e1e2e -n b4befe -S b4befe -s 1e1e2e -b -p \"Run\""
     },
 
-    "custom/ctlcenter" : {
-        "tooltip" : false,
-        "format" : "",
-        "on-click" : "swaync-client -t",
+    "custom/ctlcenter": {
+        "tooltip": false,
+        "format": "",
+        "on-click": "swaync-client -t",
         "menu": "on-click-right",
         "menu-file": "~/.config/waybar/context/ctlcenter.xml",
         "menu-actions": {
-            "action-1-1": "hyprctl dispatch exec '[float] alacritty -e htop'",
-            "action-1-2": "hyprctl dispatch exec '[float] alacritty -e nvtop'",
-            "action-1-3": "hyprctl dispatch exec '[float] alacritty -e pkexec powertop'",
-            "action-1-4": "hyprctl dispatch exec '[float] missioncenter'",
+            "action-1-1": "alacritty -e htop",
 
-            "action-2-1": "hyprctl dispatch exec nwg-look",
-            "action-2-2": "hyprctl dispatch exec qt6ct",
-            "action-2-3": "hyprctl dispatch exec kvantummanager",
-
-
-            "action-3-1": "hyprctl keyword monitor 'eDP-1,1920x1080@60, auto,1'",
-  			"action-3-2": "hyprctl keyword monitor 'eDP-1,1920x1080@90, auto,1'",
-  			"action-3-3": "hyprctl keyword monitor 'eDP-1,1920x1080@144,auto,1'",
-
-            "action-4-1": "~/.local/bin/caffeine shutdown",
-            "action-4-2": "~/.local/bin/caffeine handle-lid-switch",
-
-            "action-5": "~/.local/bin/powersafe",
-            "action-6": "hyprctl reload"
+            "action-2-1": "systemctl poweroff",
+            "action-2-2": "swaylock"
   		}
     },
 
@@ -246,7 +229,7 @@
             "transition-duration": 600,
             "transition-left-to-right": true
         },
-        "modules" : [
+        "modules": [
             "pulseaudio", "pulseaudio/slider"
         ]
     },
@@ -257,7 +240,7 @@
             "transition-duration": 600,
             "transition-left-to-right": true
         },
-        "modules" : [
+        "modules": [
             "backlight", "backlight/slider"
         ]
     }

@@ -48,6 +48,10 @@
       "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
       "src": "https://github.com/nvim-mini/mini.align"
     },
+    "mini.animate": {
+      "rev": "eee9056eecd12933dfb09b710b7f32c10200e9ea",
+      "src": "https://github.com/nvim-mini/mini.animate"
+    },
     "mini.comment": {
       "rev": "8e5ff3ed3cc0e8f216617aae01020c00c20f7a87",
       "src": "https://github.com/nvim-mini/mini.comment"
