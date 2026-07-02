@@ -1,0 +1,12 @@
+Prerequisitorys:
+Gimp
+A tool to screenshot with
+A top panel that is 19-20 rows high
+A bottom dock that is 33-34 rows high
+
+Step 1: Use XFCE
+Step 2: Set the background of the top panel to toppanel.png
+Step 3: Install gimp and screenshot your desktop
+Step 4: Open the screenshot of your desktop in gimp and crop the image to the exact size of the bottom pane.
+Step 5: Combine the endbit and middle in gimp, the endbit should be at the end and the middle should be stretched to the edge.
+Step 6: Set the bottom panel to the image you just made.

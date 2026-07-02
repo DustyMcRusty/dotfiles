@@ -1,0 +1,13 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 1280,
+    "height": 25,
+    "margin": "0",
+
+    "modules-left"   : ["sway/workspaces", "sway/mode"],
+    "modules-center" : ["sway/window"],
+    "modules-right"  : ["network", "pulseaudio", "cpu", "memory", "temperature", "battery", "clock", "tray"],
+
+    "include": [ "~/.config/waybar/modules.jsonc" ]
+}

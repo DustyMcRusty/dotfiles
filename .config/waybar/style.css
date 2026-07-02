@@ -1,0 +1,94 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: 'Terminess Nerd Font Mono';
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
+}
+
+#waybar {
+    /* font-weight: 700; */
+	/* font-smooth: none; */
+    background: @background;
+    font-size: 14px;
+    color: @foreground;
+}
+
+
+#battery, 
+#bluetooth, 
+#clock,
+#cpu,
+#load,
+#memory, 
+#mode,
+#mpris,
+#network,
+#pulseaudio,
+#temperature, 
+#tray,
+#window,
+#workspaces
+{
+    margin: 0;
+	margin-left: 1rem;
+	color: @foreground;
+} 
+
+#workspaces {
+	margin: 0;
+}
+ 
+#window {
+	padding: 0 1px;
+}
+
+window#waybar.empty #window{
+	background: transparent;
+}
+
+#mode {
+	background: @foreground;
+	color: @background;
+    margin: 0;
+}
+
+#workspaces button {
+    color: @foreground;
+	background: transparent;
+    padding: 0;
+    margin: 0;
+	transition: none;
+}
+
+#workspaces button:hover {
+	box-shadow: none;
+	border: none;
+	transition: none;
+}
+
+#workspaces button.visible {
+	background: @color1;
+	color: @foreground;
+	transition: none;
+}
+
+tooltip {
+    border-radius: 0;
+	border-width: 0;
+	box-shadow: 1em 1em 0 0 rgba(0, 0, 0, .5);
+    background: @foreground;
+	color: @background;
+}
+
+tooltip label {
+	border-width: 0;
+	color: @background;
+    background: @foreground;
+    border-radius: 0;
+    padding: 0;
+}
