@@ -68,7 +68,6 @@
 	vim.keymap.set('n', '<Leader>w',   ':write<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>r',   ':source $MYVIMRC<CR>', { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>t',   ':term<CR>',            { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>T',   ':TransparentToggle<CR>',            { noremap = true, silent = true })
 
 -- Plugin Declarations
 	vim.pack.add({
@@ -76,6 +75,9 @@
 		{ src = 'https://github.com/hat0uma/csvview.nvim' },
 		{ src = 'https://github.com/m4xshen/autoclose.nvim', name = 'autoclose' },
 		{ src = 'https://github.com/mason-org/mason.nvim' },
+		{ src = 'https://github.com/mluders/comfy-line-numbers.nvim' },
+		{ src = 'https://github.com/nvimdev/dashboard-nvim' },
+		{ src = 'https://github.com/folke/which-key.nvim' },
 		{ src = 'https://github.com/neovim/nvim-lspconfig' },
 		{ src = 'https://github.com/nvim-mini/mini-git'},
 		{ src = 'https://github.com/nvim-mini/mini.align'},
@@ -109,6 +111,8 @@
 	require("csvview").setup()
 	require("luasnip.loaders.from_vscode").lazy_load()
 	require("mason").setup()
+	require("comfy-line-numbers").setup()
+	require("dashboard").setup()
 	require("mini.align").setup()
 	require("mini.diff").setup()
 	require("mini.git").setup()

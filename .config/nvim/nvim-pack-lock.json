@@ -4,6 +4,10 @@
       "rev": "a62e1083a3cfe8b6b206e7d3d33a51091df25357",
       "src": "https://github.com/L3MON4D3/LuaSnip"
     },
+    "MiniDYM": {
+      "rev": "b571f45b350822624c6719ed1d77c196868eb6a8",
+      "src": "https://github.com/Penaz91/MiniDYM"
+    },
     "Oil": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
@@ -32,9 +36,17 @@
       "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
       "src": "https://github.com/norcalli/nvim-colorizer.lua"
     },
+    "comfy-line-numbers.nvim": {
+      "rev": "9adedbaf1f410cdaacf4fb2ca8eb44f3d5f6d010",
+      "src": "https://github.com/mluders/comfy-line-numbers.nvim"
+    },
     "csvview.nvim": {
       "rev": "5c22774c3ecc7f8883af5d143b366e45b1f0875d",
       "src": "https://github.com/hat0uma/csvview.nvim"
+    },
+    "dashboard-nvim": {
+      "rev": "f787e3462c2ee2b6117b17c1aa4ddf66cb6f57fe",
+      "src": "https://github.com/nvimdev/dashboard-nvim"
     },
     "esqueleto.nvim": {
       "rev": "d495d8aecf6d8cc87b8f9b82276cd88393ce014b",
@@ -139,6 +151,10 @@
     "vim-colors-modern-borland": {
       "rev": "f55137b8b3d6de24e35627ba01b2d6676aa41a2d",
       "src": "https://github.com/letorbi/vim-colors-modern-borland"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
     }
   }
 }
