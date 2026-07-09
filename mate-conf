@@ -1,15 +1,15 @@
 [atril/default]
 show-sidebar=false
-window-ratio=(1.9699074074074074, 1.2314814814814814)
+window-ratio=(0.75, 1.0)
 
 [caja/desktop]
 computer-icon-visible=true
-font='Helvetica 12 Medium 10'
+font='Helvetica 12 Bold Italic 10'
 home-icon-name='Home'
 home-icon-visible=true
-network-icon-name='Net Folder'
+network-icon-name='Share'
 network-icon-visible=true
-trash-icon-name='Garbage Bin'
+trash-icon-name='Wastebasket'
 trash-icon-visible=true
 volumes-visible=true
 
@@ -32,10 +32,11 @@ date-format='iso'
 default-folder-viewer='icon-view'
 executable-text-activation='launch'
 show-hidden-files=true
-thumbnail-limit=uint64 1073741824
+show-image-thumbnails='always'
+thumbnail-limit=uint64 104857600
 
 [caja/window-state]
-geometry='748x604+135+52'
+geometry='965x604+0+25'
 maximized=false
 side-pane-view='places'
 sidebar-width=184
@@ -46,9 +47,11 @@ start-with-toolbar=false
 
 [calc]
 base=10
-button-mode='programming'
+button-mode='financial'
 show-history=false
+source-currency='BRL'
 source-units='degree'
+target-currency='DZD'
 target-units='radian'
 
 [desktop/accessibility/keyboard]
@@ -88,8 +91,8 @@ exec='sakura'
 
 [desktop/background]
 color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papes/tileblue1.JPG'
-picture-options='wallpaper'
+picture-filename='/home/apolonio/Pictures/papelocal/1696737172719376.jpg'
+picture-options='scaled'
 primary-color='rgb(185,154,241)'
 secondary-color='rgb(37,140,6)'
 show-desktop-icons=true
@@ -108,7 +111,7 @@ cursor-blink-time=1367
 document-font-name='Courier 10'
 enable-animations=true
 font-name='ChicagoFLF Medium 9'
-gtk-decoration-layout='close,minimize,maximize:'
+gtk-decoration-layout='close:maximize,minimize'
 gtk-shell-shows-app-menu=true
 gtk-shell-shows-menubar=true
 gtk-theme='Sys9-def'
@@ -121,6 +124,11 @@ window-scaling-factor=0
 action='sakura -c 88 -r 42'
 binding='<Mod4>Return'
 name='Run a terminal 2'
+
+[desktop/keybindings/custom1]
+action='sakura -c 88 -r 42'
+binding='<Primary><Alt>t'
+name='Run a terminal'
 
 [desktop/media-handling]
 autorun-x-content-ignore=@as []
@@ -153,7 +161,7 @@ locate-pointer=false
 
 [desktop/session]
 idle-delay=120
-session-start=1782859198
+session-start=1783553927
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -162,7 +170,7 @@ windowmanager='marco-no-composite'
 [desktop/sound]
 event-sounds=true
 input-feedback-sounds=true
-theme-name='ocean'
+theme-name='freedesktop'
 volume-overamplifiable=false
 
 [desktop/thumbnailers]
@@ -207,19 +215,20 @@ interpolate=false
 
 [marco/general]
 action-double-click-titlebar='toggle_shade'
-allow-tiling=false
+allow-tiling=true
 button-layout='close:maximize,minimize'
 compositing-manager=false
 mouse-button-modifier='<Super>'
 num-workspaces=4
-reduced-resources=true
+reduced-resources=false
+show-tab-border=true
 theme='Sys9-def'
 titlebar-font='ChicagoFLF Medium 9'
 
 [marco/global-keybindings]
 cycle-windows='<Mod4>Tab'
 panel-run-dialog='<Mod4>r'
-run-command-terminal='<Primary><Alt>t'
+run-command-terminal='disabled'
 show-desktop='<Mod4>Escape'
 switch-to-workspace-1='<Mod4>1'
 switch-to-workspace-2='<Mod4>2'
@@ -272,14 +281,14 @@ theme='standard'
 [panel/general]
 default-layout='fedora'
 enable-program-list=false
-history-mate-run=['dconf-editor', 'rhinote', 'blueman-manager', 'pkill mate-tweak', 'pluma', 'winecfg', 'floorp', 'byobu', 'virt-manager', 'gzdoom']
-object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-8', 'object-3', 'object-2', 'object-23']
+history-mate-run=['xcompmgr', 'dconf-editor', 'qmmp', 'xfce4-panel', 'xsecurelock', 'pkill caja', 'rhinote', 'blueman-manager', 'pkill mate-tweak', 'pluma']
+object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-3', 'object-2']
 show-program-list=true
 toplevel-id-list=['top']
 
 [panel/menubar]
-icon-name='applications-other'
-icon-size='22px'
+icon-name='distributor-logo'
+icon-size='16px'
 item-icon-size='32px'
 show-applications=true
 show-desktop=true
@@ -289,16 +298,16 @@ applet-iid='ClockAppletFactory::ClockApplet'
 locked=true
 object-type='applet'
 panel-right-stick=false
-position=16
+position=0
 relative-to-edge='end'
 toplevel-id='top'
 
 [panel/objects/clock/prefs]
 cities=@as []
 custom-format=''
-expand-locations=false
+expand-locations=true
 format='12-hour'
-show-date=false
+show-date=true
 show-seconds=false
 show-temperature=false
 show-weather=false
@@ -404,7 +413,7 @@ toplevel-id='top'
 [panel/objects/object-2]
 locked=true
 object-type='separator'
-position=82
+position=16
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -427,13 +436,6 @@ applet-iid='AppmenuAppletFactory::AppmenuApplet'
 object-type='applet'
 panel-right-stick=false
 position=184
-toplevel-id='top'
-
-[panel/objects/object-23]
-locked=true
-object-type='separator'
-position=16
-relative-to-edge='end'
 toplevel-id='top'
 
 [panel/objects/object-24]
@@ -498,7 +500,7 @@ applet-iid='WnckletFactory::WindowMenuApplet'
 locked=true
 object-type='applet'
 panel-right-stick=false
-position=4
+position=0
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -506,18 +508,6 @@ toplevel-id='top'
 frames=8
 rotate=false
 speed=0.29999999999999999
-
-[panel/objects/object-8]
-applet-iid='NotificationAreaAppletFactory::NotificationArea'
-locked=false
-object-type='applet'
-panel-right-stick=false
-position=102
-relative-to-edge='end'
-toplevel-id='top'
-
-[panel/objects/object-8/prefs]
-min-icon-size=16
 
 [panel/objects/object-9]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
@@ -562,25 +552,26 @@ orientation='left'
 size=128
 
 [pluma]
-active-plugins=['sort', 'filebrowser', 'spell', 'time', 'modelines', 'docinfo']
+active-plugins=['filebrowser', 'docinfo', 'sort', 'externaltools', 'time', 'spell', 'modelines']
 auto-indent=true
 background-pattern='none'
+bottom-panel-active-page=767182702
 bottom-panel-size=140
 bracket-matching=true
-color-scheme='classic'
-display-line-numbers=true
+color-scheme='kate'
+display-line-numbers=false
 display-overview-map=false
 display-right-margin=true
-editor-font='Adwaita Mono 10'
+editor-font='Serif 10'
 highlight-current-line=false
 print-header=false
 right-margin-position=uint32 80
 side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
-size=(1000, 784)
+size=(735, 663)
 state=128
-statusbar-visible=false
+statusbar-visible=true
 tabs-size=uint32 4
 toolbar-visible=false
 use-default-font=false
@@ -588,7 +579,7 @@ use-default-font=false
 [pluma/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/apolonio/.themes/Orange-X/emblems/96'
+virtual-root='file:///home/apolonio/repos/random/box64'
 
 [power-manager]
 button-lid-ac='suspend'
