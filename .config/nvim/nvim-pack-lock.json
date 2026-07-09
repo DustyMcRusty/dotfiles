@@ -1,16 +1,8 @@
 {
   "plugins": {
     "LuaSnip": {
-      "rev": "a62e1083a3cfe8b6b206e7d3d33a51091df25357",
+      "rev": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24",
       "src": "https://github.com/L3MON4D3/LuaSnip"
-    },
-    "MiniDYM": {
-      "rev": "b571f45b350822624c6719ed1d77c196868eb6a8",
-      "src": "https://github.com/Penaz91/MiniDYM"
-    },
-    "Oil": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
-      "src": "https://github.com/stevearc/oil.nvim"
     },
     "any-jump.vim": {
       "rev": "f95674d9a4251ac02f452d5f1861e4422f4652c7",
@@ -20,25 +12,21 @@
       "rev": "bafd0368716216fa6a7bb2a43ecd889b44efdb46",
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
-    "autoclose.nvim": {
-      "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
-      "src": "https://github.com/m4xshen/autoclose.nvim"
-    },
     "blink.cmp": {
-      "rev": "61a1391399076ca37f06f63cca0a8fe22b267463",
+      "rev": "bda905a4bf1b3edfa708b0be193b8c63d8620c96",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.lib": {
-      "rev": "4b9a304a1d715c180c8a0d1db7b76a8c6868ed8f",
+      "rev": "5876dd95deeb70aadbe9f1c0b7117a135061cdac",
       "src": "https://github.com/saghen/blink.lib"
-    },
-    "colorizer": {
-      "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
-      "src": "https://github.com/norcalli/nvim-colorizer.lua"
     },
     "comfy-line-numbers.nvim": {
       "rev": "9adedbaf1f410cdaacf4fb2ca8eb44f3d5f6d010",
       "src": "https://github.com/mluders/comfy-line-numbers.nvim"
+    },
+    "convy.nvim": {
+      "rev": "7fb85ef4cbae330406f515698a51c678f23ff7a4",
+      "src": "https://github.com/necrom4/convy.nvim"
     },
     "csvview.nvim": {
       "rev": "5c22774c3ecc7f8883af5d143b366e45b1f0875d",
@@ -48,108 +36,56 @@
       "rev": "f787e3462c2ee2b6117b17c1aa4ddf66cb6f57fe",
       "src": "https://github.com/nvimdev/dashboard-nvim"
     },
-    "esqueleto.nvim": {
-      "rev": "d495d8aecf6d8cc87b8f9b82276cd88393ce014b",
-      "src": "https://github.com/cvigilv/esqueleto.nvim"
-    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "mason.nvim": {
-      "rev": "12ddd182d9efbdc848b540f16484a583d52da0fb",
+      "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini-git": {
-      "rev": "a007cc40a4585c4f54787ddcf07295c2689daeb4",
+      "rev": "96db7676696e53add56726e9e80f92dff9f63d17",
       "src": "https://github.com/nvim-mini/mini-git"
     },
     "mini.align": {
-      "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
+      "rev": "34014f8c9c0740904ed6760f9eee58f4ae00c131",
       "src": "https://github.com/nvim-mini/mini.align"
     },
-    "mini.animate": {
-      "rev": "eee9056eecd12933dfb09b710b7f32c10200e9ea",
-      "src": "https://github.com/nvim-mini/mini.animate"
-    },
-    "mini.comment": {
-      "rev": "8e5ff3ed3cc0e8f216617aae01020c00c20f7a87",
-      "src": "https://github.com/nvim-mini/mini.comment"
-    },
     "mini.diff": {
-      "rev": "ab11575a6c147ecfba894d676d0c93e855021d34",
+      "rev": "0743d26bd858ebe32efcf5c86a91a422a000f273",
       "src": "https://github.com/nvim-mini/mini.diff"
     },
     "mini.move": {
-      "rev": "74d140143b1bb905c3d0aebcfc2f216fd237080e",
+      "rev": "b9e452f9c83565a1520e14f7531632160f3b0170",
       "src": "https://github.com/nvim-mini/mini.move"
     },
     "mini.pick": {
-      "rev": "437d44eb57312f23e6b931704694fc294922cd88",
+      "rev": "8c1f75f8ddd8c9f75d07ed2ab5718d2c3cb65a66",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
     "mini.tabline": {
-      "rev": "169af955ad2ed0ffcc3d2c83e850bcc7eaac2f0e",
+      "rev": "7e8584a06b86902c64227e4abd0c39ae74061101",
       "src": "https://github.com/nvim-mini/mini.tabline"
     },
-    "minialign": {
-      "rev": "6f3c69cd57134ad8fbf1e85dcdc90cb37a8c75c8",
-      "src": "https://github.com/nvim-mini/mini.align"
-    },
-    "minicomment": {
-      "rev": "8e5ff3ed3cc0e8f216617aae01020c00c20f7a87",
-      "src": "https://github.com/nvim-mini/mini.comment"
-    },
-    "minigit": {
-      "rev": "a007cc40a4585c4f54787ddcf07295c2689daeb4",
-      "src": "https://github.com/nvim-mini/mini-git"
-    },
-    "minimove": {
-      "rev": "74d140143b1bb905c3d0aebcfc2f216fd237080e",
-      "src": "https://github.com/nvim-mini/mini.move"
-    },
-    "minipick": {
-      "rev": "437d44eb57312f23e6b931704694fc294922cd88",
-      "src": "https://github.com/nvim-mini/mini.pick"
-    },
-    "multicursor.nvim": {
-      "rev": "0c6ceae228bf209e8b8717df9de500770c4e7022",
-      "src": "https://github.com/jake-stewart/multicursor.nvim"
-    },
-    "nvim": {
-      "rev": "df1c6af5e1df601232a2c0fc7198ea1342e95f29",
-      "src": "https://github.com/neko-night/nvim"
-    },
-    "nvim-cmp": {
-      "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
-      "src": "https://github.com/hrsh7th/nvim-cmp"
-    },
-    "nvim-dap": {
-      "rev": "881f7dc17c0b4204a1d844732f95539575350e5b",
-      "src": "https://github.com/mfussenegger/nvim-dap"
-    },
     "nvim-lspconfig": {
-      "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
+      "rev": "292f44408498103c47996ff5c18fd366293840d8",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
-    "nvim-tree.lua": {
-      "rev": "fefa335f1c8f690eb668a1efd18ee4fc6d64cd3e",
-      "src": "https://github.com/nvim-tree/nvim-tree.lua"
-    },
-    "oil": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
-      "src": "https://github.com/stevearc/oil.nvim"
+    "nvim-tetris": {
+      "rev": "d17c99fb527ada98ffb0212ffc87ccda6fd4f7d9",
+      "src": "https://github.com/alec-gibson/nvim-tetris"
     },
     "oil.nvim": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"
     },
-    "transparent.nvim": {
-      "rev": "8ac59883de84e9cd1850ea25cf087031c5ba7d54",
-      "src": "https://github.com/xiyaowong/transparent.nvim"
+    "substitute.nvim": {
+      "rev": "0d2077398552f069abccbd964a26dd7cd26882cd",
+      "src": "https://github.com/gbprod/substitute.nvim"
     },
     "vim-colors-modern-borland": {
-      "rev": "f55137b8b3d6de24e35627ba01b2d6676aa41a2d",
+      "rev": "9da28b3049481ac098f555834db1607a265eb7bc",
       "src": "https://github.com/letorbi/vim-colors-modern-borland"
     },
     "which-key.nvim": {

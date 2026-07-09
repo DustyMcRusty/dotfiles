@@ -1,7 +1,12 @@
-ag
+silversearcher/ag
 alacritty
 bob-nvim
 htop
 playerctl
 thunar
 tmux
+i3status
+waybar
+wmenu
+sway
+wlr-randr

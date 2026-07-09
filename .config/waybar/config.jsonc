@@ -1,9 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "width": 1280,
-    "height": 25,
-    "margin": "0",
+    "width": 1024,
+    "height": 20,
+    "margin": "5",
 
     "modules-left"   : ["sway/workspaces", "sway/mode"],
     "modules-center" : ["sway/window"],

@@ -2,12 +2,12 @@
 # Exports
 export PATH=$PATH:$HOME/.cargo/bin/:$HOME/go/bin/:$HOME/.local/share/applications/:$HOME/.local/bin/:$HOME/.local/share/bob/nvim-bin/
 export WAYFIRE_CONFIG_FILE=$HOME/.config/wayfire/wayfire.ini
+export EDITOR=nvim
 
 # Aliases
 alias cd..="cd .."
 alias l="ls -XA --group-directories-first --file-type --color=auto"
 alias weather="curl wttr.in/?T1"
-alias edit="helix"
 alias tkill="pkill --signal 9"
 alias scr="screen -R"
 
@@ -22,3 +22,5 @@ run() {
 source ~/.machine_rc
 test -n "$TMUX" && echo "You are now inside a tmux session."
 
+export BFRISDIR=/home/apolonio/Documents/Games
+export BFRISDIR=/home/apolonio/DOS/

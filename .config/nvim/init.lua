@@ -9,6 +9,7 @@
 	vim.g.mapleader      = " "
 	vim.o.colorcolumn    = "80"
 	vim.o.number         = true
+	vim.o.shm			 = "I"
 	vim.o.relativenumber = true
 	vim.o.smartindent    = true
 	vim.o.wrap           = true
@@ -22,7 +23,6 @@
 	vim.keymap.set('n', 'gr',         vim.lsp.buf.references,      {noremap = true})
 	vim.keymap.set('n', '<Leader>D',  vim.lsp.buf.type_definition, {noremap = true})
 	vim.keymap.set('n', '<Leader>ca', vim.lsp.buf.code_action,     {noremap = true})
-	vim.keymap.set('v', '<Leader>ca', vim.lsp.buf.code_action,     {noremap = true})
 	vim.keymap.set('n', '<Leader>ld', vim.diagnostic.open_float,   { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>le', ':lsp enable<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>ls', ':lsp disable<CR>',          { noremap = true, silent = true })
@@ -54,9 +54,8 @@
 
 	-- Plugin stuff (+ a few non-plugin bindings)
 	vim.keymap.set('n', '<Leader>Q',   ':bdelete!<CR>',        { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>a',   'ga',                   { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>csv', ':CsvViewToggle<CR>',   { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>e',   ':Oil<CR>',             { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>ef',   ':Oil<CR>',            { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>et',   ':term<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>fb',  ':Pick buffers<CR>',    { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>ff',  ':Pick files<CR>',      { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>fg',  ':Pick grep<CR>',       { noremap = true, silent = true })
@@ -67,17 +66,20 @@
 	vim.keymap.set('n', '<Leader>q',   ':bdelete<CR>',         { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>w',   ':write<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>r',   ':source $MYVIMRC<CR>', { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>t',   ':term<CR>',            { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>tc', ':CsvViewToggle<CR>',    { noremap = true, silent = true })
 
 -- Plugin Declarations
 	vim.pack.add({
 		{ src = 'https://github.com/L3MON4D3/LuaSnip'},
+		{ src = 'https://github.com/letorbi/vim-colors-modern-borland'},
+		{ src = 'https://github.com/alec-gibson/nvim-tetris' },
+		{ src = 'https://github.com/folke/which-key.nvim' },
+		{ src = 'https://github.com/gbprod/substitute.nvim' },
 		{ src = 'https://github.com/hat0uma/csvview.nvim' },
 		{ src = 'https://github.com/m4xshen/autoclose.nvim', name = 'autoclose' },
 		{ src = 'https://github.com/mason-org/mason.nvim' },
 		{ src = 'https://github.com/mluders/comfy-line-numbers.nvim' },
-		{ src = 'https://github.com/nvimdev/dashboard-nvim' },
-		{ src = 'https://github.com/folke/which-key.nvim' },
+		{ src = 'https://github.com/necrom4/convy.nvim' },
 		{ src = 'https://github.com/neovim/nvim-lspconfig' },
 		{ src = 'https://github.com/nvim-mini/mini-git'},
 		{ src = 'https://github.com/nvim-mini/mini.align'},
@@ -85,6 +87,7 @@
 		{ src = 'https://github.com/nvim-mini/mini.move'},
 		{ src = 'https://github.com/nvim-mini/mini.pick'},
 		{ src = 'https://github.com/nvim-mini/mini.tabline'},
+		{ src = 'https://github.com/nvimdev/dashboard-nvim' },
 		{ src = 'https://github.com/pechorin/any-jump.vim'},
 		{ src = 'https://github.com/rafamadriz/friendly-snippets' },
 		{ src = 'https://github.com/saghen/blink.cmp' },
@@ -107,12 +110,19 @@
 			default = { 'path', 'snippets'},
 		},
 	})
+	require("substitute").setup()
+	vim.keymap.set('n', 's', require('substitute').operator, { noremap = true })
+	vim.keymap.set('n', 'ss', require('substitute').line, { noremap = true })
+	vim.keymap.set('n', 'S', require('substitute').eol, { noremap = true })
+	vim.keymap.set('x', 's', require('substitute').visual, { noremap = true })
+
 	require("autoclose").setup()
+	require("comfy-line-numbers").setup()
+	require("convy").setup()
 	require("csvview").setup()
+	require("dashboard").setup()
 	require("luasnip.loaders.from_vscode").lazy_load()
 	require("mason").setup()
-	require("comfy-line-numbers").setup()
-	require("dashboard").setup()
 	require("mini.align").setup()
 	require("mini.diff").setup()
 	require("mini.git").setup()
@@ -127,4 +137,4 @@
 	})
 
 -- Colorscheme
-vim.cmd(":colorscheme borland")
+vim.cmd(":colorscheme modern-borland")
