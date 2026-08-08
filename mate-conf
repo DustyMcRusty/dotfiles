@@ -4,7 +4,7 @@ window-ratio=(0.75, 1.0)
 
 [caja/desktop]
 computer-icon-visible=true
-font='Helvetica 12 Bold Italic 10'
+font='Helvetica Bold Oblique 8'
 home-icon-name='Home'
 home-icon-visible=true
 network-icon-name='Share'
@@ -31,12 +31,12 @@ background-uri=''
 date-format='iso'
 default-folder-viewer='icon-view'
 executable-text-activation='launch'
-show-hidden-files=true
+show-hidden-files=false
 show-image-thumbnails='always'
 thumbnail-limit=uint64 104857600
 
 [caja/window-state]
-geometry='965x604+0+25'
+geometry='811x644+100+43'
 maximized=false
 side-pane-view='places'
 sidebar-width=184
@@ -46,13 +46,19 @@ start-with-status-bar=false
 start-with-toolbar=false
 
 [calc]
+accuracy=9
+angle-units='degrees'
 base=10
-button-mode='financial'
+button-mode='programming'
+number-format='automatic'
 show-history=false
+show-thousands=true
+show-zeroes=false
 source-currency='BRL'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
+word-size=64
 
 [desktop/accessibility/keyboard]
 bouncekeys-beep-reject=true
@@ -81,7 +87,7 @@ togglekeys-enable=false
 exec='orca'
 
 [desktop/applications/calculator]
-exec='xcalc'
+exec='mate-calc'
 
 [desktop/applications/messenger]
 exec='pidgin'
@@ -91,7 +97,7 @@ exec='sakura'
 
 [desktop/background]
 color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/1696737172719376.jpg'
+picture-filename='/home/apolonio/Pictures/papelocal/1757315172163757.jpg'
 picture-options='scaled'
 primary-color='rgb(185,154,241)'
 secondary-color='rgb(37,140,6)'
@@ -101,8 +107,9 @@ show-desktop-icons=true
 icon-theme='NineIcons48x'
 
 [desktop/font-rendering]
-antialiasing='none'
-hinting='full'
+antialiasing='grayscale'
+dpi=0.0
+hinting='medium'
 rgba-order='rgb'
 
 [desktop/interface]
@@ -121,12 +128,12 @@ monospace-font-name='Terminess Nerd Font Medium 12'
 window-scaling-factor=0
 
 [desktop/keybindings/custom0]
-action='sakura -c 88 -r 42'
+action='sakura -c 88 -r 32'
 binding='<Mod4>Return'
 name='Run a terminal 2'
 
 [desktop/keybindings/custom1]
-action='sakura -c 88 -r 42'
+action='sakura -c 88 -r 32'
 binding='<Primary><Alt>t'
 name='Run a terminal'
 
@@ -148,20 +155,20 @@ layouts=['us', 'br']
 options=['terminate\tterminate:ctrl_alt_bksp', 'grp\tgrp:win_space_toggle']
 
 [desktop/peripherals/keyboard/preview]
-height=810
-width=1427
+height=680
+width=1011
 x=0
-y=145
+y=25
 
 [desktop/peripherals/mouse]
 accel-profile='adaptive'
-cursor-size=24
-cursor-theme=''
+cursor-size=32
+cursor-theme='Chicago95_Standard_Cursors_Black'
 locate-pointer=false
 
 [desktop/session]
 idle-delay=120
-session-start=1783553927
+session-start=1786216438
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -177,7 +184,7 @@ volume-overamplifiable=false
 disable=['image/png', 'image/jpeg', 'image/webp', 'image/bmp', 'image/svg+xml', 'video/webm', 'video/x-msvideo', 'video/mp4', 'video/mpeg', 'video/ogg', 'video/mp2t', 'video/3gpp', 'video/3gpp2']
 
 [disk-usage-analyzer/ui]
-active-chart='rings'
+active-chart='treemap'
 
 [engrampa/dialogs/extract]
 create-subdirectory=false
@@ -190,7 +197,7 @@ unar-open-zip=false
 
 [engrampa/listing]
 list-mode='as-folder'
-name-column-width=377
+name-column-width=343
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -217,9 +224,10 @@ interpolate=false
 action-double-click-titlebar='toggle_shade'
 allow-tiling=true
 button-layout='close:maximize,minimize'
+center-new-windows=true
 compositing-manager=false
 mouse-button-modifier='<Super>'
-num-workspaces=4
+num-workspaces=5
 reduced-resources=false
 show-tab-border=true
 theme='Sys9-def'
@@ -234,6 +242,7 @@ switch-to-workspace-1='<Mod4>1'
 switch-to-workspace-2='<Mod4>2'
 switch-to-workspace-3='<Mod4>3'
 switch-to-workspace-4='<Mod4>4'
+switch-to-workspace-5='<Mod4>5'
 switch-windows='<Alt>Tab'
 
 [marco/window-keybindings]
@@ -245,6 +254,7 @@ move-to-workspace-1='<Shift><Mod4>exclam'
 move-to-workspace-2='<Shift><Mod4>at'
 move-to-workspace-3='<Shift><Mod4>numbersign'
 move-to-workspace-4='<Shift><Mod4>dollar'
+move-to-workspace-5='<Shift><Mod4>percent'
 tile-to-corner-ne='disabled'
 tile-to-corner-nw='disabled'
 tile-to-corner-se='disabled'
@@ -281,7 +291,7 @@ theme='standard'
 [panel/general]
 default-layout='fedora'
 enable-program-list=false
-history-mate-run=['xcompmgr', 'dconf-editor', 'qmmp', 'xfce4-panel', 'xsecurelock', 'pkill caja', 'rhinote', 'blueman-manager', 'pkill mate-tweak', 'pluma']
+history-mate-run=['xclock', 'qmmp', 'pkill caja', 'xfce4-panel', 'thunar', 'xsecurelock', 'xcompmgr', 'dconf-editor', 'rhinote', 'blueman-manager']
 object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-3', 'object-2']
 show-program-list=true
 toplevel-id-list=['top']
@@ -289,7 +299,7 @@ toplevel-id-list=['top']
 [panel/menubar]
 icon-name='distributor-logo'
 icon-size='16px'
-item-icon-size='32px'
+item-icon-size='22px'
 show-applications=true
 show-desktop=true
 
@@ -298,7 +308,7 @@ applet-iid='ClockAppletFactory::ClockApplet'
 locked=true
 object-type='applet'
 panel-right-stick=false
-position=0
+position=26
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -552,26 +562,28 @@ orientation='left'
 size=128
 
 [pluma]
-active-plugins=['filebrowser', 'docinfo', 'sort', 'externaltools', 'time', 'spell', 'modelines']
+active-plugins=['docinfo', 'sort', 'time']
 auto-indent=true
 background-pattern='none'
 bottom-panel-active-page=767182702
-bottom-panel-size=140
-bracket-matching=true
-color-scheme='kate'
+bottom-panel-size=173
+bottom-panel-visible=false
+bracket-matching=false
+color-scheme='classic'
 display-line-numbers=false
 display-overview-map=false
-display-right-margin=true
-editor-font='Serif 10'
+display-right-margin=false
+editor-font='Courier 13'
 highlight-current-line=false
+insert-spaces=false
 print-header=false
 right-margin-position=uint32 80
 side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
-size=(735, 663)
+size=(703, 438)
 state=128
-statusbar-visible=true
+statusbar-visible=false
 tabs-size=uint32 4
 toolbar-visible=false
 use-default-font=false
@@ -579,7 +591,7 @@ use-default-font=false
 [pluma/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/apolonio/repos/random/box64'
+virtual-root='file:///home/apolonio/Desktop'
 
 [power-manager]
 button-lid-ac='suspend'
@@ -597,7 +609,7 @@ lock-enabled=false
 mode='single'
 picture-filename='/usr/share/backgrounds/mate/desktop/Stripes.png'
 power-management-delay=1200
-themes=['screensavers-flurry']
+themes=['screensavers-cosmos-slideshow']
 
 [screenshot]
 border-effect='none'
