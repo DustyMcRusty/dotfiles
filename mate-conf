@@ -1,10 +1,13 @@
+[atril]
+document-directory=@ms 'file:///home/apolonio/Documents/Study'
+
 [atril/default]
 show-sidebar=false
-window-ratio=(0.75, 1.0)
+window-ratio=(1.428303303303303, 1.0738133910846419)
 
 [caja/desktop]
 computer-icon-visible=true
-font='Helvetica Bold Oblique 8'
+font='Helvetica Bold Oblique 9'
 home-icon-name='Home'
 home-icon-visible=true
 network-icon-name='Share'
@@ -31,12 +34,13 @@ background-uri=''
 date-format='iso'
 default-folder-viewer='icon-view'
 executable-text-activation='launch'
+show-directory-item-counts='always'
 show-hidden-files=false
 show-image-thumbnails='always'
-thumbnail-limit=uint64 104857600
+thumbnail-limit=uint64 3145728
 
 [caja/window-state]
-geometry='811x644+100+43'
+geometry='811x644+154+43'
 maximized=false
 side-pane-view='places'
 sidebar-width=184
@@ -97,7 +101,7 @@ exec='sakura'
 
 [desktop/background]
 color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/1757315172163757.jpg'
+picture-filename='/home/apolonio/Pictures/papelocal/orangecottage.jpg'
 picture-options='scaled'
 primary-color='rgb(185,154,241)'
 secondary-color='rgb(37,140,6)'
@@ -115,7 +119,7 @@ rgba-order='rgb'
 [desktop/interface]
 buttons-have-icons=true
 cursor-blink-time=1367
-document-font-name='Courier 10'
+document-font-name='Courier 9'
 enable-animations=true
 font-name='ChicagoFLF Medium 9'
 gtk-decoration-layout='close:maximize,minimize'
@@ -162,13 +166,13 @@ y=25
 
 [desktop/peripherals/mouse]
 accel-profile='adaptive'
-cursor-size=32
-cursor-theme='Chicago95_Standard_Cursors_Black'
+cursor-size=24
+cursor-theme='default'
 locate-pointer=false
 
 [desktop/session]
 idle-delay=120
-session-start=1786216438
+session-start=1786582992
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -289,10 +293,10 @@ popup-location='bottom_right'
 theme='standard'
 
 [panel/general]
-default-layout='fedora'
+default-layout='OS9-Like-tweak'
 enable-program-list=false
-history-mate-run=['xclock', 'qmmp', 'pkill caja', 'xfce4-panel', 'thunar', 'xsecurelock', 'xcompmgr', 'dconf-editor', 'rhinote', 'blueman-manager']
-object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-3', 'object-2']
+history-mate-run=['pkill -9 mate-tweak', 'mate-screensaver', 'xclock', 'qmmp', 'pkill caja', 'xfce4-panel', 'thunar', 'xsecurelock', 'xcompmgr', 'dconf-editor']
+object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-3', 'object-2', 'object-8']
 show-program-list=true
 toplevel-id-list=['top']
 
@@ -308,7 +312,7 @@ applet-iid='ClockAppletFactory::ClockApplet'
 locked=true
 object-type='applet'
 panel-right-stick=false
-position=26
+position=92
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -317,7 +321,7 @@ cities=@as []
 custom-format=''
 expand-locations=true
 format='12-hour'
-show-date=true
+show-date=false
 show-seconds=false
 show-temperature=false
 show-weather=false
@@ -519,6 +523,13 @@ frames=8
 rotate=false
 speed=0.29999999999999999
 
+[panel/objects/object-8]
+locked=true
+object-type='separator'
+position=92
+relative-to-edge='end'
+toplevel-id='top'
+
 [panel/objects/object-9]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
 object-type='applet'
@@ -551,7 +562,7 @@ y=0
 y-bottom=-1
 
 [panel/toplevels/top/background]
-color='rgb(40,42,54)'
+color='rgba(255,255,255,0.804)'
 image='/home/apolonio/.themes/PanelAssets/toppanel.png'
 type='image'
 
@@ -569,7 +580,7 @@ bottom-panel-active-page=767182702
 bottom-panel-size=173
 bottom-panel-visible=false
 bracket-matching=false
-color-scheme='classic'
+color-scheme='Yaru'
 display-line-numbers=false
 display-overview-map=false
 display-right-margin=false
@@ -581,7 +592,7 @@ right-margin-position=uint32 80
 side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
-size=(703, 438)
+size=(552, 560)
 state=128
 statusbar-visible=false
 tabs-size=uint32 4
