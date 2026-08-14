@@ -91,7 +91,7 @@ togglekeys-enable=false
 exec='orca'
 
 [desktop/applications/calculator]
-exec='mate-calc'
+exec='xcalc'
 
 [desktop/applications/messenger]
 exec='pidgin'
