@@ -231,7 +231,7 @@ button-layout='close:maximize,minimize'
 center-new-windows=true
 compositing-manager=false
 mouse-button-modifier='<Super>'
-num-workspaces=5
+num-workspaces=4
 reduced-resources=false
 show-tab-border=true
 theme='Sys9-def'
@@ -246,7 +246,6 @@ switch-to-workspace-1='<Mod4>1'
 switch-to-workspace-2='<Mod4>2'
 switch-to-workspace-3='<Mod4>3'
 switch-to-workspace-4='<Mod4>4'
-switch-to-workspace-5='<Mod4>5'
 switch-windows='<Alt>Tab'
 
 [marco/window-keybindings]
@@ -258,7 +257,6 @@ move-to-workspace-1='<Shift><Mod4>exclam'
 move-to-workspace-2='<Shift><Mod4>at'
 move-to-workspace-3='<Shift><Mod4>numbersign'
 move-to-workspace-4='<Shift><Mod4>dollar'
-move-to-workspace-5='<Shift><Mod4>percent'
 tile-to-corner-ne='disabled'
 tile-to-corner-nw='disabled'
 tile-to-corner-se='disabled'

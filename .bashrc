@@ -22,5 +22,4 @@ run() {
 source ~/.machine_rc
 test -n "$TMUX" && echo "You are now inside a tmux session."
 
-export BFRISDIR=/home/apolonio/Documents/Games
-export BFRISDIR=/home/apolonio/DOS/
+fastfetch -l ~/apple
