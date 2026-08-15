@@ -22,4 +22,5 @@ run() {
 source ~/.machine_rc
 test -n "$TMUX" && echo "You are now inside a tmux session."
 
-fastfetch -l Apple
+fastfetch -l Apple_Small -s Title:OS:Kernel:CPU:Shell:Colors
+echo 
