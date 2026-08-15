@@ -10,6 +10,7 @@ alias l="ls -XA --group-directories-first --file-type --color=auto"
 alias weather="curl wttr.in/?T1"
 alias tkill="pkill --signal 9"
 alias scr="screen -R"
+alias fetch="fastfetch -l Apple_Small -s Title:OS:CPU:Memory:Disk:Colors"
 
 # Run a program detached from terminal
 run() {
@@ -22,5 +23,5 @@ run() {
 source ~/.machine_rc
 test -n "$TMUX" && echo "You are now inside a tmux session."
 
-fastfetch -l Apple_Small -s Title:OS:Kernel:CPU:Shell:Colors
+fastfetch -l Apple_Small -s Title:OS:CPU:Memory:Disk:Colors
 echo 

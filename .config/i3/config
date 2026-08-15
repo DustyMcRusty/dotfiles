@@ -7,7 +7,6 @@
 ### Colors
 # exec wal -i $HOME/pape
 exec wal -R
-exec_always wlr-randr --output HDMI-A-1 --mode 1024x768
 include $HOME/.cache/wal/colors-sway
 #
 # Logo key. Use Mod1 for Alt.
