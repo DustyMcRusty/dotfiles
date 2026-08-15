@@ -22,4 +22,4 @@ run() {
 source ~/.machine_rc
 test -n "$TMUX" && echo "You are now inside a tmux session."
 
-fastfetch -l ~/apple
+fastfetch -l Apple
