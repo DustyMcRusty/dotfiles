@@ -40,7 +40,7 @@ show-image-thumbnails='always'
 thumbnail-limit=uint64 3145728
 
 [caja/window-state]
-geometry='811x644+154+43'
+geometry='811x644+100+43'
 maximized=false
 side-pane-view='places'
 sidebar-width=184
@@ -101,11 +101,15 @@ exec='sakura'
 
 [desktop/background]
 color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/orangecottage.jpg'
+picture-filename='/home/apolonio/Pictures/papelocal/pcdither.jpg'
 picture-options='scaled'
 primary-color='rgb(185,154,241)'
 secondary-color='rgb(37,140,6)'
 show-desktop-icons=true
+
+[desktop/file-sharing]
+enabled=true
+require-password='always'
 
 [desktop/file-views]
 icon-theme='NineIcons48x'
@@ -171,8 +175,8 @@ cursor-theme='default'
 locate-pointer=false
 
 [desktop/session]
-idle-delay=120
-session-start=1786582992
+idle-delay=10
+session-start=1786833265
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -246,6 +250,7 @@ switch-to-workspace-1='<Mod4>1'
 switch-to-workspace-2='<Mod4>2'
 switch-to-workspace-3='<Mod4>3'
 switch-to-workspace-4='<Mod4>4'
+switch-to-workspace-5='<Mod4>5'
 switch-windows='<Alt>Tab'
 
 [marco/window-keybindings]
@@ -257,6 +262,7 @@ move-to-workspace-1='<Shift><Mod4>exclam'
 move-to-workspace-2='<Shift><Mod4>at'
 move-to-workspace-3='<Shift><Mod4>numbersign'
 move-to-workspace-4='<Shift><Mod4>dollar'
+move-to-workspace-5='<Shift><Mod4>percent'
 tile-to-corner-ne='disabled'
 tile-to-corner-nw='disabled'
 tile-to-corner-se='disabled'
@@ -293,7 +299,7 @@ theme='standard'
 [panel/general]
 default-layout='OS9-Like-tweak'
 enable-program-list=false
-history-mate-run=['pkill -9 mate-tweak', 'mate-screensaver', 'xclock', 'qmmp', 'pkill caja', 'xfce4-panel', 'thunar', 'xsecurelock', 'xcompmgr', 'dconf-editor']
+history-mate-run=['librewolf', 'pkill mate-session', 'pkill -9 mate-tweak', 'mate-screensaver', 'xclock', 'qmmp', 'pkill caja', 'xfce4-panel', 'thunar', 'xsecurelock']
 object-id-list=['clock', 'object-6', 'object-11', 'object-10', 'object-3', 'object-2', 'object-8']
 show-program-list=true
 toplevel-id-list=['top']
@@ -310,7 +316,7 @@ applet-iid='ClockAppletFactory::ClockApplet'
 locked=true
 object-type='applet'
 panel-right-stick=false
-position=92
+position=30
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -425,7 +431,7 @@ toplevel-id='top'
 [panel/objects/object-2]
 locked=true
 object-type='separator'
-position=16
+position=26
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -613,12 +619,12 @@ info-stats-type='charge-data'
 sleep-display-ac=0
 
 [screensaver]
-idle-activation-enabled=false
-lock-enabled=false
+idle-activation-enabled=true
+lock-enabled=true
 mode='single'
 picture-filename='/usr/share/backgrounds/mate/desktop/Stripes.png'
 power-management-delay=1200
-themes=['screensavers-cosmos-slideshow']
+themes=['screensavers-peepers']
 
 [screenshot]
 border-effect='none'
