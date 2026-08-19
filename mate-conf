@@ -35,7 +35,7 @@ background-color='#E0D656'
 background-set=false
 background-uri=''
 date-format='iso'
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 executable-text-activation='launch'
 show-directory-item-counts='always'
 show-hidden-files=false
@@ -43,12 +43,12 @@ show-image-thumbnails='always'
 thumbnail-limit=uint64 3145728
 
 [caja/window-state]
-geometry='603x419+40+42'
+geometry='835x573+93+93'
 maximized=false
 side-pane-view='places'
-sidebar-width=184
+sidebar-width=156
 start-with-location-bar=true
-start-with-sidebar=false
+start-with-sidebar=true
 start-with-status-bar=true
 start-with-toolbar=false
 
@@ -133,8 +133,8 @@ gtk-color-scheme='menu_fg: #363636'
 gtk-decoration-layout='close,minimize,maximize:'
 gtk-shell-shows-app-menu=true
 gtk-shell-shows-menubar=true
-gtk-theme='WhiteSur-Light'
-icon-theme='Mint-Y-Aqua'
+gtk-theme='Adwaita'
+icon-theme='Mint-Y-Blue'
 menus-have-icons=true
 monospace-font-name='Terminess Nerd Font Medium 12'
 window-scaling-factor=0
@@ -180,7 +180,7 @@ locate-pointer=false
 
 [desktop/session]
 idle-delay=10
-session-start=1787094484
+session-start=1787101335
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -303,8 +303,8 @@ theme='standard'
 [panel/general]
 default-layout='OS9-Like-tweak'
 enable-program-list=false
-history-mate-run=['pkill caja', 'dconf-editor', 'xcompmgr', 'vala-panel', 'librewolf', 'pkill mate-session', 'pkill -9 mate-tweak', 'mate-screensaver', 'xclock', 'qmmp']
-object-id-list=['clock', 'object-11', 'object-10', 'object-3', 'object-23']
+history-mate-run=['dconf-editor', 'pkill mate-panel', 'pkill caja', 'xcompmgr', 'vala-panel', 'librewolf', 'pkill mate-session', 'pkill -9 mate-tweak', 'mate-screensaver', 'xclock']
+object-id-list=['clock', 'object-11', 'object-10', 'object-2', 'object-6', 'object-3', 'object-35', 'object-36', 'object-34', 'object-37']
 show-program-list=true
 toplevel-id-list=['top']
 
@@ -376,6 +376,7 @@ show-text-mode=2
 
 [panel/objects/object-12]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=21
@@ -383,6 +384,7 @@ toplevel-id='top'
 
 [panel/objects/object-13]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=27
@@ -390,6 +392,7 @@ toplevel-id='top'
 
 [panel/objects/object-14]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=175
@@ -397,6 +400,7 @@ toplevel-id='top'
 
 [panel/objects/object-15]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=226
@@ -412,6 +416,7 @@ toplevel-id='top'
 
 [panel/objects/object-17]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=472
@@ -419,6 +424,7 @@ toplevel-id='top'
 
 [panel/objects/object-18]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=101
@@ -426,13 +432,25 @@ toplevel-id='top'
 
 [panel/objects/object-19]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=205
 toplevel-id='top'
 
+[panel/objects/object-2]
+applet-iid='NotificationAreaAppletFactory::NotificationArea'
+object-type='applet'
+position=834
+relative-to-edge='start'
+toplevel-id='top'
+
+[panel/objects/object-2/prefs]
+min-icon-size=16
+
 [panel/objects/object-20]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=104
@@ -440,6 +458,7 @@ toplevel-id='top'
 
 [panel/objects/object-21]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=145
@@ -447,6 +466,7 @@ toplevel-id='top'
 
 [panel/objects/object-22]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=184
@@ -454,12 +474,14 @@ toplevel-id='top'
 
 [panel/objects/object-23]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
 object-type='applet'
 position=292
 toplevel-id='top'
 
 [panel/objects/object-24]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=233
@@ -467,6 +489,7 @@ toplevel-id='top'
 
 [panel/objects/object-25]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=402
@@ -474,6 +497,7 @@ toplevel-id='top'
 
 [panel/objects/object-26]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=260
@@ -481,6 +505,7 @@ toplevel-id='top'
 
 [panel/objects/object-27]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=328
@@ -488,6 +513,7 @@ toplevel-id='top'
 
 [panel/objects/object-28]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=528
@@ -495,38 +521,86 @@ toplevel-id='top'
 
 [panel/objects/object-29]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=230
 toplevel-id='top'
 
 [panel/objects/object-3]
-object-type='menu-bar'
-position=0
+applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
+object-type='applet'
+position=230
 toplevel-id='top'
 
 [panel/objects/object-30]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
 object-type='applet'
 position=292
 toplevel-id='top'
 
 [panel/objects/object-31]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
 object-type='applet'
 position=292
 toplevel-id='top'
 
 [panel/objects/object-32]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
 object-type='applet'
 position=292
 toplevel-id='top'
 
 [panel/objects/object-33]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
+has-arrow=false
 object-type='applet'
 position=292
+toplevel-id='top'
+
+[panel/objects/object-34]
+applet-iid='WnckletFactory::WorkspaceSwitcherApplet'
+locked=true
+object-type='applet'
+position=101
+relative-to-edge='end'
+toplevel-id='top'
+
+[panel/objects/object-34/prefs]
+display-all-workspaces=true
+display-workspace-names=false
+num-rows=4
+wrap-workspaces=false
+
+[panel/objects/object-35]
+custom-icon='mintwelcome'
+has-arrow=false
+locked=true
+object-type='menu'
+position=0
+tooltip='Compact Menu'
+toplevel-id='top'
+use-custom-icon=true
+use-menu-path=false
+
+[panel/objects/object-36]
+applet-iid='AppmenuAppletFactory::AppmenuApplet'
+object-type='applet'
+position=25
+toplevel-id='top'
+
+[panel/objects/object-36/prefs]
+compact-mode=false
+
+[panel/objects/object-37]
+locked=true
+object-type='separator'
+position=892
+relative-to-edge='start'
 toplevel-id='top'
 
 [panel/objects/object-4]
@@ -542,6 +616,14 @@ has-arrow=false
 [panel/objects/object-5/prefs]
 group-windows='never'
 
+[panel/objects/object-6]
+applet-iid='GvcAppletFactory::GvcApplet'
+locked=true
+object-type='applet'
+position=63
+relative-to-edge='end'
+toplevel-id='top'
+
 [panel/objects/object-7]
 has-arrow=false
 
@@ -552,6 +634,7 @@ speed=0.29999999999999999
 
 [panel/objects/object-9]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
+has-arrow=false
 object-type='applet'
 panel-right-stick=false
 position=227
@@ -575,7 +658,7 @@ enable-buttons=false
 expand=true
 orientation='top'
 screen=0
-size=24
+size=25
 x=0
 x-centered=true
 x-right=-1
@@ -583,9 +666,9 @@ y=0
 y-bottom=-1
 
 [panel/toplevels/top/background]
-color='rgba(255,255,255,0.804)'
+color='rgba(246,245,244,0.753)'
 image='/home/apolonio/.themes/PanelAssets/toppanel.png'
-type='none'
+type='color'
 
 [panel/toplevels/toplevel-0]
 enable-arrows=true
