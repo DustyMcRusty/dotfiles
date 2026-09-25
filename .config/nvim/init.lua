@@ -8,6 +8,7 @@
 -- General options
 	vim.g.mapleader      = " "
 	vim.o.colorcolumn    = "80"
+	vim.o.textwidth      = 80
 	vim.o.number         = true
 	vim.o.shm			 = "I"
 	vim.o.relativenumber = true
@@ -43,6 +44,9 @@
 	vim.keymap.set('i', '<M-B>', '<C-o>B',        {noremap = true})
 	vim.keymap.set('i', '<M-E>', '<C-o>E<right>', {noremap = true})
 
+	vim.keymap.set('v', '>', '>gv', {noremap = true})
+	vim.keymap.set('v', '<', '<gv', {noremap = true})
+
 	vim.keymap.set('c', '<M-h>', '<left>',  {noremap = true})
 	vim.keymap.set('c', '<M-j>', '<down>',  {noremap = true})
 	vim.keymap.set('c', '<M-k>', '<up>',    {noremap = true})
@@ -67,6 +71,7 @@
 	vim.keymap.set('n', '<Leader>w',   ':write<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>r',   ':source $MYVIMRC<CR>', { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>tc', ':CsvViewToggle<CR>',    { noremap = true, silent = true })
+	vim.keymap.set('n', '<Leader>/', ':noh<CR>',    { noremap = true, silent = true })
 
 -- Plugin Declarations
 	vim.pack.add({
@@ -137,4 +142,4 @@
 	})
 
 -- Colorscheme
-vim.cmd(":colorscheme modern-borland")
+vim.cmd(":colorscheme habamax")

@@ -13,6 +13,6 @@ sway
 tmux
 waybar
 wlr-randr
-wmenu
+rofi
 xcalc
 xpaint
