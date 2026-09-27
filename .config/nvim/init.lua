@@ -92,7 +92,6 @@
 		{ src = 'https://github.com/nvim-mini/mini.move'},
 		{ src = 'https://github.com/nvim-mini/mini.pick'},
 		{ src = 'https://github.com/nvim-mini/mini.tabline'},
-		{ src = 'https://github.com/nvimdev/dashboard-nvim' },
 		{ src = 'https://github.com/pechorin/any-jump.vim'},
 		{ src = 'https://github.com/rafamadriz/friendly-snippets' },
 		{ src = 'https://github.com/saghen/blink.cmp' },
@@ -125,7 +124,6 @@
 	require("comfy-line-numbers").setup()
 	require("convy").setup()
 	require("csvview").setup()
-	require("dashboard").setup()
 	require("luasnip.loaders.from_vscode").lazy_load()
 	require("mason").setup()
 	require("mini.align").setup()
