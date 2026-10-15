@@ -60,6 +60,10 @@
       "rev": "8c1f75f8ddd8c9f75d07ed2ab5718d2c3cb65a66",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
+    "mini.surround": {
+      "rev": "72feeaa0f984646efde875cc775a97b6f8a8be9b",
+      "src": "https://github.com/nvim-mini/mini.surround"
+    },
     "mini.tabline": {
       "rev": "7e8584a06b86902c64227e4abd0c39ae74061101",
       "src": "https://github.com/nvim-mini/mini.tabline"
@@ -75,10 +79,6 @@
     "oil.nvim": {
       "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"
-    },
-    "substitute.nvim": {
-      "rev": "0d2077398552f069abccbd964a26dd7cd26882cd",
-      "src": "https://github.com/gbprod/substitute.nvim"
     },
     "vim-colors-modern-borland": {
       "rev": "9da28b3049481ac098f555834db1607a265eb7bc",

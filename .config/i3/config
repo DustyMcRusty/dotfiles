@@ -33,8 +33,8 @@ include /etc/sway/config-vars.d/*
 # This is commented in Debian, because the Sway wallpaper files are in a separate
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
-output * bg ~/pape stretch
-output * subpixel none
+# output * bg ~/pape stretch
+# output * subpixel none
 #
 # Example configuration:
 #
@@ -95,7 +95,7 @@ output * subpixel none
     bindsym $mod+Shift+c reload
 
 	# Lock sway
-	bindsym $meta+$mod+l exec "swaylock -c 000000ff"
+	bindsym $meta+$mod+l exec 'swaylock -c 000000ff -Fe --font "Terminess Nerd Font Mono" --font-size 12'
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -136,7 +136,7 @@ output * subpixel none
     bindsym $mod+7 workspace number 7
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace *
+    bindsym $mod+0 workspace number 10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
@@ -147,7 +147,7 @@ output * subpixel none
     bindsym $mod+Shift+7 move container to workspace number 7
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace *
+    bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -252,20 +252,21 @@ client.urgent #ff0000 $background $background $background #ff0000
 workspace_layout tabbed
 focus_follows_mouse no
 
-bar {
-	position bottom
-
-	# swaybar_command waybar
-	status_command i3status
-	font "Terminess Nerd Font Mono" 12
-
-	colors {
-	statusline $foreground
-	background $background
-	inactive_workspace $background $background $foreground
-	focused_workspace $foreground $foreground $background
-	}
-}
+# bar {
+# 	position top
+#
+# 	swaybar_command nwg-panel
+# 	status_command i3status
+# 	font "Terminess Nerd Font Mono" 12
+#
+# 	colors {
+# 	statusline $foreground
+# 	background $background
+# 	inactive_workspace $background $background $foreground
+# 	focused_workspace $foreground $foreground $background
+# 	}
+# }
+exec nwg-panel
 
 font "Terminess Nerd Font Mono" 9
 default_border pixel 2

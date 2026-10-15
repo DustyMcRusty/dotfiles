@@ -56,6 +56,9 @@
 	vim.keymap.set('c', '<M-H>', '<Home>',  {noremap = true})
 	vim.keymap.set('c', '<M-L>', '<End>',   {noremap = true})
 
+	-- When in visual mode, search only applies to selection
+	vim.keymap.set('v', '<m-/>', '<esc>/\\%V')
+
 	-- Plugin stuff (+ a few non-plugin bindings)
 	vim.keymap.set('n', '<Leader>Q',   ':bdelete!<CR>',        { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>ef',   ':Oil<CR>',            { noremap = true, silent = true })
@@ -71,7 +74,6 @@
 	vim.keymap.set('n', '<Leader>w',   ':write<CR>',           { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>r',   ':source $MYVIMRC<CR>', { noremap = true, silent = true })
 	vim.keymap.set('n', '<Leader>tc', ':CsvViewToggle<CR>',    { noremap = true, silent = true })
-	vim.keymap.set('n', '<Leader>/', ':noh<CR>',    { noremap = true, silent = true })
 
 -- Plugin Declarations
 	vim.pack.add({
@@ -79,7 +81,7 @@
 		{ src = 'https://github.com/letorbi/vim-colors-modern-borland'},
 		{ src = 'https://github.com/alec-gibson/nvim-tetris' },
 		{ src = 'https://github.com/folke/which-key.nvim' },
-		{ src = 'https://github.com/gbprod/substitute.nvim' },
+		{ src = 'https://github.com/nvim-mini/mini.surround' },
 		{ src = 'https://github.com/hat0uma/csvview.nvim' },
 		{ src = 'https://github.com/m4xshen/autoclose.nvim', name = 'autoclose' },
 		{ src = 'https://github.com/mason-org/mason.nvim' },
@@ -114,11 +116,6 @@
 			default = { 'path', 'snippets'},
 		},
 	})
-	require("substitute").setup()
-	vim.keymap.set('n', 's', require('substitute').operator, { noremap = true })
-	vim.keymap.set('n', 'ss', require('substitute').line, { noremap = true })
-	vim.keymap.set('n', 'S', require('substitute').eol, { noremap = true })
-	vim.keymap.set('x', 's', require('substitute').visual, { noremap = true })
 
 	require("autoclose").setup()
 	require("comfy-line-numbers").setup()
@@ -131,6 +128,7 @@
 	require("mini.git").setup()
 	require("mini.move").setup()
 	require("mini.pick").setup()
+	require("mini.surround").setup()
 	require("mini.tabline").setup()
 
 -- LSPs
