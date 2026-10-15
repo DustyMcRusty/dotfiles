@@ -22,12 +22,11 @@
       "scratchpad"
     ],
     "modules-center": [
-      "clock"
+      "playerctl"
     ],
     "modules-right": [
-      "playerctl",
-      "keyboard-layout",
-      "tray"
+      "tray",
+      "clock"
     ],
     "controls-settings": {
       "components": [
@@ -197,7 +196,7 @@
     },
     "playerctl": {
       "buttons-position": "right",
-      "icon-size": 21,
+      "icon-size": 10,
       "chars": 12,
       "scroll": true,
       "button-css-name": "",
