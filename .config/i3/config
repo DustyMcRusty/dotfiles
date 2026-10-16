@@ -22,7 +22,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term sakura
+set $term alacritty
 # Your preferred application launcher
 
 include /etc/sway/config-vars.d/*

@@ -10,7 +10,7 @@ default-zoom-level='small'
 
 [caja/desktop]
 computer-icon-visible=true
-font='DejaVu Sans 9'
+font='Helvetica Bold Oblique 9'
 home-icon-name='Home'
 home-icon-visible=true
 network-icon-name='Share'
@@ -35,21 +35,21 @@ background-color='#E0D656'
 background-set=false
 background-uri=''
 date-format='iso'
-default-folder-viewer='list-view'
-executable-text-activation='launch'
+default-folder-viewer='icon-view'
+executable-text-activation='ask'
 show-directory-item-counts='always'
 show-hidden-files=false
 show-image-thumbnails='always'
 thumbnail-limit=uint64 3145728
 
 [caja/window-state]
-geometry='835x573+93+93'
+geometry='567x566+222+82'
 maximized=false
 side-pane-view='places'
 sidebar-width=156
-start-with-location-bar=true
+start-with-location-bar=false
 start-with-sidebar=true
-start-with-status-bar=true
+start-with-status-bar=false
 start-with-toolbar=false
 
 [calc]
@@ -104,7 +104,7 @@ exec='sakura'
 
 [desktop/background]
 color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/pcdither.jpg'
+picture-filename='/home/apolonio/Pictures/papelocal/orangecottage.jpg'
 picture-options='scaled'
 primary-color='rgb(185,154,241)'
 secondary-color='rgb(37,140,6)'
@@ -118,23 +118,23 @@ require-password='always'
 icon-theme='NineIcons48x'
 
 [desktop/font-rendering]
-antialiasing='rgba'
+antialiasing='grayscale'
 dpi=0.0
-hinting='slight'
+hinting='medium'
 rgba-order='rgb'
 
 [desktop/interface]
 buttons-have-icons=true
 cursor-blink-time=1367
-document-font-name='DejaVu Serif 9'
+document-font-name='Helvetica 9'
 enable-animations=true
-font-name='DejaVu Sans 9'
-gtk-color-scheme='menu_fg: #363636'
+font-name='ChicagoFLF Medium 9'
+gtk-color-scheme='tooltip_fg_color:#ffffff\ntooltip_bg_color:#343434'
 gtk-decoration-layout='close,minimize,maximize:'
 gtk-shell-shows-app-menu=true
 gtk-shell-shows-menubar=true
-gtk-theme='Adwaita'
-icon-theme='Mint-Y-Blue'
+gtk-theme='Sys9-def'
+icon-theme='BeOS-r5-Icons'
 menus-have-icons=true
 monospace-font-name='Terminess Nerd Font Medium 12'
 window-scaling-factor=0
@@ -174,13 +174,13 @@ y=25
 
 [desktop/peripherals/mouse]
 accel-profile='adaptive'
-cursor-size=24
-cursor-theme='elementary'
+cursor-size=32
+cursor-theme='retrosmart-xcursor-black-shadow'
 locate-pointer=false
 
 [desktop/session]
 idle-delay=10
-session-start=1787101335
+session-start=1792107630
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -219,8 +219,8 @@ sidebar-width=200
 view-folders=true
 view-statusbar=false
 view-toolbar=true
-window-height=320
-window-width=543
+window-height=729
+window-width=1010
 
 [eom/ui]
 image-collection=false
@@ -229,21 +229,21 @@ statusbar=false
 toolbar=false
 
 [eom/view]
-extrapolate=false
-interpolate=false
+extrapolate=true
+interpolate=true
 
 [marco/general]
 action-double-click-titlebar='toggle_shade'
 allow-tiling=true
-button-layout='close,minimize,maximize:'
+button-layout='close:maximize,minimize'
 center-new-windows=true
 compositing-manager=false
 mouse-button-modifier='<Super>'
 num-workspaces=4
 reduced-resources=false
 show-tab-border=true
-theme='GreenLaguna'
-titlebar-font='DejaVu Sans Bold 9'
+theme='Sys9-def'
+titlebar-font='ChicagoFLF Medium 9'
 
 [marco/global-keybindings]
 cycle-windows='<Mod4>Tab'
@@ -297,14 +297,15 @@ height=266
 icon-size=16
 
 [notification-daemon]
-popup-location='bottom_right'
-theme='standard'
+popup-location='bottom_left'
+theme='slider'
+use-active-monitor=true
 
 [panel/general]
 default-layout='OS9-Like-tweak'
 enable-program-list=false
-history-mate-run=['dconf-editor', 'pkill mate-panel', 'pkill caja', 'xcompmgr', 'vala-panel', 'librewolf', 'pkill mate-session', 'pkill -9 mate-tweak', 'mate-screensaver', 'xclock']
-object-id-list=['clock', 'object-11', 'object-10', 'object-2', 'object-6', 'object-3', 'object-35', 'object-36', 'object-34', 'object-37']
+history-mate-run=['alacritty', 'dconf-editor', 'pavucontrol', 'librewolf', 'dosbox', 'xfce4-panel', 'pkill xfce4-panel', 'epiphany-browser', 'epiphany-game', 'xterm']
+object-id-list=['clock', 'object-11', 'object-10', 'object-2', 'object-6', 'object-8', 'object-3', 'object-35']
 show-program-list=true
 toplevel-id-list=['top']
 
@@ -316,17 +317,17 @@ show-desktop=true
 
 [panel/objects/clock]
 applet-iid='ClockAppletFactory::ClockApplet'
-locked=false
+locked=true
 object-type='applet'
 panel-right-stick=false
-position=0
+position=72
 relative-to-edge='end'
 toplevel-id='top'
 
 [panel/objects/clock/prefs]
 cities=@as []
 custom-format=''
-expand-locations=true
+expand-locations=false
 format='12-hour'
 show-date=false
 show-seconds=false
@@ -439,14 +440,11 @@ position=205
 toplevel-id='top'
 
 [panel/objects/object-2]
-applet-iid='NotificationAreaAppletFactory::NotificationArea'
-object-type='applet'
-position=834
-relative-to-edge='start'
+locked=true
+object-type='separator'
+position=82
+relative-to-edge='end'
 toplevel-id='top'
-
-[panel/objects/object-2/prefs]
-min-icon-size=16
 
 [panel/objects/object-20]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
@@ -528,11 +526,16 @@ position=230
 toplevel-id='top'
 
 [panel/objects/object-3]
-applet-iid='MateMenuAppletFactory::MateMenuApplet'
+custom-icon='MacOS_1_32x32x8'
 has-arrow=false
-object-type='applet'
-position=230
+locked=true
+object-type='menu'
+position=11
+relative-to-edge='start'
+tooltip='Compact Menu'
 toplevel-id='top'
+use-custom-icon=true
+use-menu-path=false
 
 [panel/objects/object-30]
 applet-iid='MateMenuAppletFactory::MateMenuApplet'
@@ -563,44 +566,30 @@ position=292
 toplevel-id='top'
 
 [panel/objects/object-34]
-applet-iid='WnckletFactory::WorkspaceSwitcherApplet'
-locked=true
+applet-iid='MateMenuAppletFactory::MateMenuApplet'
 object-type='applet'
-position=101
+position=45
+relative-to-edge='start'
+toplevel-id='top'
+
+[panel/objects/object-35]
+applet-iid='AppmenuAppletFactory::AppmenuApplet'
+locked=false
+object-type='applet'
+position=557
 relative-to-edge='end'
 toplevel-id='top'
 
-[panel/objects/object-34/prefs]
-display-all-workspaces=true
-display-workspace-names=false
-num-rows=4
-wrap-workspaces=false
-
-[panel/objects/object-35]
-custom-icon='mintwelcome'
-has-arrow=false
-locked=true
-object-type='menu'
-position=0
-tooltip='Compact Menu'
-toplevel-id='top'
-use-custom-icon=true
-use-menu-path=false
-
 [panel/objects/object-36]
-applet-iid='AppmenuAppletFactory::AppmenuApplet'
+applet-iid='MateMenuAppletFactory::MateMenuApplet'
 object-type='applet'
-position=25
+position=26
 toplevel-id='top'
-
-[panel/objects/object-36/prefs]
-compact-mode=false
 
 [panel/objects/object-37]
-locked=true
-object-type='separator'
-position=892
-relative-to-edge='start'
+applet-iid='MateMenuAppletFactory::MateMenuApplet'
+object-type='applet'
+position=26
 toplevel-id='top'
 
 [panel/objects/object-4]
@@ -610,17 +599,14 @@ panel-right-stick=false
 position=452
 toplevel-id='top'
 
-[panel/objects/object-5]
-has-arrow=false
-
 [panel/objects/object-5/prefs]
 group-windows='never'
 
 [panel/objects/object-6]
-applet-iid='GvcAppletFactory::GvcApplet'
+applet-iid='WnckletFactory::WindowMenuApplet'
 locked=true
 object-type='applet'
-position=63
+position=0
 relative-to-edge='end'
 toplevel-id='top'
 
@@ -631,6 +617,14 @@ has-arrow=false
 frames=8
 rotate=false
 speed=0.29999999999999999
+
+[panel/objects/object-8]
+has-arrow=false
+locked=true
+object-type='separator'
+position=26
+relative-to-edge='end'
+toplevel-id='top'
 
 [panel/objects/object-9]
 applet-iid='AppmenuAppletFactory::AppmenuApplet'
@@ -660,15 +654,15 @@ orientation='top'
 screen=0
 size=25
 x=0
-x-centered=true
+x-centered=false
 x-right=-1
 y=0
 y-bottom=-1
 
 [panel/toplevels/top/background]
-color='rgba(246,245,244,0.753)'
+color='rgb(222,221,218)'
 image='/home/apolonio/.themes/PanelAssets/toppanel.png'
-type='color'
+type='image'
 
 [panel/toplevels/toplevel-0]
 enable-arrows=true
@@ -684,7 +678,7 @@ bottom-panel-active-page=767182702
 bottom-panel-size=173
 bottom-panel-visible=false
 bracket-matching=false
-color-scheme='Yaru'
+color-scheme='classic'
 display-line-numbers=false
 display-overview-map=false
 display-right-margin=false
@@ -696,7 +690,7 @@ right-margin-position=uint32 80
 side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
-size=(589, 560)
+size=(1010, 680)
 state=128
 statusbar-visible=false
 tabs-size=uint32 4
