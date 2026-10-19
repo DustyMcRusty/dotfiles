@@ -1,20 +1,24 @@
-cargo{
+cargo =>
 	bob-nvim
-}
 
-htop
-mate-desktop
-xfe
-playerctl
-clementine
-alacritty
-sakura
-silversearcher/ag
-sway
-tmux
-wlr-randr
-nwg-panel
-nwg-displays
-nwg-look
-rofi
-xpaint
+pip/pipx =>
+	pywalfox
+
+distribution-repo =>
+	alacritty
+	cmus
+	fastfetch
+	htop
+	openbox
+	pcmanfm-qt
+	playerctl
+	sakura
+	silversearcher/ag
+	sway
+	tmux
+	wlr-randr
+	xpaint
+
+misc-srcs =>
+	noctalia
+	librewolf

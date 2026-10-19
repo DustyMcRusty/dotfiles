@@ -1,26 +1,24 @@
+# TODO: Delegate things to separate files, to make config more modular
+
 # Exports
 export PATH=$PATH:$HOME/.cargo/bin/:$HOME/go/bin/:$HOME/.local/share/applications/:$HOME/.local/bin/:$HOME/.local/share/bob/nvim-bin/
 export WAYFIRE_CONFIG_FILE=$HOME/.config/wayfire/wayfire.ini
 export EDITOR=nvim
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Get current resolution
+resolution_test=`fbset -s | grep 'mode ' | awk '{ print $2 }' | tr -d '"'`
+export MONITOR_RESOLUTION=$resolution_test
 
 # Aliases
+alias bare="clear && exec '$SHELL'"
 alias cd..="cd .."
+alias fetch="$HOME/.bash/fetch.sh"
 alias l="ls -XA --group-directories-first --file-type --color=auto"
 alias weather="curl wttr.in/?T1"
-alias fkill="pkill --signal 9"
-alias fetch="fastfetch -l Apple_Small -s Title:OS:CPU:Memory:Disk:Colors"
-
-# Run a program detached from terminal
-run() {
-  for arg in "$@"; do
-    nohup "$arg" &> /dev/null &
-  done
-}
 
 # per-machine stuff
-source ~/.machine_rc
+source $HOME/.bash/machine_rc.sh
 
-fastfetch -l Apple_Small -s Title:OS:CPU:Memory:Disk:Colors
-echo 
-test -n "$TMUX" && echo "Tmux is running..."
-echo
+clear
+$HOME/.bash/fetch.sh
