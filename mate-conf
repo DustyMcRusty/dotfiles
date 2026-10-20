@@ -15,7 +15,7 @@ home-icon-name='Home'
 home-icon-visible=true
 network-icon-name='Share'
 network-icon-visible=true
-trash-icon-name='Wastebasket'
+trash-icon-name='TrashBox'
 trash-icon-visible=true
 volumes-visible=true
 
@@ -43,7 +43,7 @@ show-image-thumbnails='always'
 thumbnail-limit=uint64 3145728
 
 [caja/window-state]
-geometry='567x566+222+82'
+geometry='926x566+98+104'
 maximized=false
 side-pane-view='places'
 sidebar-width=156
@@ -94,7 +94,7 @@ togglekeys-enable=false
 exec='orca'
 
 [desktop/applications/calculator]
-exec='xcalc'
+exec='mate-calc'
 
 [desktop/applications/messenger]
 exec='pidgin'
@@ -103,11 +103,11 @@ exec='pidgin'
 exec='sakura'
 
 [desktop/background]
-color-shading-type='solid'
-picture-filename='/home/apolonio/Pictures/papelocal/orangecottage.jpg'
-picture-options='scaled'
-primary-color='rgb(185,154,241)'
-secondary-color='rgb(37,140,6)'
+color-shading-type='horizontal-gradient'
+picture-filename=''
+picture-options='wallpaper'
+primary-color='rgb(102,102,204)'
+secondary-color='rgb(218,218,218)'
 show-desktop-icons=true
 
 [desktop/file-sharing]
@@ -137,7 +137,7 @@ gtk-theme='Sys9-def'
 icon-theme='BeOS-r5-Icons'
 menus-have-icons=true
 monospace-font-name='Terminess Nerd Font Medium 12'
-window-scaling-factor=0
+window-scaling-factor=1
 
 [desktop/keybindings/custom0]
 action='sakura -c 88 -r 32'
@@ -180,7 +180,7 @@ locate-pointer=false
 
 [desktop/session]
 idle-delay=10
-session-start=1792107630
+session-start=1792517105
 show-hidden-apps=true
 
 [desktop/session/required-components]
@@ -304,7 +304,7 @@ use-active-monitor=true
 [panel/general]
 default-layout='OS9-Like-tweak'
 enable-program-list=false
-history-mate-run=['alacritty', 'dconf-editor', 'pavucontrol', 'librewolf', 'dosbox', 'xfce4-panel', 'pkill xfce4-panel', 'epiphany-browser', 'epiphany-game', 'xterm']
+history-mate-run=['dconf-editor', 'wxedid', 'uxterm', 'alacritty', 'pavucontrol', 'librewolf', 'dosbox', 'xfce4-panel', 'pkill xfce4-panel', 'epiphany-browser']
 object-id-list=['clock', 'object-11', 'object-10', 'object-2', 'object-6', 'object-8', 'object-3', 'object-35']
 show-program-list=true
 toplevel-id-list=['top']
@@ -526,7 +526,7 @@ position=230
 toplevel-id='top'
 
 [panel/objects/object-3]
-custom-icon='MacOS_1_32x32x8'
+custom-icon='BeOS'
 has-arrow=false
 locked=true
 object-type='menu'
@@ -690,7 +690,7 @@ right-margin-position=uint32 80
 side-pane-visible=false
 side-panel-active-page=827629879
 side-panel-size=200
-size=(1010, 680)
+size=(671, 698)
 state=128
 statusbar-visible=false
 tabs-size=uint32 4
