@@ -9,6 +9,9 @@ distribution-repo =>
 	cmus
 	fastfetch
 	htop
+	imv
+	lazygit
+	mupdf
 	openbox
 	pcmanfm-qt
 	playerctl
@@ -20,5 +23,6 @@ distribution-repo =>
 	xpaint
 
 misc-srcs =>
-	noctalia
 	librewolf
+	noctalia
+	yazi

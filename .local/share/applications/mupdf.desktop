@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=MuPDF
+GenericName=Lightweight Document Viewer
+Exec="/usr/bin/mupdf" %f
+StartupNotify=true
+StartupWMClass=MUPDF

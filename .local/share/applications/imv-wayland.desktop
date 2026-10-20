@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=IMV
+GenericName=Image Viewer Designed for Tiling Window Managers
+Exec="/usr/bin/imv-wayland" %f
+StartupNotify=true
+StartupWMClass=IMV
