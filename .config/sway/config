@@ -237,4 +237,3 @@ gaps inner 5
 include window_rules
 include per_machine
 
-include ~/.config/sway/noctalia
