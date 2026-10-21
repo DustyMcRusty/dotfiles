@@ -1,5 +1,14 @@
 # TODO: Delegate things to separate files, to make config more modular
 
+y() {
+	set -- "$@" --cwd-file "$(mktemp -t yazi-cwd.XXXXXX)"
+	command yazi "$@"
+	shift $(($# - 1))
+	set -- "$(command cat < "$1"; printf .; command rm -f -- "$1")"
+	set -- "${1%.}"
+	[ "$1" != "$PWD" ] && [ -d "$1" ] && command cd -- "$1" || command true
+}
+
 # Exports
 export PATH=$PATH:$HOME/.cargo/bin/:$HOME/go/bin/:$HOME/.local/share/applications/:$HOME/.local/bin/:$HOME/.local/share/bob/nvim-bin/
 export WAYFIRE_CONFIG_FILE=$HOME/.config/wayfire/wayfire.ini

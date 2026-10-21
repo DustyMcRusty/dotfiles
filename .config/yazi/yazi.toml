@@ -1,0 +1,25 @@
+[mgr]
+sort_dir_first=true
+sort_by="natural"
+linemode="size"
+
+[preview]
+tab_size=8
+
+[opener]
+play = [
+	{ run="ffplay %s", orphan=true, for="unix" }
+]
+edit = [
+	{ run="nvim %s", block=true, for="unix" }
+]
+view = [
+	{ run="swayimg %s", orphan=true, for="unix" }
+]
+
+[open]
+rules = [
+	{ mime="text/*", use="edit"},
+	{ mime="video/*", use="play"},
+	{ mime="image/*", use="view"},
+]
