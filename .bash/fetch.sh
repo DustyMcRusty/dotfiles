@@ -1,18 +1,18 @@
 FETCH_PROG=fastfetch
 
 RET_LOGO="amiga"
-MOD_LOGO="prismlinux_small"
-DEF_LOGO="cutefishos"
+MOD_LOGO="blackmesa"
+DEF_LOGO="raspbian"
 
 RET_ARGS="-s Title:OS:CPU:Memory:Disk:Colors \
 		-l $RET_LOGO"
 
-MOD_ARGS="-l $MOD_LOGO"
+MOD_ARGS="-l $MOD_LOGO \
+		--logo-color-1 yellow"
 
 DEF_ARGS="--logo-padding-bottom 0 \
 		--logo-padding-left 7 \
 		--logo-padding-right 7 \
-		--logo-position top \
 		--logo-type auto \
 		-c examples/20.jsonc \
 		-l $DEF_LOGO" 
@@ -23,7 +23,7 @@ case $TERM in
 		$FETCH_PROG $RET_ARGS
 		echo
 		;;
-	alacritty | foot | kitty | ghostty)
+	alacritty | foot | kitty | ghostty | rio)
 		echo
 		$FETCH_PROG $MOD_ARGS
 		echo

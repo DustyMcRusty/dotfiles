@@ -1,0 +1,189 @@
+up = 1;
+
+wallpaper_image = Image("background.png");
+wallpaper_ratio = wallpaper_image.GetHeight() / wallpaper_image.GetWidth();
+screen_ratio = Window.GetHeight() / Window.GetWidth();
+
+if (screen_ratio > wallpaper_ratio) {
+    scale_factor = Window.GetHeight() / wallpaper_image.GetHeight();
+} else {
+    scale_factor = Window.GetWidth() / wallpaper_image.GetWidth();
+}
+
+scaled_wallpaper = wallpaper_image.Scale(wallpaper_image.GetWidth() * scale_factor,
+                                         wallpaper_image.GetHeight() * scale_factor);
+wallpaper_sprite = Sprite(scaled_wallpaper);
+wallpaper_sprite.SetX(Window.GetWidth() / 2 - scaled_wallpaper.GetWidth() / 2);
+wallpaper_sprite.SetY(Window.GetHeight() / 2 - scaled_wallpaper.GetHeight() / 2);
+wallpaper_sprite.SetZ(-10000);
+progress = 0;
+
+if (Plymouth.GetMode() == "boot") {
+    progress_box.image = Image("throbber.png");
+    progress_box.sprite = Sprite();
+    progress_box.x = Window.GetWidth() / 4 - progress_box.image.GetWidth()  / 4;
+    progress_box.y = Window.GetHeight() * 0.70 - progress_box.image.GetHeight() / 2;
+    progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
+    progress_box.sprite.SetImage(progress_box.image);
+}
+
+fun refresh (){
+    mode = Plymouth.GetMode();
+    
+    if (status == "normal" && (mode == "boot")) {
+        if (up) {
+            progress++;
+        } else {
+            progress--;
+        }
+
+        if (progress == 100 || progress == 0) {
+          up = !up;
+        }
+
+        opacity = progress / 100;
+        progress_box.sprite.SetOpacity(opacity);
+    } else if (status != "normal" && mode == "boot" ) {
+        progress_box.sprite.SetOpacity(0);
+    }
+}
+ 
+ Plymouth.SetRefreshFunction(refresh);
+
+
+/*                                   Dialogue                                  */
+ status = "normal";
+
+ fun dialog_setup() {
+    local.box;
+    local.lock;
+    local.entry;
+
+    box.image = Image("box.png");
+    lock.image = Image("lock.png");
+    entry.image = Image("entry.png");
+
+    box.sprite = Sprite(box.image);
+    box.x = Window.GetWidth()  / 2 - box.image.GetWidth ()/2;
+    box.y = Window.GetHeight() / 2 - box.image.GetHeight()/2;
+    box.z = 10000;
+    box.sprite.SetPosition(box.x, box.y, box.z);
+
+    lock.sprite = Sprite(lock.image);
+    lock.x = box.x + box.image.GetWidth()/2 - (lock.image.GetWidth() + entry.image.GetWidth()) / 2;
+    lock.y = box.y + box.image.GetHeight()/2 - lock.image.GetHeight()/2;
+    lock.z = box.z + 1;
+    lock.sprite.SetPosition(lock.x, lock.y, lock.z);
+
+    entry.sprite = Sprite(entry.image);
+    entry.x = lock.x + lock.image.GetWidth();
+    entry.y = box.y + box.image.GetHeight()/2 - entry.image.GetHeight()/2;
+    entry.z = box.z + 1;
+    entry.sprite.SetPosition(entry.x, entry.y, entry.z);
+
+    global.dialog.box = box;
+    global.dialog.lock = lock;
+    global.dialog.entry = entry;
+    global.dialog.bullet_image = Image("bullet.png");
+    dialog_opacity (1);
+}
+
+fun dialog_opacity(opacity) {
+    dialog.box.sprite.SetOpacity (opacity);
+    dialog.lock.sprite.SetOpacity (opacity);
+    dialog.entry.sprite.SetOpacity (opacity);
+    for (index = 0; dialog.bullet[index]; index++) {
+        dialog.bullet[index].sprite.SetOpacity(opacity);
+    }
+}
+
+fun display_normal_callback () {
+    global.status = "normal";
+    if (global.dialog) {
+        dialog_opacity(0);
+    }
+}
+
+fun display_password_callback (prompt, bullets) {
+    global.status = "password";
+    if (!global.dialog) {
+        dialog_setup();
+    }
+    else {
+        dialog_opacity(1);
+    }
+    for (index = 0; dialog.bullet[index] || index < bullets; index++) {
+        if (!dialog.bullet[index]) {
+            dialog.bullet[index].sprite = Sprite(dialog.bullet_image);
+            dialog.bullet[index].x = dialog.entry.x + index * dialog.bullet_image.GetWidth();
+            dialog.bullet[index].y = dialog.entry.y + dialog.entry.image.GetHeight() / 2 - dialog.bullet_image.GetHeight() / 2;
+            dialog.bullet[index].z = dialog.entry.z + 1;
+            dialog.bullet[index].sprite.SetPosition(dialog.bullet[index].x, dialog.bullet[index].y, dialog.bullet[index].z);
+        }
+        if (index < bullets) {
+            dialog.bullet[index].sprite.SetOpacity(1);
+        }
+        else {
+            dialog.bullet[index].sprite.SetOpacity(0);
+        }
+    }
+}
+Plymouth.SetDisplayNormalFunction(display_normal_callback);
+Plymouth.SetDisplayPasswordFunction(display_password_callback);
+
+/*                                       Quit                                    */
+
+fun quit_callback () {
+
+}
+Plymouth.SetQuitFunction(quit_callback);
+
+/*                                     Message                                   */
+
+message_sprite = Sprite();
+message_sprite.SetPosition(10, 10, 10000);
+
+fun message_callback (text) {
+    my_image = Image.Text(text, (1 / 255 * 67), (1 / 255 * 71), (1 / 255 * 72));
+    message_sprite.SetImage(my_image);
+}
+Plymouth.SetMessageFunction(message_callback);
+
+/*                                   Scroll Messages                             */
+NUM_SCROLL_LINES=5;
+LINE_WIDTH=55;
+
+for (i=0; i < NUM_SCROLL_LINES; i++) {
+    lines[i]= Image.Text("", 0, 0, 0);
+    scrl_message_sprite[i] = Sprite();
+    scrl_message_sprite[i].SetPosition(Window.GetWidth() * 0.2, (Window.GetHeight() * 0.75) + (i * 20), 10000);
+}
+
+fun string_length(string) {
+    index = 0;
+    str = String(string);
+    while(str.CharAt(index))
+        index++;
+    return index;
+}
+
+fun scroll_message(text) {
+    /* Truncate log messages */
+    if (string_length(text) > LINE_WIDTH) {
+        text = text.SubString(0, LINE_WIDTH -3);
+        text += "...";
+    }
+
+    /* Shift message one line up */
+    for (i=0; i<NUM_SCROLL_LINES -1; i++) {
+        lines[i] = lines[i+1];
+    }
+
+    /* Convert message to image */
+    lines[i] = Image.Text(text, (1 / 255 * 67), (1 / 255 * 71), (1 / 255 * 72));  /* Set gray font color */
+
+    for (i=0; i<NUM_SCROLL_LINES; i++) {
+        scrl_message_sprite[i].SetImage(lines[i]);
+    }
+}
+Plymouth.SetUpdateStatusFunction(scroll_message);

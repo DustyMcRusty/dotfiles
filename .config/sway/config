@@ -76,8 +76,8 @@ output * scale_filter nearest
 	bindsym button2 kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
-    bindsym $mod+Shift+d exec $menu-noc
+    bindsym $mod+d exec $menu-noc
+    bindsym $mod+Shift+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -222,8 +222,8 @@ bindsym Print exec grim
 # Customizations
 #
 
-bindsym $meta+$mod+equal opacity plus 0.1
-bindsym $meta+$mod+minus opacity minus 0.1
+bindsym $meta+$mod+equal opacity plus 0.05
+bindsym $meta+$mod+minus opacity minus 0.05
 bindsym $meta+$mod+r opacity 1
 
 input type:keyboard {
@@ -235,8 +235,8 @@ input type:keyboard {
 focus_follows_mouse no
 
 
-font "Ubuntu" 9
-default_border pixel 2
+font "Terminess Nerd Font Mono" 9
+default_border pixel 1
 gaps inner 5
 
 include window_rules

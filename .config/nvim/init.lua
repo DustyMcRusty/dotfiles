@@ -78,6 +78,7 @@
 -- Plugin Declarations
 	vim.pack.add({
 		{ src = 'https://github.com/L3MON4D3/LuaSnip'},
+		{ src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim'},
 		{ src = 'https://github.com/alec-gibson/nvim-tetris' },
 		{ src = 'https://github.com/folke/which-key.nvim' },
 		{ src = 'https://github.com/hat0uma/csvview.nvim' },
@@ -94,6 +95,7 @@
 		{ src = 'https://github.com/nvim-mini/mini.pick'},
 		{ src = 'https://github.com/nvim-mini/mini.surround' },
 		{ src = 'https://github.com/nvim-mini/mini.tabline'},
+		{ src = 'https://github.com/nvim-treesitter/nvim-treesitter'},
 		{ src = 'https://github.com/pechorin/any-jump.vim'},
 		{ src = 'https://github.com/rafamadriz/friendly-snippets' },
 		{ src = 'https://github.com/saghen/blink.cmp' },
@@ -118,6 +120,7 @@
 	})
 
 	require("autoclose").setup()
+	require("render-markdown").setup()
 	require("comfy-line-numbers").setup()
 	require("convy").setup()
 	require("csvview").setup()
@@ -139,3 +142,8 @@
 
 -- Colorscheme
 vim.cmd(":colorscheme habamax")
+
+local groups = {'Normal', 'NormalNC', 'NormalFloat', 'SignColumn', 'StatusLine', 'StatusLineNC', 'EndOfBuffer'}
+  for _, group in ipairs(groups) do
+    vim.api.nvim_set_hl(0, group, { bg = 'NONE', ctermbg = 'NONE' })
+  end

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Asphyxia
+Description=Asphyxia Theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/asphyxia
+ScriptFile=/usr/share/plymouth/themes/asphyxia/asphyxia.script

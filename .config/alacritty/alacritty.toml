@@ -1,12 +1,13 @@
 [general]
-import = [
-    "~/.config/alacritty/themes/noctalia.toml",
-]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
+
+# [colors.primary]
+# background = '#1a1a1a'
 
 [font]
-normal = { family = "Inconsolata LGC Nerd Font Mono"}
-size = 10.5
+normal = { family = "Terminess Nerd Font Mono"}
+size = 12
 
 [window]
-opacity = 0.96
-title = "Linux Shell"
+opacity = 0.88
+title = "*nix shell"
