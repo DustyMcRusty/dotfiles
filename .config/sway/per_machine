@@ -1,3 +1,2 @@
-
-bindsym $mod+f2 gaps left 382
-bindsym $mod+f3 gaps left 0
+bindsym $cmd+f2 gaps left 263
+bindsym $cmd+f3 gaps left 0

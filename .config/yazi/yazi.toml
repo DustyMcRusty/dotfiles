@@ -16,10 +16,23 @@ edit = [
 view = [
 	{ run="swayimg %s", orphan=true, for="unix" }
 ]
+read = [
+	{ run="mupdf -A0 %s", orphan=true, for="unix" }
+]
 
 [open]
 rules = [
+	{ mime="application/epub+zip", use="read"},
+	{ mime="application/oxps", use="read"},
+	{ mime="application/pdf", use="read"},
+	{ mime="application/vnd.comicbook+cbz", use="read"},
+	{ mime="application/vnd.comicbook+zip", use="read"},
+	{ mime="application/vnd.comicbook-rar", use="read"},
+	{ mime="application/vnd.ms-xpsdocument", use="read"},
+	{ mime="application/x-cbr", use="read"},
+	{ mime="application/x-cbz", use="read"},
+	{ mime="application/xhtml+html", use="read"},
+	{ mime="image/*", use="view"},
 	{ mime="text/*", use="edit"},
 	{ mime="video/*", use="play"},
-	{ mime="image/*", use="view"},
 ]

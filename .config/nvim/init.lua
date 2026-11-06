@@ -141,7 +141,7 @@
 	})
 
 -- Colorscheme
-vim.cmd(":colorscheme habamax")
+vim.cmd(":colorscheme retrobox")
 
 local groups = {'Normal', 'NormalNC', 'NormalFloat', 'SignColumn', 'StatusLine', 'StatusLineNC', 'EndOfBuffer'}
   for _, group in ipairs(groups) do

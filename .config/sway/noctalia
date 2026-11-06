@@ -1,12 +1,12 @@
-set $primary            #ffffff
-set $on_primary         #333200
-set $secondary          #ccca83
-set $tertiary           #ffffff
-set $error              #ffb4ab
-set $surface            #14140a
-set $on_surface         #e6e3d2
-set $on_surface_variant #cac7ae
-set $outline            #94927a
+set $primary            #4c7899
+set $on_primary         #ffffff
+set $secondary          #2e9ef4
+set $tertiary           #5f676a
+set $error              #900000
+set $surface            #222222
+set $on_surface         #f0f0f0
+set $on_surface_variant #888888
+set $outline            #666d6f
 
 ## Window Colours
 # class                 border    backgr.   text                indicator  child_border

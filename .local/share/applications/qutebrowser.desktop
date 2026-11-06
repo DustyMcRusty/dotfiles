@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=qutebrowser
+GenericName=Keyboard-centric Web-Browser
+Exec="/home/apolonio/.local/bin/qutebrowser"
+StartupNotify=true
+StartupWMClass=qutebrowser
